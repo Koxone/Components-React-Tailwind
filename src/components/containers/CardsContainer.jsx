@@ -7,7 +7,7 @@ MainCard;
 
 function CardsContainer() {
   return (
-    <div className="grid overflow-auto grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="hide-scrollbar grid h-[calc(100vh-100px)] grid-cols-1 gap-8 overflow-auto md:grid-cols-2 lg:grid-cols-3">
       <MainCard
         title="Text Animated Gradient"
         effect={<TextAnimatedGradient>Sample Text</TextAnimatedGradient>}
