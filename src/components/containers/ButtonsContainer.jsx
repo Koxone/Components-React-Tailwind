@@ -10,6 +10,16 @@ import ButtonGradientShift from "../samples/buttons/ButtonGradientShift";
 import ButtonWiggle from "../samples/buttons/ButtonWiggle";
 import ButtonScale from "../samples/buttons/ButtonScale";
 import MainCard from "../cards/MainCard";
+import ButtonFlash from "../samples/buttons/ButtonFlash";
+import ButtonFlip from "../samples/buttons/ButtonFlip";
+import ButtonRotate from "../samples/buttons/ButtonRotate";
+import ButtonSwing from "../samples/buttons/ButtonSwing";
+import ButtonShadowPulse from "../samples/buttons/ButtonShadowPulse";
+import ButtonTilt from "../samples/buttons/ButtonTilt";
+import ButtonShimmer from "../samples/buttons/ButtonShimmer";
+import ButtonHeartbeat from "../samples/buttons/ButtonHeartbeat";
+import ButtonGlowBorder from "../samples/buttons/ButtonGlowBorder";
+import ButtonDiagonalSlide from "../samples/buttons/ButtonDiagonalSlide";
 
 function ButtonsContainer() {
   return (
@@ -62,6 +72,46 @@ function ButtonsContainer() {
       <MainCard
         title="Button Scale"
         effect={<ButtonScale>Click Me</ButtonScale>}
+      />
+      <MainCard
+        title="Button Flash"
+        effect={<ButtonFlash>Click Me</ButtonFlash>}
+      />
+      <MainCard
+        title="Button Flip"
+        effect={<ButtonFlip>Click Me</ButtonFlip>}
+      />
+      <MainCard
+        title="Button Rotate"
+        effect={<ButtonRotate>Click Me</ButtonRotate>}
+      />
+      <MainCard
+        title="Button Swing"
+        effect={<ButtonSwing>Click Me</ButtonSwing>}
+      />
+      <MainCard
+        title="Button Shadow Pulse"
+        effect={<ButtonShadowPulse>Click Me</ButtonShadowPulse>}
+      />
+      <MainCard
+        title="Button Tilt"
+        effect={<ButtonTilt>Click Me</ButtonTilt>}
+      />
+      <MainCard
+        title="Button Shimmer"
+        effect={<ButtonShimmer>Click Me</ButtonShimmer>}
+      />
+      <MainCard
+        title="Button Heartbeat"
+        effect={<ButtonHeartbeat>Click Me</ButtonHeartbeat>}
+      />
+      <MainCard
+        title="Button Glow Border"
+        effect={<ButtonGlowBorder>Click Me</ButtonGlowBorder>}
+      />
+      <MainCard
+        title="Button Diagonal Slide"
+        effect={<ButtonDiagonalSlide>Click Me</ButtonDiagonalSlide>}
       />
     </div>
   );
