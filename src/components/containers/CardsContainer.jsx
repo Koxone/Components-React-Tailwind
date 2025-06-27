@@ -10,6 +10,13 @@ import TextScalePulse from "../samples/TextScalePlus";
 import TextShine from "../samples/TextShine";
 import TextTypewriter from "../samples/TextTypewriter";
 import TextWave from "../samples/TextWave";
+import TextWiggle from "../samples/TextWiggle";
+import TextSlideInLeft from "../samples/TextSlideInLeft";
+import TextSlideInRight from "../samples/TextSlideInRight";
+import TextFadeLoop from "../samples/TextFadeLoop";
+import TextSkewLoop from "../samples/TextSkewLoop";
+import TextScaleLoop from "../samples/TextScaleLoop";
+import TextSpinLoop from "../samples/TextSpinLoop";
 
 MainCard;
 
@@ -58,33 +65,34 @@ function CardsContainer() {
         title="Text Scale Plus"
         effect={<TextScalePulse>Sample Text</TextScalePulse>}
       />
+
       <MainCard
-        title="Text Animation Horizontal"
-        effect={<TextAnimationHorizontal>Sample Text</TextAnimationHorizontal>}
+        title="Text Wiggle"
+        effect={<TextWiggle>Sample Text</TextWiggle>}
       />
       <MainCard
-        title="Text Animated Gradient"
-        effect={<TextAnimatedGradient>Sample Text</TextAnimatedGradient>}
+        title="Text Slide In Left"
+        effect={<TextSlideInLeft>Sample Text</TextSlideInLeft>}
       />
       <MainCard
-        title="Text Shine"
-        effect={<TextShine>Sample Text</TextShine>}
+        title="Text Slide In Right"
+        effect={<TextSlideInRight>Sample Text</TextSlideInRight>}
       />
       <MainCard
-        title="Text Animation Horizontal"
-        effect={<TextAnimationHorizontal>Sample Text</TextAnimationHorizontal>}
+        title="Text Fade Loop"
+        effect={<TextFadeLoop>Sample Text</TextFadeLoop>}
       />
       <MainCard
-        title="Text Animated Gradient"
-        effect={<TextAnimatedGradient>Sample Text</TextAnimatedGradient>}
+        title="Text Skew Loop"
+        effect={<TextSkewLoop>Sample Text</TextSkewLoop>}
       />
       <MainCard
-        title="Text Shine"
-        effect={<TextShine>Sample Text</TextShine>}
+        title="Text Scale Loop"
+        effect={<TextScaleLoop>Sample Text</TextScaleLoop>}
       />
       <MainCard
-        title="Text Animation Horizontal"
-        effect={<TextAnimationHorizontal>Sample Text</TextAnimationHorizontal>}
+        title="Text Spin Loop"
+        effect={<TextSpinLoop>Sample Text</TextSpinLoop>}
       />
     </div>
   );

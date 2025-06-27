@@ -301,3 +301,139 @@ main {
 .animate-scalePulse {
   animation: scalePulse 1.5s infinite ease-in-out;
 }
+
+/* ========================================
+   Animation: Text Wiggle
+   ======================================== */
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s infinite;
+}
+
+/* ========================================
+   Animation: Slide In Left Loop
+   ======================================== */
+@keyframes slideInLeftLoop {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-slideInLeftLoop {
+  animation: slideInLeftLoop 3s ease-in-out infinite;
+}
+
+/* ========================================
+   Animation: Slide In Right Loop
+   ======================================== */
+
+@keyframes slideInRightLoop {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slideInRightLoop {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideInRightLoop 3s ease-in-out infinite;
+}
+
+/* ========================================
+   Animation: Text Fade Loop
+   ======================================== */
+
+@keyframes fadeLoop {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-fadeLoop {
+  animation: fadeLoop 3s infinite;
+}
+
+/* ========================================
+   Animation: Text Skew Loop
+   ======================================== */
+
+@keyframes skewLoop {
+  0%,
+  100% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(10deg);
+  }
+}
+
+.animate-skewLoop {
+  animation: skewLoop 2s infinite ease-in-out;
+}
+
+/* ========================================
+   Animation: Text Scale Loop
+   ======================================== */
+
+@keyframes scaleLoop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.animate-scaleLoop {
+  animation: scaleLoop 2s infinite ease-in-out;
+}
+
+/* ========================================
+   Animation: Text Spin Loop
+   ======================================== */
+
+@keyframes spinLoop {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spinLoop {
+  animation: spinLoop 5s linear infinite;
+}
