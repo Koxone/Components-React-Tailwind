@@ -1,4 +1,12 @@
+import { buttons, text } from "../data/ComponentsData";
+
 function CategorieCard({ type = "", onClick }) {
+  let count = 0;
+  if (type.toLowerCase() === "buttons") {
+    count = buttons.length;
+  } else if (type.toLowerCase() === "text") {
+    count = text.length;
+  }
   return (
     <ul>
       <li className="mb-3">
@@ -26,7 +34,7 @@ function CategorieCard({ type = "", onClick }) {
             </span>
           </span>
           <span className="text-base font-medium text-gray-500 group-hover:text-blue-700 dark:text-gray-400 dark:group-hover:text-blue-600">
-            (340)
+            ({`${count}`})
           </span>
         </button>
       </li>
