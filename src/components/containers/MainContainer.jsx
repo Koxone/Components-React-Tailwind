@@ -1,11 +1,9 @@
 import CategoriesSideBar from "../nav/CategoriesSideBar";
 import SearchBar from "../nav/SearchBar";
-import CardsContainer from "./CardsContainer";
-import ButtonsContainer from "./ButtonsContainer";
 
-function MainContainer() {
+function MainContainer({ content }) {
   return (
-    <main className="relative grid h-screen grid-cols-[250px_1fr] grid-rows-[auto_1fr] gap-4 overflow-hidden">
+    <main className="relative grid h-screen grid-cols-[250px_1fr] grid-rows-[auto_1fr] gap-4">
       {/* SearchBar fijo en la parte superior */}
       <div className="col-span-2">
         <SearchBar />
@@ -16,11 +14,8 @@ function MainContainer() {
         <CategoriesSideBar />
       </div>
 
-      {/* CardsContainer scrolleable dentro del área de contenido */}
-      <div className="col-start-2 row-start-2 overflow-y-auto">
-        {/* <CardsContainer /> */}
-        <ButtonsContainer />
-      </div>
+      {/* Área dinámica scrollable */}
+      <div className="col-start-2 row-start-2 overflow-y-auto">{content}</div>
     </main>
   );
 }

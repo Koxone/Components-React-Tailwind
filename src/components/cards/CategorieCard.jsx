@@ -1,10 +1,11 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
-function CategorieCard({ type = '' }) {
+function CategorieCard({ type = "", onClick }) {
   return (
     <ul>
       <li className="mb-3">
         <button
+          onClick={onClick}
           type="button"
           className="group flex w-full cursor-pointer items-center justify-between"
         >
