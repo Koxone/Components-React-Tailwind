@@ -1,4 +1,5 @@
-import React from "react";
+import MainCard from "../cards/MainCard";
+
 import ButtonGlow from "../samples/buttons/ButtonGlow";
 import ButtonPulse from "../samples/buttons/ButtonPulse";
 import ButtonSlideIn from "../samples/buttons/ButtonSlideIn";
@@ -9,7 +10,6 @@ import ButtonRipple from "../samples/buttons/ButtonRipple";
 import ButtonGradientShift from "../samples/buttons/ButtonGradientShift";
 import ButtonWiggle from "../samples/buttons/ButtonWiggle";
 import ButtonScale from "../samples/buttons/ButtonScale";
-import MainCard from "../cards/MainCard";
 import ButtonFlash from "../samples/buttons/ButtonFlash";
 import ButtonFlip from "../samples/buttons/ButtonFlip";
 import ButtonRotate from "../samples/buttons/ButtonRotate";
@@ -21,98 +21,39 @@ import ButtonHeartbeat from "../samples/buttons/ButtonHeartbeat";
 import ButtonGlowBorder from "../samples/buttons/ButtonGlowBorder";
 import ButtonDiagonalSlide from "../samples/buttons/ButtonDiagonalSlide";
 
+const buttons = [
+  { title: "Button Glow", Component: ButtonGlow },
+  { title: "Button Pulse", Component: ButtonPulse },
+  { title: "Button Slide In", Component: ButtonSlideIn },
+  { title: "Button Slide Out", Component: ButtonSlideOut },
+  { title: "Button Border Glow", Component: ButtonBorderGlow },
+  { title: "Button Bounce", Component: ButtonBounce },
+  { title: "Button Ripple", Component: ButtonRipple },
+  { title: "Button Gradient Shift", Component: ButtonGradientShift },
+  { title: "Button Wiggle", Component: ButtonWiggle },
+  { title: "Button Scale", Component: ButtonScale },
+  { title: "Button Flash", Component: ButtonFlash },
+  { title: "Button Flip", Component: ButtonFlip },
+  { title: "Button Rotate", Component: ButtonRotate },
+  { title: "Button Swing", Component: ButtonSwing },
+  { title: "Button Shadow Pulse", Component: ButtonShadowPulse },
+  { title: "Button Tilt", Component: ButtonTilt },
+  { title: "Button Shimmer", Component: ButtonShimmer },
+  { title: "Button Heartbeat", Component: ButtonHeartbeat },
+  { title: "Button Glow Border", Component: ButtonGlowBorder },
+  { title: "Button Diagonal Slide", Component: ButtonDiagonalSlide },
+];
+
 function ButtonsContainer() {
   return (
     <div className="hide-scrollbar grid h-[calc(100vh-100px)] grid-cols-1 gap-8 overflow-auto md:grid-cols-2 lg:grid-cols-3">
-      <MainCard
-        title="Button Glow"
-        effect={<ButtonGlow>Click Me</ButtonGlow>}
-      />
-
-      <MainCard
-        title="Button Pulse"
-        effect={<ButtonPulse>Click Me</ButtonPulse>}
-      />
-
-      <MainCard
-        title="Button Slide In"
-        effect={<ButtonSlideIn>Click Me</ButtonSlideIn>}
-      />
-
-      <MainCard
-        title="Button Slide Out"
-        effect={<ButtonSlideOut>Click Me</ButtonSlideOut>}
-      />
-
-      <MainCard
-        title="Button Border Glow"
-        effect={<ButtonBorderGlow>Click Me</ButtonBorderGlow>}
-      />
-
-      <MainCard
-        title="Button Bounce"
-        effect={<ButtonBounce>Click Me</ButtonBounce>}
-      />
-
-      <MainCard
-        title="Button Ripple"
-        effect={<ButtonRipple>Click Me</ButtonRipple>}
-      />
-
-      <MainCard
-        title="Button Gradient Shift"
-        effect={<ButtonGradientShift>Click Me</ButtonGradientShift>}
-      />
-
-      <MainCard
-        title="Button Wiggle"
-        effect={<ButtonWiggle>Click Me</ButtonWiggle>}
-      />
-
-      <MainCard
-        title="Button Scale"
-        effect={<ButtonScale>Click Me</ButtonScale>}
-      />
-      <MainCard
-        title="Button Flash"
-        effect={<ButtonFlash>Click Me</ButtonFlash>}
-      />
-      <MainCard
-        title="Button Flip"
-        effect={<ButtonFlip>Click Me</ButtonFlip>}
-      />
-      <MainCard
-        title="Button Rotate"
-        effect={<ButtonRotate>Click Me</ButtonRotate>}
-      />
-      <MainCard
-        title="Button Swing"
-        effect={<ButtonSwing>Click Me</ButtonSwing>}
-      />
-      <MainCard
-        title="Button Shadow Pulse"
-        effect={<ButtonShadowPulse>Click Me</ButtonShadowPulse>}
-      />
-      <MainCard
-        title="Button Tilt"
-        effect={<ButtonTilt>Click Me</ButtonTilt>}
-      />
-      <MainCard
-        title="Button Shimmer"
-        effect={<ButtonShimmer>Click Me</ButtonShimmer>}
-      />
-      <MainCard
-        title="Button Heartbeat"
-        effect={<ButtonHeartbeat>Click Me</ButtonHeartbeat>}
-      />
-      <MainCard
-        title="Button Glow Border"
-        effect={<ButtonGlowBorder>Click Me</ButtonGlowBorder>}
-      />
-      <MainCard
-        title="Button Diagonal Slide"
-        effect={<ButtonDiagonalSlide>Click Me</ButtonDiagonalSlide>}
-      />
+      {buttons.map(({ title, Component }, index) => (
+        <MainCard
+          key={index}
+          title={title}
+          effect={<Component>Click Me</Component>}
+        />
+      ))}
     </div>
   );
 }

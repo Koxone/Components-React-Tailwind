@@ -1,4 +1,4 @@
-import TextAnimatedGradient from "../samples/TextAnimatedGradient";
+import TextAnimatedGradient from "../samples/text/TextAnimatedGradient";
 
 function MainCard({ title = "", effect, url = "" }) {
   return (
