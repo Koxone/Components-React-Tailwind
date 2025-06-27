@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router-dom";
-
 function CategorieCard({ type = "", onClick }) {
   return (
     <ul>
