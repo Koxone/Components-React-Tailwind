@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./index.css";
 import MainContainer from "./components/containers/MainContainer";
-import CategoriesSideBar from "./components/nav/CategoriesSideBar";
 
 function App() {
   return (

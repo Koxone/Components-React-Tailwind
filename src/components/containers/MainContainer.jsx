@@ -1,6 +1,7 @@
 import CategoriesSideBar from "../nav/CategoriesSideBar";
 import SearchBar from "../nav/SearchBar";
 import CardsContainer from "./CardsContainer";
+import ButtonsContainer from "./ButtonsContainer";
 
 function MainContainer() {
   return (
@@ -17,7 +18,8 @@ function MainContainer() {
 
       {/* CardsContainer scrolleable dentro del área de contenido */}
       <div className="col-start-2 row-start-2 overflow-y-auto">
-        <CardsContainer />
+        {/* <CardsContainer /> */}
+        <ButtonsContainer />
       </div>
     </main>
   );
