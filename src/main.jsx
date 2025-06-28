@@ -5,6 +5,7 @@ import "./index.css";
 import TextsContainer from "./components/containers/TextsContainer";
 import ButtonsContainer from "./components/containers/ButtonsContainer";
 import Layout from "./styles/Layout";
+import { Analytics } from "@vercel/analytics/react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -17,5 +18,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         />
       </Routes>
     </BrowserRouter>
+    <Analytics />
   </React.StrictMode>,
 );
