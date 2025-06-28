@@ -18,6 +18,8 @@ import ButtonShimmer from "../samples/buttons/ButtonShimmer";
 import ButtonHeartbeat from "../samples/buttons/ButtonHeartbeat";
 import ButtonGlowBorder from "../samples/buttons/ButtonGlowBorder";
 import ButtonDiagonalSlide from "../samples/buttons/ButtonDiagonalSlide";
+import ButtonShootingStarBorder from "../samples/buttons/ButtonShootingStarBorder";
+import ButtonSymbion from "../samples/buttons/ButtonSymbion";
 
 import TextAnimatedGradient from "../samples/text/TextAnimatedGradient";
 import TextAnimationHorizontal from "../samples/text/TextAnimationHorizontal";
@@ -59,6 +61,8 @@ export const buttons = [
   { title: "Button Heartbeat", Component: ButtonHeartbeat },
   { title: "Button Glow Border", Component: ButtonGlowBorder },
   { title: "Button Diagonal Slide", Component: ButtonDiagonalSlide },
+  { title: "Button Shooting Star Border", Component: ButtonShootingStarBorder },
+  { title: "Button Symbion", Component: ButtonSymbion },
 ];
 
 export const text = [

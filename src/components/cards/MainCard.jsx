@@ -23,7 +23,7 @@ function MainCard({ title = "", effect, url = "" }) {
           </svg>
         </a>
       </div>
-      <div className="z-0 text-center">{effect}</div>
+      <div className="z-0 text-center flex items-center justify-center">{effect}</div>
     </div>
   );
 }

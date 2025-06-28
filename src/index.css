@@ -819,3 +819,48 @@ body {
   scrollbar-width: thin;
   scrollbar-color: rgba(100, 100, 100, 0.4) transparent;
 }
+
+/* ====== Shooting Star Border: Non-Tailwind Needed CSS ====== */
+.button-shooting-star .spark {
+  -webkit-mask-image: linear-gradient(white, transparent 50%);
+  mask-image: linear-gradient(white, transparent 50%);
+}
+
+.button-shooting-star .spark::before {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  width: 200%;
+  background: conic-gradient(from 0deg, transparent 0deg 340deg, white 360deg);
+  left: 50%;
+  top: -15%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+@keyframes flip {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+/* ====== Gooey Button: Non-Tailwind Needed CSS ====== */
+.button-symbion-wrapper {
+  filter: url("#symbion");
+}
+
+.bubble-symbion {
+  z-index: -10;
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2);
+  transform: translateX(80%);
+}
+
+.button-symbion:hover .bubble-symbion {
+  transform: translateX(180%);
+}
