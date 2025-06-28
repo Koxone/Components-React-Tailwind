@@ -2,20 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Preloads -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
+
+    <!-- SEO Meta -->
+    <title>Koxland Component Library: React + Tailwind UI Components</title>
+    <meta
+      name="description"
+      content="Koxland Component Library: The ultimate collection of React + Tailwind CSS components to build modern interfaces. Open-source, accessible, and highly customizable."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Koxland Component Library</title>
+    <meta name="author" content="Koxland" />
+    <meta
+      name="keywords"
+      content="React, Tailwind CSS, UI components, component library, frontend development, open source, design system, reusable components, React hooks, TypeScript, accessibility, responsive design, frontend toolkit, Koxland, web development"
+    />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Koxland Component Library: React + Tailwind UI Components"
+    />
+    <meta
+      property="og:description"
+      content="The ultimate collection of React + Tailwind CSS components to build modern interfaces. Open-source, accessible, and highly customizable."
+    />
+    <meta
+      property="og:image"
+      content="https://components.koxland.dev/Card-Twitter-Linkedin.png"
+    />
+    <meta property="og:url" content="https://components.koxland.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Koxland" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@koxland" />
+    <meta
+      name="twitter:title"
+      content="Koxland Component Library: React + Tailwind UI Components"
+    />
+    <meta
+      name="twitter:description"
+      content="The ultimate collection of React + Tailwind CSS components to build modern interfaces. Open-source, accessible, and highly customizable."
+    />
+    <meta
+      name="twitter:image"
+      content="https://components.koxland.dev/Card-Twitter-Linkedin.png"
+    />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://components.koxland.dev" />
+
+    <!-- Structured Data -->
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["WebSite", "SoftwareApplication"],
+        "name": "Koxland Component Library",
+        "url": "https://components.koxland.dev",
+        "description": "The ultimate collection of React + Tailwind CSS components to build modern interfaces. Open-source, accessible, and highly customizable.",
+        "operatingSystem": "Web",
+        "applicationCategory": "FrontendLibrary",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Koxland",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://components.koxland.dev/logo-512x512.png"
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
