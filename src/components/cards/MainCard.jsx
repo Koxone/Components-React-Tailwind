@@ -2,7 +2,7 @@ import TextAnimatedGradient from "../samples/text/TextAnimatedGradient";
 
 function MainCard({ title = "", effect, url = "" }) {
   return (
-    <div className="relative grid aspect-square w-[250px] grid-cols-1 grid-rows-[auto_1fr] items-center justify-center rounded-xl border border-gray-700 bg-gray-950/60 p-4">
+    <div className="relative grid aspect-square grid-cols-1 grid-rows-[auto_1fr] items-center justify-center rounded-xl border border-gray-700 bg-gray-950/60 p-4">
       <div className="flex w-full items-center justify-between">
         <a className="text-sm text-gray-400" href={`${url}`}>
           {title}
