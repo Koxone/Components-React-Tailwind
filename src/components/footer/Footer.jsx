@@ -3,7 +3,7 @@ function Footer() {
 
   return (
     <div className="w-full bg-gray-50 dark:bg-gray-800">
-      <footer className="mx-auto w-full max-w-4xl p-4 sm:pl-[50px]">
+      <footer className="mx-auto w-full mb-[30px] max-w-4xl p-4 sm:pl-[50px]">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Branding */}
           <div>
