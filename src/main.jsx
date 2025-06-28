@@ -5,6 +5,7 @@ import "./index.css";
 import TextsContainer from "./components/containers/TextsContainer";
 import ButtonsContainer from "./components/containers/ButtonsContainer";
 import Layout from "./styles/Layout";
+import Demo from "./demos/Demo";
 import { Analytics } from "@vercel/analytics/react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           path="/buttons"
           element={<Layout content={<ButtonsContainer />} />}
         />
+        <Route path="/Demo" element={<Demo />} />
       </Routes>
     </BrowserRouter>
     <Analytics />
