@@ -1,5 +1,6 @@
 import CategoriesSideBar from "../nav/CategoriesSideBar";
 import SearchBar from "../nav/SearchBar";
+import Footer from "../footer/Footer";
 
 function MainContainer({ content }) {
   return (
