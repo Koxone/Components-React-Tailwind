@@ -3,6 +3,7 @@ import CategorieCard from "../cards/CategorieCard";
 
 function CategoriesSideBar() {
   const navigate = useNavigate();
+
   return (
     <aside className="hide-scrollbar col-span-1 hidden h-[calc(100vh-100px)] max-h-[calc(100vh-4rem)] max-w-[250px] flex-1 overflow-y-hidden rounded-lg border border-gray-200 bg-gray-50 p-5 lg:block dark:border-gray-700 dark:bg-gray-800">
       <div className="grid h-full grid-rows-[auto_auto_auto_auto]">
@@ -55,7 +56,7 @@ function CategoriesSideBar() {
           </div>
         </div>
 
-        <div className="hide-scrollbar mb-5 h-full max-h-full overflow-y-auto">
+        <div className="hide-scrollbar mb-5 h-full max-h-full touch-none overflow-y-auto overscroll-contain">
           <h2 className="mb-4 text-sm font-medium text-gray-500 uppercase dark:text-gray-400">
             Components
           </h2>
@@ -64,33 +65,28 @@ function CategoriesSideBar() {
           <CategorieCard type="Cards" />
           <CategorieCard type="Input Field" />
           <CategorieCard type="Toggle" />
-          <CategorieCard type="Text" />
-          <CategorieCard type="Buttons" />
+          <CategorieCard onClick={() => navigate("/")} type="Text" />
+          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
           <CategorieCard type="Cards" />
           <CategorieCard type="Input Field" />
           <CategorieCard type="Toggle" />
-          <CategorieCard type="Text" />
-          <CategorieCard type="Buttons" />
+          <CategorieCard onClick={() => navigate("/")} type="Text" />
+          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
           <CategorieCard type="Cards" />
           <CategorieCard type="Input Field" />
           <CategorieCard type="Toggle" />
-          <CategorieCard type="Text" />
-          <CategorieCard type="Buttons" />
+          <CategorieCard onClick={() => navigate("/")} type="Text" />
+          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
           <CategorieCard type="Cards" />
           <CategorieCard type="Input Field" />
           <CategorieCard type="Toggle" />
-          <CategorieCard type="Text" />
-          <CategorieCard type="Buttons" />
+          <CategorieCard onClick={() => navigate("/")} type="Text" />
+          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
           <CategorieCard type="Cards" />
           <CategorieCard type="Input Field" />
           <CategorieCard type="Toggle" />
-          <CategorieCard type="Text" />
-          <CategorieCard type="Buttons" />
-          <CategorieCard type="Cards" />
-          <CategorieCard type="Input Field" />
-          <CategorieCard type="Toggle" />
-          <CategorieCard type="Text" />
-          <CategorieCard type="Buttons" />
+          <CategorieCard onClick={() => navigate("/")} type="Text" />
+          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
           <CategorieCard type="Cards" />
           <CategorieCard type="Input Field" />
           <CategorieCard type="Toggle" />
