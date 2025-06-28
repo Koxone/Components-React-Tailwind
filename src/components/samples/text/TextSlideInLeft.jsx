@@ -1,6 +1,6 @@
 function TextSlideInLeft({ children }) {
   return (
-    <div className="animate-slideInLeftLoop text-xl text-white">{children}</div>
+    <div className="animate-slideInLeftLoop text-[40px] text-white">{children}</div>
   );
 }
 

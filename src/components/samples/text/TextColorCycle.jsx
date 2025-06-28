@@ -1,6 +1,6 @@
 function TextColorCycle({ children }) {
   return (
-    <div className="animate-colorCycle text-xl font-bold">{children}</div>
+    <div className="animate-colorCycle text-[40px] font-bold">{children}</div>
   );
 }
 

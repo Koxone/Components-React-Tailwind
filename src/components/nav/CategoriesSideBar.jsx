@@ -96,8 +96,9 @@ function CategoriesSideBar() {
 
         <div>
           <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni
-            incidunt excepturi ratione.
+            Welcome to your component library! Here you’ll find both our own
+            handcrafted components and open-source gems from around the web,
+            ready to power your projects.
           </p>
           <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
             Free under the{" "}

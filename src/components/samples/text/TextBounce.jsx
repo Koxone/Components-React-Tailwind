@@ -1,6 +1,6 @@
 function TextBounce({ children }) {
   return (
-    <div className="animate-bounceText text-xl font-bold text-white">
+    <div className="animate-bounceText text-[40px] font-bold text-white">
       {children}
     </div>
   );

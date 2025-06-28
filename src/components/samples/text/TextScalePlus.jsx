@@ -1,6 +1,6 @@
 function TextScalePulse({ children }) {
   return (
-    <div className="animate-scalePulse text-white text-xl font-bold">
+    <div className="animate-scalePulse text-white text-[40px] font-bold">
       {children}
     </div>
   );

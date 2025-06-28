@@ -3,7 +3,7 @@ import React from "react";
 const TextFadeIn = ({ children = "Sample Text", className = "" }) => {
   return (
     <span
-      className={`animate-fadeInUp inline-block text-lg text-white ${className}`}
+      className={`animate-fadeInUp inline-block text-[40px] text-white ${className}`}
     >
       {children}
     </span>

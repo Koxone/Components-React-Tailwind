@@ -1,6 +1,6 @@
 function TextScaleLoop({ children }) {
   return (
-    <div className="animate-scaleLoop inline-block text-xl font-bold text-white">
+    <div className="animate-scaleLoop inline-block text-[40px] font-bold text-white">
       {children}
     </div>
   );
