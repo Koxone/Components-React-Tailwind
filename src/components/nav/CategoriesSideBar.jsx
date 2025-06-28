@@ -5,8 +5,8 @@ function CategoriesSideBar() {
   const navigate = useNavigate();
 
   return (
-    <aside className="hide-scrollbar col-span-1 hidden h-[calc(100vh-100px)] max-h-[calc(100vh-4rem)] max-w-[250px] flex-1 overflow-y-hidden rounded-lg border border-gray-200 bg-gray-50 p-5 lg:block dark:border-gray-700 dark:bg-gray-800">
-      <div className="grid h-full grid-rows-[auto_auto_auto_auto]">
+    <aside className="hide-scrollbar col-span-1 hidden h-[calc(100vh-100px)] max-h-[calc(100vh-4rem)] max-w-[250px] flex-1 overflow-y-hidden rounded-lg border border-gray-200 bg-gray-50 p-5 sm:flex lg:block dark:border-gray-700 dark:bg-gray-800">
+      <div className="hidden h-full grid-rows-[auto_auto_auto_auto] sm:grid">
         <div className="mb-5">
           <h5 className="mb-4 text-sm font-medium text-gray-500 uppercase dark:text-gray-400">
             Categories
