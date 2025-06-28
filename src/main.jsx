@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import CardsContainer from "./components/containers/CardsContainer";
+import CardsContainer from "./components/containers/TextsContainer";
 import ButtonsContainer from "./components/containers/ButtonsContainer";
 import Layout from "./styles/Layout";
 
