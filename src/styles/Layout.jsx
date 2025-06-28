@@ -13,12 +13,12 @@ function Layout({ content }) {
       {/* MAIN: SIDEBAR + CONTENT */}
       <div className="mx-auto flex w-full max-w-[1280px] flex-1">
         {/* SIDEBAR */}
-        <aside className="sticky top-16 hidden h-[calc(100vh-4rem)] w-[250px] flex-shrink-0 md:block">
+        <aside className="sticky top-[64px] hidden w-[250px] p-4 flex-shrink-0 md:block">
           <CategoriesSideBar />
         </aside>
 
         {/* CONTENT */}
-        <main className="flex-1 p-6">{content}</main>
+        <main className="flex-1 p-4">{content}</main>
       </div>
 
       {/* FOOTER */}
