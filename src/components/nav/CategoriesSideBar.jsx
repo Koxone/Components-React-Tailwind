@@ -56,7 +56,7 @@ function CategoriesSideBar() {
           </div>
         </div>
 
-        <div className="hide-scrollbar mb-5 h-full max-h-full touch-none overflow-y-auto overscroll-contain">
+        <div className="mb-5 h-full max-h-full touch-none overflow-y-auto overscroll-contain pr-2">
           <h2 className="mb-4 text-sm font-medium text-gray-500 uppercase dark:text-gray-400">
             Components
           </h2>

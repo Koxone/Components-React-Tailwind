@@ -3,7 +3,7 @@ import { text } from "../data/ComponentsData";
 
 function CardsContainer() {
   return (
-    <div className="hide-scrollbar grid h-[calc(100vh-100px)] grid-cols-1 gap-8 overflow-auto md:grid-cols-2 lg:grid-cols-3">
+    <div className="hide-scrollbar grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       {text.map(({ title, Component }, index) => (
         <MainCard
           key={index}
