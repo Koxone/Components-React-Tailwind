@@ -1,8 +1,8 @@
-import CategoriesSideBar from "../nav/CategoriesSideBar";
-import SearchBar from "../nav/SearchBar";
-import Footer from "../footer/Footer";
+import CategoriesSideBar from "../components/nav/CategoriesSideBar";
+import SearchBar from "../components/nav/SearchBar";
+import Footer from "../components/footer/Footer";
 
-function MainContainer({ content }) {
+function Layout({ content }) {
   return (
     <main className="relative grid h-screen grid-cols-[250px_1fr] grid-rows-[auto_1fr] gap-4">
       {/* SearchBar fijo en la parte superior */}
@@ -21,4 +21,4 @@ function MainContainer({ content }) {
   );
 }
 
-export default MainContainer;
+export default Layout;

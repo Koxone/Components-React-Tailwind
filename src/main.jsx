@@ -2,21 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import MainContainer from "./components/containers/MainContainer";
 import CardsContainer from "./components/containers/CardsContainer";
 import ButtonsContainer from "./components/containers/ButtonsContainer";
+import Layout from "./styles/Layout";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={<MainContainer content={<CardsContainer />} />}
-        />
+        <Route path="/" element={<Layout content={<CardsContainer />} />} />
         <Route
           path="/buttons"
-          element={<MainContainer content={<ButtonsContainer />} />}
+          element={<Layout content={<ButtonsContainer />} />}
         />
       </Routes>
     </BrowserRouter>
