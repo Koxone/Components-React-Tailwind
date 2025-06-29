@@ -1,12 +1,121 @@
-# React + Vite
+# ✨ Components Library – React + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern component library** built with **React**, **Tailwind CSS**, and **Vite**, featuring a clean UI, smooth animations, and modular structure for learning, showcasing, and reusing frontend components in your projects.
 
-Currently, two official plugins are available:
+Live Demo: [components.koxland.dev](https://components.koxland.dev)  
+Repository: [Components-React-Tailwind](https://github.com/Koxone/Components-React-Tailwind)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎨 **Over 80 reusable components** (buttons, toggles, text effects, inputs, cards, and more)
+- 🌀 **Smooth animations** and hover effects with Tailwind and custom CSS
+- 🌗 **Dark mode** support
+- 🗂️ Organized and scalable folder structure
+- 📱 **Fully responsive** design
+- ⚡ **Instant preview** with Vite
+- 📝 Includes **code snippets**, Tailwind config, and global CSS for each component
+
+---
+
+## 🛠️ Technologies Used
+
+- **React** – Component structure and rendering
+- **Tailwind CSS** – Utility-first styling
+- **Vite** – Fast build and hot-reload environment
+- **Custom CSS** – For advanced animations and effects
+- **React Router** – Seamless navigation between components
+
+---
+
+## 📦 Installation
+
+1️⃣ **Clone the repository:**
+
+```bash
+git clone https://github.com/Koxone/Components-React-Tailwind.git
+cd Components-React-Tailwind
+```
+
+2️⃣ **Install dependencies:**
+
+```bash
+npm install
+```
+
+3️⃣ **Run the development server:**
+
+```bash
+npm run dev
+```
+
+4️⃣ Open in your browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🗂️ Project Structure
+
+```
+Components-React-Tailwind/
+├── public/                     # Static assets
+├── src/
+│   ├── components/             # Main React components
+│   │   ├── cards/
+│   │   ├── buttons/
+│   │   ├── inputs/
+│   │   ├── toggles/
+│   │   └── text/
+│   ├── data/                   # ComponentsData for dynamic routing
+│   ├── App.jsx                 # Main app structure
+│   ├── main.jsx                # Entry point
+│   └── styles.css              # Tailwind and global styles
+├── tailwind.config.js          # Tailwind configuration
+└── vite.config.js              # Vite configuration
+```
+
+---
+
+## ⚡ Live Demo
+
+Check out the live, interactive demo at:
+
+👉 [components.koxland.dev](https://components.koxland.dev)
+
+---
+
+## 💡 Usage
+
+- Explore available components by category.
+- Click on any component to view a live preview.
+- Copy ready-to-use **React code**, **Tailwind config**, and **CSS snippets** for quick integration into your projects.
+
+This library is designed to **accelerate your workflow**, inspire your projects, and serve as a learning reference for **React + Tailwind UI patterns**.
+
+---
+
+## 🎯 Roadmap
+
+- [x] Add interactive demo for each component
+- [x] Include code snippets for Tailwind config and CSS
+- [x] Add dark mode
+- [ ] Add filter and search by component type
+- [ ] Add "copy to clipboard" functionality on code snippets
+- [ ] Export as a reusable npm package for projects
+
+---
+
+## 📄 License
+
+MIT License – Free to use, modify, and distribute.
+
+---
+
+## ✨ Credits
+
+Developed with ❤️ by [Koxone](https://github.com/Koxone).  
+Pull requests and feedback are welcome to improve the project and help others learn.
