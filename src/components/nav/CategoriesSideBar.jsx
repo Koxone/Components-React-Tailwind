@@ -101,14 +101,7 @@ function CategoriesSideBar() {
             ready to power your projects.
           </p>
           <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-            Free under the{" "}
-            <a
-              href="https://github.com/themesberg/flowbite-icons"
-              className="underline hover:no-underline"
-            >
-              MIT License
-            </a>{" "}
-            💙
+            Free under the MIT License
           </p>
         </div>
       </div>
