@@ -4,8 +4,8 @@ function MainCard({ title = "", effect, url }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
+    sessionStorage.setItem("scrollToPosition", window.scrollY);
     navigate(url);
-    window.scrollTo(0, 0);
   };
 
   return (
