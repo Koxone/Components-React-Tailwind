@@ -6,7 +6,7 @@ function CardBackgroundVideoHover() {
 
   return (
     <div
-      className="relative w-64 h-40 overflow-hidden rounded-lg cursor-pointer"
+      className="relative h-50 w-50 overflow-hidden rounded-lg cursor-pointer"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >

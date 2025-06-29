@@ -1,28 +1,39 @@
-// CardHoverRippleWave.jsx
 import React, { useRef } from "react";
 
 function CardHoverRippleWave() {
-  const rippleRef = useRef();
+  const containerRef = useRef(null);
 
   const handleClick = (e) => {
-    const ripple = rippleRef.current;
-    const rect = ripple.getBoundingClientRect();
-    ripple.style.left = `${e.clientX - rect.left}px`;
-    ripple.style.top = `${e.clientY - rect.top}px`;
-    ripple.classList.add("animate-ripple");
-    ripple.addEventListener("animationend", () => ripple.classList.remove("animate-ripple"), { once: true });
+    const container = containerRef.current;
+    const circle = document.createElement("span");
+
+    const diameter = Math.max(container.clientWidth, container.clientHeight);
+    const radius = diameter / 2;
+
+    circle.style.width = circle.style.height = `${diameter}px`;
+    circle.style.left = `${e.clientX - container.getBoundingClientRect().left - radius}px`;
+    circle.style.top = `${e.clientY - container.getBoundingClientRect().top - radius}px`;
+    circle.style.position = "absolute";
+    circle.style.borderRadius = "50%";
+    circle.style.backgroundColor = "rgba(255, 255, 255, 0.4)";
+    circle.style.transform = "scale(0)";
+    circle.style.animation = "rippleEffect 0.6s linear";
+    circle.style.pointerEvents = "none";
+
+    container.appendChild(circle);
+
+    circle.addEventListener("animationend", () => {
+      circle.remove();
+    });
   };
 
   return (
     <div
-      className="relative w-60 h-40 bg-blue-600 rounded-lg overflow-hidden cursor-pointer flex items-center justify-center text-white font-bold"
+      ref={containerRef}
       onClick={handleClick}
+      className="relative flex h-[200px] w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-blue-600 font-bold text-white select-none"
     >
-      <span
-        ref={rippleRef}
-        className="absolute w-20 h-20 rounded-full bg-white/50 pointer-events-none scale-0"
-      ></span>
-      Ripple
+      Click Me!
     </div>
   );
 }

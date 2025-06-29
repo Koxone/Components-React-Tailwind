@@ -9,11 +9,16 @@ function CardMagneticHoverFollow() {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left - rect.width / 2;
     const y = e.clientY - rect.top - rect.height / 2;
-    card.style.transform = `rotateX(${(-y / 20)}deg) rotateY(${x / 20}deg)`;
+    card.style.transform = `rotateX(${-y / 4}deg) rotateY(${x / 4}deg) scale(1.05)`;
   };
 
   const reset = () => {
-    cardRef.current.style.transform = "";
+    const card = cardRef.current;
+    card.style.transition = "transform 0.4s ease";
+    card.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
+    setTimeout(() => {
+      card.style.transition = "";
+    }, 400);
   };
 
   return (
@@ -21,7 +26,7 @@ function CardMagneticHoverFollow() {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={reset}
-      className="w-60 h-40 bg-gradient-to-tr from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white text-lg font-bold transition-transform"
+      className="flex h-[200px] w-[200px] items-center justify-center rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 text-lg font-bold text-white shadow-2xl transition-transform duration-200 will-change-transform"
     >
       Hover Me
     </div>

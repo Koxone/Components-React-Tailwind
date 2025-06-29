@@ -7,11 +7,11 @@ function CardAnimatedConfettiCelebration() {
 
   return (
     <div
-      className="relative flex h-40 w-60 cursor-pointer items-center justify-center rounded-lg bg-green-500 font-bold text-white"
+      className="relative flex h-50 w-50 cursor-pointer items-center justify-center rounded-lg bg-green-500 font-bold text-white"
       onClick={() => setShowConfetti(!showConfetti)}
     >
       {showConfetti && <Confetti width={240} height={160} />}
-      Celebrate
+      Click Me!
     </div>
   );
 }

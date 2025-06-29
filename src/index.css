@@ -931,13 +931,9 @@ body {
   Animation: CardHoverRippleWave
   ======================================== */
 
-@keyframes ripple {
+@keyframes rippleEffect {
   to {
     transform: scale(4);
     opacity: 0;
   }
-}
-
-.animate-ripple {
-  animation: ripple 0.6s linear;
 }

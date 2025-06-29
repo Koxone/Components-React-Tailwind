@@ -7,7 +7,7 @@ function CardEmojiReactAnimation() {
 
   return (
     <div
-      className="relative w-60 h-40 rounded-lg bg-purple-600 flex items-center justify-center text-white font-bold cursor-pointer overflow-hidden"
+      className="relative h-50 w-50 rounded-lg bg-purple-600 flex items-center justify-center text-white font-bold cursor-pointer overflow-hidden"
       onMouseEnter={() => setShowEmojis(true)}
       onMouseLeave={() => setShowEmojis(false)}
     >
@@ -24,7 +24,7 @@ function CardEmojiReactAnimation() {
             {emoji}
           </span>
         ))}
-      React 🎈
+      Hover Me! 🎈
     </div>
   );
 }
