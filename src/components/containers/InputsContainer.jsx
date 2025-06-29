@@ -1,10 +1,10 @@
 import MainCard from "../cards/MainCard";
-import { toggles } from "../data/ComponentsData";
+import { inputs } from "../data/ComponentsData";
 
 function InputsContainer() {
   return (
     <div className="hide-scrollbar grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {toggles.map(({ title, Component }, index) => (
+      {inputs.map(({ title, Component }, index) => (
         <MainCard
           key={index}
           title={title}
