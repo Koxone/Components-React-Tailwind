@@ -96,7 +96,7 @@ function CategoriesSideBar() {
             type="Input Field"
           />
           <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-          <CategorieCard type="Toggle" />
+          <CategorieCard onClick={() => navigate("/toggles")} type="Toggles" />
           <CategorieCard onClick={() => navigate("/")} type="Text" />
           <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
           <CategorieCard
@@ -104,7 +104,6 @@ function CategoriesSideBar() {
             type="Input Field"
           />
           <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-          <CategorieCard type="Toggle" />
           <CategorieCard onClick={() => navigate("/")} type="Text" />
           <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
           <CategorieCard

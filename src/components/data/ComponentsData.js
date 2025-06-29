@@ -82,6 +82,27 @@ import CardAnimatedConfettiCelebration from "../samples/cards/CardAnimatedConfet
 import CardHoverRippleWave from "../samples/cards/CardHoverRippleWave";
 import CardEmojiReactAnimation from "../samples/cards/CardEmojiReactAnimation";
 
+import IconToggle from "../samples/toggles/IconToggle";
+import NeonBorderToggle from "../samples/toggles/NeonBorderToggle";
+import RotateToggle from "../samples/toggles/RotateToggle";
+import ScalePulseToggle from "../samples/toggles/ScalePulseToggle";
+import SlideTextToggle from "../samples/toggles/SlideTextToggle";
+import ToggleSwitch from "../samples/toggles/ToggleSwitch";
+import BorderFlipToggle from "../samples/toggles/BorderFlipToggle";
+import EmojiToggle from "../samples/toggles/EmojiToggle";
+import GlowDotToggle from "../samples/toggles/GlowDotToggle";
+import GlowToggle from "../samples/toggles/GlowToggle";
+import ToggleBounce from "../samples/toggles/ToggleBounce";
+import ToggleDot from "../samples/toggles/ToggleDot";
+import ToggleGlow from "../samples/toggles/ToggleGlow";
+import ToggleGradient from "../samples/toggles/ToggleGradient";
+import ToggleIconInside from "../samples/toggles/ToggleIconInside";
+import ToggleOutline from "../samples/toggles/ToggleOutline";
+import TogglePulse from "../samples/toggles/TogglePulse";
+import ToggleRing from "../samples/toggles/ToggleRing";
+import ToggleShadow from "../samples/toggles/ToggleShadow";
+import ToggleSlide from "../samples/toggles/ToggleSlide";
+
 export const buttons = [
   { title: "Button Glow", Component: ButtonGlow },
   { title: "Button Pulse", Component: ButtonPulse },
@@ -193,4 +214,27 @@ export const cards = [
   },
   { title: "Card Hover Ripple Wave", Component: CardHoverRippleWave },
   { title: "Card Emoji React Animation", Component: CardEmojiReactAnimation },
+];
+
+export const toggles = [
+  { title: "Icon Toggle", Component: IconToggle },
+  { title: "Neon Border Toggle", Component: NeonBorderToggle },
+  { title: "Rotate Toggle", Component: RotateToggle },
+  { title: "Scale Pulse Toggle", Component: ScalePulseToggle },
+  { title: "Slide Text Toggle", Component: SlideTextToggle },
+  { title: "Toggle Switch", Component: ToggleSwitch },
+  { title: "Border Flip Toggle", Component: BorderFlipToggle },
+  { title: "Emoji Toggle", Component: EmojiToggle },
+  { title: "Glow Dot Toggle", Component: GlowDotToggle },
+  { title: "Glow Toggle", Component: GlowToggle },
+  { title: "Toggle Bounce", Component: ToggleBounce },
+  { title: "Toggle Dot", Component: ToggleDot },
+  { title: "Toggle Glow", Component: ToggleGlow },
+  { title: "Toggle Gradient", Component: ToggleGradient },
+  { title: "Toggle Icon Inside", Component: ToggleIconInside },
+  { title: "Toggle Outline", Component: ToggleOutline },
+  { title: "Toggle Pulse", Component: TogglePulse },
+  { title: "Toggle Ring", Component: ToggleRing },
+  { title: "Toggle Shadow", Component: ToggleShadow },
+  { title: "Toggle Slide", Component: ToggleSlide },
 ];
