@@ -7,13 +7,6 @@
       "componentCode": "const TextAnimatedGradient = () => {\n  return (\n    <span className=\"inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-xl text-transparent\">\n      Sample Text\n    </span>\n  );\n};\n\nexport default TextAnimatedGradient;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"text-gradient\": \"text-gradient 1.5s linear infinite\"\n  },\n  \"keyframes\": {\n    \"text-gradient\": {\n      \"to\": {\n        \"backgroundPosition\": \"200% center\"\n      }\n    }\n  }\n}",
       "cssCode": "/* ========================================\n   Animation: Button Border Glow (LOOP)\n   ======================================== */\n@keyframes borderGlowLoop {\n  0%,\n  100% {\n    box-shadow: 0 0 5px #3b82f6;\n  }\n  50% {\n    box-shadow: 0 0 20px #3b82f6;\n  }\n}\n.btn-border-glow {\n  border: 2px solid #3b82f6;\n  background: transparent;\n  animation: borderGlowLoop 2s infinite;\n}"
-    },
-    {
-      "title": "Text Animated Gradient",
-      "category": "Text",
-      "componentCode": "const TextAnimatedGradient = () => {\n  return (\n    <span className=\"inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-xl text-transparent\">\n      Sample Text\n    </span>\n  );\n};\n\nexport default TextAnimatedGradient;",
-      "tailwindConfigCode": "{\n  \"animation\": {\n    \"text-gradient\": \"text-gradient 1.5s linear infinite\"\n  },\n  \"keyframes\": {\n    \"text-gradient\": {\n      \"to\": {\n        \"backgroundPosition\": \"200% center\"\n      }\n    }\n  }\n}",
-      "cssCode": "/* ========================================\n   Animation: Button Border Glow (LOOP)\n   ======================================== */\n@keyframes borderGlowLoop {\n  0%,\n  100% {\n    box-shadow: 0 0 5px #3b82f6;\n  }\n  50% {\n    box-shadow: 0 0 20px #3b82f6;\n  }\n}\n.btn-border-glow {\n  border: 2px solid #3b82f6;\n  background: transparent;\n  animation: borderGlowLoop 2s infinite;\n}"
     }
   ]
 }
