@@ -9,6 +9,7 @@ function CardsContainer() {
           key={index}
           title={title}
           effect={<Component>Sample Text</Component>}
+          url={`/demo/${encodeURIComponent(title.toLowerCase().replace(/\s+/g, "-"))}`}
         />
       ))}
     </div>

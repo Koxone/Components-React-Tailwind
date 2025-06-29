@@ -9,6 +9,7 @@ function ButtonsContainer() {
           key={index}
           title={title}
           effect={<Component>Click Me</Component>}
+          url={`/demo/${encodeURIComponent(title.toLowerCase().replace(/\s+/g, "-"))}`}
         />
       ))}
     </div>

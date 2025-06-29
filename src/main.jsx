@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           path="/buttons"
           element={<Layout content={<ButtonsContainer />} />}
         />
-        <Route path="/Demo" element={<Demo />} />
+        <Route path="/demo/:component" element={<Demo />} />
       </Routes>
     </BrowserRouter>
     <Analytics />

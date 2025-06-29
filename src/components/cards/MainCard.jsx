@@ -1,11 +1,26 @@
-function MainCard({ title = "", effect, url = "" }) {
+import { useNavigate } from "react-router-dom";
+
+function MainCard({ title = "", effect, url }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(url);
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <div className="relative grid aspect-square grid-cols-1 grid-rows-[auto_1fr] items-center justify-center rounded-xl border border-gray-700 bg-gray-950/60 p-4">
+    <div
+      id={title.toLowerCase().replace(/\s+/g, "-")}
+      className="relative grid aspect-square grid-cols-1 grid-rows-[auto_1fr] items-center justify-center rounded-xl border border-gray-700 bg-gray-950/60 p-4"
+    >
       <div className="flex w-full items-center justify-between">
-        <a className="text-sm text-gray-400" href={`${url}`}>
+        <button
+          onClick={handleClick}
+          className="text-left text-sm text-gray-400 hover:underline"
+        >
           {title}
-        </a>
-        <a href={`${url}`}>
+        </button>
+        <button onClick={handleClick}>
           <svg
             width="15"
             height="15"
@@ -21,7 +36,7 @@ function MainCard({ title = "", effect, url = "" }) {
               clipRule="evenodd"
             ></path>
           </svg>
-        </a>
+        </button>
       </div>
       <div className="z-0 flex items-center justify-center text-center">
         {effect}
