@@ -1,11 +1,14 @@
-import { buttons, text } from "../data/ComponentsData";
+import { buttons, text, inputs } from "../data/ComponentsData";
 
 function CategorieCard({ type = "", onClick }) {
   let count = 0;
+
   if (type.toLowerCase() === "buttons") {
     count = buttons.length;
   } else if (type.toLowerCase() === "text") {
     count = text.length;
+  } else if (type.toLowerCase() === "input field") {
+    count = inputs.length;
   }
   return (
     <ul>

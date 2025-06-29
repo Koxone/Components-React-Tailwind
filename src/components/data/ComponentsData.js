@@ -40,6 +40,27 @@ import TextSkewLoop from "../samples/text/TextSkewLoop";
 import TextScaleLoop from "../samples/text/TextScaleLoop";
 import TextSpinLoop from "../samples/text/TextSpinLoop";
 
+import InputGlassmorphism from "../samples/inputs/InputGlassmorphism";
+import InputAnimatedUnderline from "../samples/inputs/InputAnimatedUnderline";
+import InputFloatingLabel from "../samples/inputs/InputFloatingLabel";
+import InputGradientBorder from "../samples/inputs/InputGradientBorder";
+import InputNeonGlow from "../samples/inputs/InputNeonGlow";
+import InputIconInside from "../samples/inputs/InputIconInside";
+import InputAnimatedPlaceholder from "../samples/inputs/InputAnimatedPlaceholder";
+import InputGradientText from "../samples/inputs/InputGradientText";
+import InputGlassNeon from "../samples/inputs/InputGlassNeon";
+import InputTextareaAnimatedBorder from "../samples/inputs/InputTextareaAnimatedBorder";
+import InputBorderGlowOnHover from "../samples/inputs/InputBorderGlowOnHover";
+import InputRoundedFull from "../samples/inputs/InputRoundedFull";
+import InputAnimatedLabelSlide from "../samples/inputs/InputAnimatedLabelSlide";
+import InputDarkGlassBlur from "../samples/inputs/InputDarkGlassBlur";
+import InputVibrantFocusRing from "../samples/inputs/InputVibrantFocusRing";
+import InputLeftAccentBorder from "../samples/inputs/InputLeftAccentBorder";
+import InputWithGradientText from "../samples/inputs/InputWithGradientText";
+import InputIconRight from "../samples/inputs/InputIconRight";
+import InputDoubleShadow from "../samples/inputs/InputDoubleShadow";
+import InputAnimatedGradientBorder from "../samples/inputs/InputAnimatedGradientBorder";
+
 export const buttons = [
   { title: "Button Glow", Component: ButtonGlow },
   { title: "Button Pulse", Component: ButtonPulse },
@@ -84,4 +105,33 @@ export const text = [
   { title: "Text Skew Loop", Component: TextSkewLoop },
   { title: "Text Scale Loop", Component: TextScaleLoop },
   { title: "Text Spin Loop", Component: TextSpinLoop },
+];
+
+export const inputs = [
+  { title: "Input Glassmorphism", Component: InputGlassmorphism },
+  { title: "Input Animated Underline", Component: InputAnimatedUnderline },
+  { title: "Input Floating Label", Component: InputFloatingLabel },
+  { title: "Input Gradient Border", Component: InputGradientBorder },
+  { title: "Input Neon Glow", Component: InputNeonGlow },
+  { title: "Input Icon Inside", Component: InputIconInside },
+  { title: "Input Animated Placeholder", Component: InputAnimatedPlaceholder },
+  { title: "Input Gradient Text", Component: InputGradientText },
+  { title: "Input Glass Neon", Component: InputGlassNeon },
+  {
+    title: "Input Textarea Animated Border",
+    Component: InputTextareaAnimatedBorder,
+  },
+  { title: "Input Border Glow On Hover", Component: InputBorderGlowOnHover },
+  { title: "Input Rounded Full", Component: InputRoundedFull },
+  { title: "Input Animated Label Slide", Component: InputAnimatedLabelSlide },
+  { title: "Input Dark Glass Blur", Component: InputDarkGlassBlur },
+  { title: "Input Vibrant Focus Ring", Component: InputVibrantFocusRing },
+  { title: "Input Left Accent Border", Component: InputLeftAccentBorder },
+  { title: "Input With Gradient Text", Component: InputWithGradientText },
+  { title: "Input Icon Right", Component: InputIconRight },
+  { title: "Input Double Shadow", Component: InputDoubleShadow },
+  {
+    title: "Input Animated Gradient Border",
+    Component: InputAnimatedGradientBorder,
+  },
 ];

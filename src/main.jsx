@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import TextsContainer from "./components/containers/TextsContainer";
 import ButtonsContainer from "./components/containers/ButtonsContainer";
+import InputsContainer from "./components/containers/InputsContainer";
 import Layout from "./styles/Layout";
 import Demo from "./demos/Demo";
 import { Analytics } from "@vercel/analytics/react";
@@ -16,6 +17,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
           path="/buttons"
           element={<Layout content={<ButtonsContainer />} />}
+        />
+        <Route
+          path="/inputs"
+          element={<Layout content={<InputsContainer />} />}
         />
         <Route path="/demo/:component" element={<Demo />} />
       </Routes>
