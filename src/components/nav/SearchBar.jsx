@@ -4,7 +4,7 @@ function SearchBar({ onClick }) {
   return (
     <div
       onClick={onClick}
-      className="flex flex-row-reverse items-center justify-between rounded-lg border border-gray-200 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800"
+      className="flex flex-row-reverse items-center justify-between border-b-transparent border-gray-200 bg-gray-50 p-4 sm:rounded-lg dark:border-gray-700 dark:bg-gray-800"
     >
       {/* INPUT A LA DERECHA */}
       <div className="relative max-w-[600px] sm:w-full">
