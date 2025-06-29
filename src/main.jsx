@@ -8,6 +8,7 @@ import InputsContainer from "./components/containers/InputsContainer";
 import Layout from "./styles/Layout";
 import Demo from "./demos/Demo";
 import { Analytics } from "@vercel/analytics/react";
+import CardsContainer from "./components/containers/CardsContainer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -21,6 +22,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
           path="/inputs"
           element={<Layout content={<InputsContainer />} />}
+        />
+        <Route
+          path="/cards"
+          element={<Layout content={<CardsContainer />} />}
         />
         <Route path="/demo/:component" element={<Demo />} />
       </Routes>

@@ -61,6 +61,27 @@ import InputIconRight from "../samples/inputs/InputIconRight";
 import InputDoubleShadow from "../samples/inputs/InputDoubleShadow";
 import InputAnimatedGradientBorder from "../samples/inputs/InputAnimatedGradientBorder";
 
+import CardFrostedGlassHoverExpand from "../samples/cards/CardFrostedGlassHoverExpand";
+import Card3DTiltWithShadow from "../samples/cards/Card3DTiltWithShadow";
+import CardNeonGlowBorder from "../samples/cards/CardNeonGlowBorder";
+import CardGlassReflectionShine from "../samples/cards/CardGlassReflectionShine";
+import CardImageParallaxHover from "../samples/cards/CardImageParallaxHover";
+import CardLayeredGradientAccent from "../samples/cards/CardLayeredGradientAccent";
+import CardSplitHoverReveal from "../samples/cards/CardSplitHoverReveal";
+import CardSlideContentOnHover from "../samples/cards/CardSlideContentOnHover";
+import CardMorphingShapeHover from "../samples/cards/CardMorphingShapeHover";
+import CardBorderPulseAnimation from "../samples/cards/CardBorderPulseAnimation";
+import CardFlipGlassmorphism from "../samples/cards/CardFlipGlassmorphism";
+import CardHoverGradientBorderAnimation from "../samples/cards/CardHoverGradientBorderAnimation";
+import CardBackgroundVideoHover from "../samples/cards/CardBackgroundVideoHover";
+import CardMagneticHoverFollow from "../samples/cards/CardMagneticHoverFollow";
+import CardGlitchHoverEffect from "../samples/cards/CardGlitchHoverEffect";
+import CardCircularRevealHover from "../samples/cards/CardCircularRevealHover";
+import CardGlassGradientShineSweep from "../samples/cards/CardGlassGradientShineSweep";
+import CardAnimatedConfettiCelebration from "../samples/cards/CardAnimatedConfettiCelebration";
+import CardHoverRippleWave from "../samples/cards/CardHoverRippleWave";
+import CardEmojiReactAnimation from "../samples/cards/CardEmojiReactAnimation";
+
 export const buttons = [
   { title: "Button Glow", Component: ButtonGlow },
   { title: "Button Pulse", Component: ButtonPulse },
@@ -134,4 +155,42 @@ export const inputs = [
     title: "Input Animated Gradient Border",
     Component: InputAnimatedGradientBorder,
   },
+];
+
+export const cards = [
+  {
+    title: "Card Frosted Glass Hover Expand",
+    Component: CardFrostedGlassHoverExpand,
+  },
+  { title: "Card 3D Tilt With Shadow", Component: Card3DTiltWithShadow },
+  { title: "Card Neon Glow Border", Component: CardNeonGlowBorder },
+  { title: "Card Glass Reflection Shine", Component: CardGlassReflectionShine },
+  { title: "Card Image Parallax Hover", Component: CardImageParallaxHover },
+  {
+    title: "Card Layered Gradient Accent",
+    Component: CardLayeredGradientAccent,
+  },
+  { title: "Card Split Hover Reveal", Component: CardSplitHoverReveal },
+  { title: "Card Slide Content On Hover", Component: CardSlideContentOnHover },
+  { title: "Card Morphing Shape Hover", Component: CardMorphingShapeHover },
+  { title: "Card Border Pulse Animation", Component: CardBorderPulseAnimation },
+  { title: "Card Flip Glassmorphism", Component: CardFlipGlassmorphism },
+  {
+    title: "Card Hover Gradient Border Animation",
+    Component: CardHoverGradientBorderAnimation,
+  },
+  { title: "Card Background Video Hover", Component: CardBackgroundVideoHover },
+  { title: "Card Magnetic Hover Follow", Component: CardMagneticHoverFollow },
+  { title: "Card Glitch Hover Effect", Component: CardGlitchHoverEffect },
+  { title: "Card Circular Reveal Hover", Component: CardCircularRevealHover },
+  {
+    title: "Card Glass Gradient Shine Sweep",
+    Component: CardGlassGradientShineSweep,
+  },
+  {
+    title: "Card Animated Confetti Celebration",
+    Component: CardAnimatedConfettiCelebration,
+  },
+  { title: "Card Hover Ripple Wave", Component: CardHoverRippleWave },
+  { title: "Card Emoji React Animation", Component: CardEmojiReactAnimation },
 ];

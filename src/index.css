@@ -17,8 +17,8 @@ body {
   transition: all 0.3s ease-in-out;
   scroll-behavior: smooth;
   transition:
-   background-color 0.3s ease,
-   color 0.3s ease;
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* ========================================
@@ -35,10 +35,10 @@ body {
   ======================================== */
 @keyframes text-gradient {
   0% {
-   background-position: 200% center;
+    background-position: 200% center;
   }
   100% {
-   background-position: 0% center;
+    background-position: 0% center;
   }
 }
 
@@ -51,10 +51,10 @@ body {
   ======================================== */
 @keyframes background-shine {
   from {
-   background-position: 0 0;
+    background-position: 0 0;
   }
   to {
-   background-position: -200% 0;
+    background-position: -200% 0;
   }
 }
 
@@ -67,10 +67,10 @@ body {
   ======================================== */
 @keyframes horizontal {
   0% {
-   background-position: 0% 0%;
+    background-position: 0% 0%;
   }
   100% {
-   background-position: 200% 0%;
+    background-position: 200% 0%;
   }
 }
 
@@ -103,10 +103,10 @@ body {
   0%,
   60%,
   100% {
-   transform: translateY(0);
+    transform: translateY(0);
   }
   30% {
-   transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
@@ -155,13 +155,13 @@ body {
   ======================================== */
 @keyframes typewriter {
   0% {
-   width: 0;
+    width: 0;
   }
   50% {
-   width: 100%;
+    width: 100%;
   }
   100% {
-   width: 0;
+    width: 0;
   }
 }
 
@@ -169,11 +169,11 @@ body {
   0%,
   50%,
   100% {
-   border-color: transparent;
+    border-color: transparent;
   }
   25%,
   75% {
-   border-color: white;
+    border-color: white;
   }
 }
 
@@ -183,8 +183,8 @@ body {
   white-space: nowrap;
   border-right: 2px solid white;
   animation:
-   typewriter 4s steps(40) infinite,
-   blink 0.75s step-end infinite;
+    typewriter 4s steps(40) infinite,
+    blink 0.75s step-end infinite;
 }
 
 /* ========================================
@@ -192,20 +192,20 @@ body {
   ======================================== */
 @keyframes fadeInUp {
   0% {
-   opacity: 0;
-   transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   30% {
-   opacity: 1;
-   transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
   70% {
-   opacity: 1;
-   transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
   100% {
-   opacity: 0;
-   transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
 }
 
@@ -219,10 +219,10 @@ body {
 @keyframes pulseText {
   0%,
   100% {
-   opacity: 1;
+    opacity: 1;
   }
   50% {
-   opacity: 0.4;
+    opacity: 0.4;
   }
 }
 
@@ -236,10 +236,10 @@ body {
 @keyframes bounceText {
   0%,
   100% {
-   transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-   transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
@@ -252,13 +252,13 @@ body {
   ======================================== */
 @keyframes rotateText {
   0% {
-   transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
-   transform: rotate(10deg);
+    transform: rotate(10deg);
   }
   100% {
-   transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -271,19 +271,19 @@ body {
   ======================================== */
 @keyframes colorCycle {
   0% {
-   color: #f87171; /* red-400 */
+    color: #f87171; /* red-400 */
   }
   25% {
-   color: #60a5fa; /* blue-400 */
+    color: #60a5fa; /* blue-400 */
   }
   50% {
-   color: #34d399; /* green-400 */
+    color: #34d399; /* green-400 */
   }
   75% {
-   color: #fbbf24; /* yellow-400 */
+    color: #fbbf24; /* yellow-400 */
   }
   100% {
-   color: #f87171; /* red-400 */
+    color: #f87171; /* red-400 */
   }
 }
 
@@ -297,10 +297,10 @@ body {
 @keyframes scalePulse {
   0%,
   100% {
-   transform: scale(1);
+    transform: scale(1);
   }
   50% {
-   transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
@@ -314,10 +314,10 @@ body {
 @keyframes wiggle {
   0%,
   100% {
-   transform: rotate(-3deg);
+    transform: rotate(-3deg);
   }
   50% {
-   transform: rotate(3deg);
+    transform: rotate(3deg);
   }
 }
 
@@ -330,16 +330,16 @@ body {
   ======================================== */
 @keyframes slideInLeftLoop {
   0% {
-   transform: translateX(-100%);
-   opacity: 0;
+    transform: translateX(-100%);
+    opacity: 0;
   }
   50% {
-   transform: translateX(0%);
-   opacity: 1;
+    transform: translateX(0%);
+    opacity: 1;
   }
   100% {
-   transform: translateX(-100%);
-   opacity: 0;
+    transform: translateX(-100%);
+    opacity: 0;
   }
 }
 
@@ -352,16 +352,16 @@ body {
   ======================================== */
 @keyframes slideInRightLoop {
   0% {
-   transform: translateX(100%);
-   opacity: 0;
+    transform: translateX(100%);
+    opacity: 0;
   }
   50% {
-   transform: translateX(0%);
-   opacity: 1;
+    transform: translateX(0%);
+    opacity: 1;
   }
   100% {
-   transform: translateX(100%);
-   opacity: 0;
+    transform: translateX(100%);
+    opacity: 0;
   }
 }
 
@@ -377,10 +377,10 @@ body {
 @keyframes fadeLoop {
   0%,
   100% {
-   opacity: 1;
+    opacity: 1;
   }
   50% {
-   opacity: 0.3;
+    opacity: 0.3;
   }
 }
 
@@ -394,10 +394,10 @@ body {
 @keyframes skewLoop {
   0%,
   100% {
-   transform: skewX(0deg);
+    transform: skewX(0deg);
   }
   50% {
-   transform: skewX(10deg);
+    transform: skewX(10deg);
   }
 }
 
@@ -411,10 +411,10 @@ body {
 @keyframes scaleLoop {
   0%,
   100% {
-   transform: scale(1);
+    transform: scale(1);
   }
   50% {
-   transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
@@ -427,10 +427,10 @@ body {
   ======================================== */
 @keyframes spinLoop {
   0% {
-   transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-   transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -444,14 +444,14 @@ body {
 @keyframes glowLoop {
   0%,
   100% {
-   box-shadow:
-    0 0 10px #1d4ed8,
-    0 0 20px #1d4ed8;
+    box-shadow:
+      0 0 10px #1d4ed8,
+      0 0 20px #1d4ed8;
   }
   50% {
-   box-shadow:
-    0 0 20px #1d4ed8,
-    0 0 40px #1d4ed8;
+    box-shadow:
+      0 0 20px #1d4ed8,
+      0 0 40px #1d4ed8;
   }
 }
 .btn-glow {
@@ -465,10 +465,10 @@ body {
 @keyframes pulseLoop {
   0%,
   100% {
-   transform: scale(1);
+    transform: scale(1);
   }
   50% {
-   transform: scale(1.05);
+    transform: scale(1.05);
   }
 }
 .btn-pulse {
@@ -481,13 +481,13 @@ body {
   ======================================== */
 @keyframes slideInClipLoop {
   0% {
-   clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
   }
   50% {
-   clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
   }
   100% {
-   clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
   }
 }
 .btn-slide-in {
@@ -500,13 +500,13 @@ body {
   ======================================== */
 @keyframes slideOutClipLoop {
   0% {
-   clip-path: inset(0 0 0 100%);
+    clip-path: inset(0 0 0 100%);
   }
   50% {
-   clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
   }
   100% {
-   clip-path: inset(0 0 0 100%);
+    clip-path: inset(0 0 0 100%);
   }
 }
 .btn-slide-out {
@@ -520,10 +520,10 @@ body {
 @keyframes borderGlowLoop {
   0%,
   100% {
-   box-shadow: 0 0 5px #3b82f6;
+    box-shadow: 0 0 5px #3b82f6;
   }
   50% {
-   box-shadow: 0 0 20px #3b82f6;
+    box-shadow: 0 0 20px #3b82f6;
   }
 }
 .btn-border-glow {
@@ -538,10 +538,10 @@ body {
 @keyframes bounceLoop {
   0%,
   100% {
-   transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-   transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
 .btn-bounce {
@@ -554,13 +554,13 @@ body {
   ======================================== */
 @keyframes rippleLoop {
   0% {
-   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
   }
   50% {
-   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
   }
   100% {
-   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
 .btn-ripple {
@@ -573,13 +573,13 @@ body {
   ======================================== */
 @keyframes gradientShiftLoop {
   0% {
-   background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-   background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-   background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 .btn-gradient-shift {
@@ -594,10 +594,10 @@ body {
 @keyframes wiggleLoop {
   0%,
   100% {
-   transform: rotate(-3deg);
+    transform: rotate(-3deg);
   }
   50% {
-   transform: rotate(3deg);
+    transform: rotate(3deg);
   }
 }
 .btn-wiggle {
@@ -611,10 +611,10 @@ body {
 @keyframes scaleLoopBtn {
   0%,
   100% {
-   transform: scale(1);
+    transform: scale(1);
   }
   50% {
-   transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 .btn-scale {
@@ -628,10 +628,10 @@ body {
 @keyframes flash {
   0%,
   100% {
-   opacity: 1;
+    opacity: 1;
   }
   50% {
-   opacity: 0.1;
+    opacity: 0.1;
   }
 }
 .btn-flash {
@@ -644,13 +644,13 @@ body {
   ======================================== */
 @keyframes flip {
   0% {
-   transform: rotateY(0);
+    transform: rotateY(0);
   }
   50% {
-   transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
   100% {
-   transform: rotateY(0);
+    transform: rotateY(0);
   }
 }
 .btn-flip {
@@ -663,13 +663,13 @@ body {
   ======================================== */
 @keyframes rotate {
   0% {
-   transform: rotate(0);
+    transform: rotate(0);
   }
   50% {
-   transform: rotate(180deg);
+    transform: rotate(180deg);
   }
   100% {
-   transform: rotate(0);
+    transform: rotate(0);
   }
 }
 .btn-rotate {
@@ -682,19 +682,19 @@ body {
   ======================================== */
 @keyframes swing {
   0% {
-   transform: rotate(0);
+    transform: rotate(0);
   }
   25% {
-   transform: rotate(10deg);
+    transform: rotate(10deg);
   }
   50% {
-   transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   75% {
-   transform: rotate(5deg);
+    transform: rotate(5deg);
   }
   100% {
-   transform: rotate(0);
+    transform: rotate(0);
   }
 }
 .btn-swing {
@@ -708,10 +708,10 @@ body {
 @keyframes shadowPulse {
   0%,
   100% {
-   box-shadow: 0 0 5px #3b82f6;
+    box-shadow: 0 0 5px #3b82f6;
   }
   50% {
-   box-shadow: 0 0 20px #3b82f6;
+    box-shadow: 0 0 20px #3b82f6;
   }
 }
 .btn-shadow-pulse {
@@ -724,13 +724,13 @@ body {
   ======================================== */
 @keyframes tilt {
   0% {
-   transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
   50% {
-   transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
   }
   100% {
-   transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
 }
 .btn-tilt {
@@ -743,10 +743,10 @@ body {
   ======================================== */
 @keyframes shimmer {
   0% {
-   background-position: -200% 0;
+    background-position: -200% 0;
   }
   100% {
-   background-position: 200% 0;
+    background-position: 200% 0;
   }
 }
 .btn-shimmer {
@@ -761,19 +761,19 @@ body {
 @keyframes heartbeat {
   0%,
   100% {
-   transform: scale(1);
+    transform: scale(1);
   }
   14% {
-   transform: scale(1.3);
+    transform: scale(1.3);
   }
   28% {
-   transform: scale(1);
+    transform: scale(1);
   }
   42% {
-   transform: scale(1.3);
+    transform: scale(1.3);
   }
   70% {
-   transform: scale(1);
+    transform: scale(1);
   }
 }
 .btn-heartbeat {
@@ -787,10 +787,10 @@ body {
 @keyframes glowBorder {
   0%,
   100% {
-   box-shadow: 0 0 5px #9333ea;
+    box-shadow: 0 0 5px #9333ea;
   }
   50% {
-   box-shadow: 0 0 15px #9333ea;
+    box-shadow: 0 0 15px #9333ea;
   }
 }
 .btn-glow-border {
@@ -804,13 +804,13 @@ body {
   ======================================== */
 @keyframes diagonalSlide {
   0% {
-   transform: translate(-100%, -100%);
+    transform: translate(-100%, -100%);
   }
   50% {
-   transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   100% {
-   transform: translate(-100%, -100%);
+    transform: translate(-100%, -100%);
   }
 }
 .btn-diagonal-slide {
@@ -872,12 +872,12 @@ body {
   ======================================== */
 @keyframes flip {
   to {
-   transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
   to {
-   transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
@@ -896,4 +896,48 @@ body {
 
 .button-symbion:hover .bubble-symbion {
   transform: translateX(180%);
+}
+
+/* ========================================
+  Animation: CardGlitchHoverEffect
+  ======================================== */
+
+@keyframes glitch {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  20% {
+    clip-path: inset(10% 0 10% 0);
+  }
+  40% {
+    clip-path: inset(0 10% 0 10%);
+  }
+  60% {
+    clip-path: inset(10% 10% 10% 10%);
+  }
+  80% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-glitch {
+  animation: glitch 0.5s infinite;
+}
+
+/* ========================================
+  Animation: CardHoverRippleWave
+  ======================================== */
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 0.6s linear;
 }

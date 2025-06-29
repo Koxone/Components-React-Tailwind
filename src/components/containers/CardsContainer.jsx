@@ -1,14 +1,14 @@
 import MainCard from "../cards/MainCard";
-import { inputs } from "../data/ComponentsData";
+import { cards } from "../data/ComponentsData";
 
-function InputsContainer() {
+function CardsContainer() {
   return (
     <div className="hide-scrollbar grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {inputs.map(({ title, Component }, index) => (
+      {cards.map(({ title, Component }, index) => (
         <MainCard
           key={index}
           title={title}
-          effect={<Component />} 
+          effect={<Component />}
           url={`/demo/${encodeURIComponent(title.toLowerCase().replace(/\s+/g, "-"))}`}
         />
       ))}
@@ -16,4 +16,4 @@ function InputsContainer() {
   );
 }
 
-export default InputsContainer;
+export default CardsContainer;

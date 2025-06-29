@@ -66,11 +66,9 @@ function CategoriesSideBar() {
             onClick={() => navigate("/inputs")}
             type="Input Field"
           />
-          <CategorieCard type="Cards" />
-          <CategorieCard type="Toggle" />
-          <CategorieCard onClick={() => navigate("/")} type="Text" />
+          <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
           <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
-          <CategorieCard type="Cards" />
+          <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
           <CategorieCard type="Input Field" />
           <CategorieCard type="Toggle" />
           <CategorieCard onClick={() => navigate("/")} type="Text" />
