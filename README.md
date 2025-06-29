@@ -3,7 +3,6 @@
 A **modern component library** built with **React**, **Tailwind CSS**, and **Vite**, featuring a clean UI, smooth animations, and modular structure for learning, showcasing, and reusing frontend components in your projects.
 
 Live Demo: [components.koxland.dev](https://components.koxland.dev)  
-Repository: [Components-React-Tailwind](https://github.com/Koxone/Components-React-Tailwind)
 
 ---
 
