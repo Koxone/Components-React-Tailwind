@@ -1,0 +1,395 @@
+/* ========================================
+  Animation: Text Animated Gradient
+  ======================================== */
+@keyframes text-gradient {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+.animate-text-gradient {
+  animation: text-gradient 3s ease infinite;
+}
+
+/* ========================================
+  Animation: Text Animation Horizontal
+  ======================================== */
+@keyframes horizontal {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+.animate-horizontal {
+  background-image: linear-gradient(270deg, #f76927, #fdfa29, #f76927);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: horizontal 3s ease-in-out infinite;
+  background-repeat: no-repeat;
+}
+
+/* ========================================
+  Animation: Text Bounce
+  ======================================== */
+@keyframes bounceText {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounceText {
+  animation: bounceText 1s infinite;
+}
+
+/* ========================================
+  Animation: Text Color Cycle
+  ======================================== */
+@keyframes colorCycle {
+  0% {
+    color: #f87171; /* red-400 */
+  }
+  25% {
+    color: #60a5fa; /* blue-400 */
+  }
+  50% {
+    color: #34d399; /* green-400 */
+  }
+  75% {
+    color: #fbbf24; /* yellow-400 */
+  }
+  100% {
+    color: #f87171; /* red-400 */
+  }
+}
+
+.animate-colorCycle {
+  animation: colorCycle 5s infinite;
+}
+
+/* ========================================
+  Animation: Text Fade In Up (LOOP)
+  ======================================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 4s ease-in-out infinite;
+}
+
+/* ========================================
+  Animation: Text Fade Loop
+  ======================================== */
+@keyframes fadeLoop {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-fadeLoop {
+  animation: fadeLoop 3s infinite;
+}
+
+/* ========================================
+  Animation: Text Pulse
+  ======================================== */
+@keyframes pulseText {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.animate-pulseText {
+  animation: pulseText 2s infinite;
+}
+
+/* ========================================
+  Animation: Text Rotate
+  ======================================== */
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-rotateText {
+  animation: rotateText 2s infinite ease-in-out;
+}
+
+/* ========================================
+  Animation: Text Scale Loop
+  ======================================== */
+@keyframes scaleLoop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.animate-scaleLoop {
+  animation: scaleLoop 2s infinite ease-in-out;
+}
+
+/* ========================================
+  Animation: Text Scale Pulse
+  ======================================== */
+@keyframes scalePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-scalePulse {
+  animation: scalePulse 1.5s infinite ease-in-out;
+}
+
+/* ========================================
+  Animation: Text Shine
+  ======================================== */
+@keyframes background-shine {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.animate-background-shine {
+  animation: background-shine 2s linear infinite;
+}
+
+/* ========================================
+  Animation: Text Skew Loop
+  ======================================== */
+@keyframes skewLoop {
+  0%,
+  100% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(10deg);
+  }
+}
+
+.animate-skewLoop {
+  animation: skewLoop 2s infinite ease-in-out;
+}
+
+/* ========================================
+  Animation: Text Slide In Left Loop
+  ======================================== */
+@keyframes slideInLeftLoop {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-slideInLeftLoop {
+  animation: slideInLeftLoop 3s ease-in-out infinite;
+}
+
+/* ========================================
+  Animation: Text Slide In Right Loop
+  ======================================== */
+@keyframes slideInRightLoop {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slideInRightLoop {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideInRightLoop 3s ease-in-out infinite;
+}
+
+/* ========================================
+  Animation: Text Spin Loop
+  ======================================== */
+@keyframes spinLoop {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spinLoop {
+  animation: spinLoop 5s linear infinite;
+}
+
+/* ========================================
+  Animation: Text Typewriter (LOOP)
+  ======================================== */
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    border-color: transparent;
+  }
+  25%,
+  75% {
+    border-color: white;
+  }
+}
+
+.animate-typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  animation:
+    typewriter 4s steps(40) infinite,
+    blink 0.75s step-end infinite;
+}
+
+/* ========================================
+  Animation: Text Wave
+  ======================================== */
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-wave span {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+
+.animate-wave span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animate-wave span:nth-child(2) {
+  animation-delay: 0.05s;
+}
+.animate-wave span:nth-child(3) {
+  animation-delay: 0.1s;
+}
+.animate-wave span:nth-child(4) {
+  animation-delay: 0.15s;
+}
+.animate-wave span:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.animate-wave span:nth-child(6) {
+  animation-delay: 0.25s;
+}
+.animate-wave span:nth-child(7) {
+  animation-delay: 0.3s;
+}
+.animate-wave span:nth-child(8) {
+  animation-delay: 0.35s;
+}
+.animate-wave span:nth-child(9) {
+  animation-delay: 0.4s;
+}
+.animate-wave span:nth-child(10) {
+  animation-delay: 0.45s;
+}
+.animate-wave span:nth-child(11) {
+  animation-delay: 0.5s;
+}
+/* Aumenta según la longitud de tu texto */
+
+/* ========================================
+  Animation: Text Wiggle
+  ======================================== */
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s infinite;
+}

@@ -2,8 +2,16 @@ import React from "react";
 import data from "/data.json";
 import CodeSnippet from "./CodeSnippet";
 import { useNavigate, useParams } from "react-router-dom";
+import MainCard from "../components/cards/MainCard";
+import {
+  buttons,
+  text,
+  inputs,
+  cards,
+  toggles,
+} from "../components/data/ComponentsData";
 
-function Demo({ element }) {
+function Demo() {
   const { component } = useParams();
   const decodedComponent = decodeURIComponent(component).replace(/-/g, " ");
   const componentData = data.components.find(
@@ -18,7 +26,7 @@ function Demo({ element }) {
 
   const navigate = useNavigate();
   return (
-    <div className="flex items-center justify-center space-y-8 p-8">
+    <div className="grid grid-rows-[auto_1fr] items-center justify-center space-y-8">
       <button
         onClick={() => {
           sessionStorage.setItem("scrollToPosition", window.scrollY);
@@ -28,17 +36,22 @@ function Demo({ element }) {
       >
         Go Back
       </button>
-      <div className="flex w-fit flex-col sm:gap-8">
+
+      <div className="flex h-[230px] items-center justify-center rounded-lg border border-white p-4">
         <h1
           className={`mb-2 flex w-full items-center justify-center text-2xl font-semibold ${componentData.effectClass}`}
         >
           {componentData.title}
         </h1>
+      </div>
+
+      <div className="flex w-fit flex-col sm:gap-8">
         <CodeSnippet
           code={componentData.componentCode}
           snippetTitle="React"
           lang="jsx"
         />
+
         {componentData.tailwindConfigCode && (
           <CodeSnippet
             code={componentData.tailwindConfigCode}
@@ -47,6 +60,7 @@ function Demo({ element }) {
             snippetTitle="Tailwind Config (If you use Tailwind 4.x, use the Global CSS Code)"
           />
         )}
+
         {componentData.cssCode && (
           <CodeSnippet
             snippetTitle="Global CSS"

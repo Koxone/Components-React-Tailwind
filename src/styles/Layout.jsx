@@ -4,6 +4,10 @@ import Footer from "../components/footer/Footer";
 import Demo from "../demos/Demo";
 import DrawerMenu from "../components/nav/DrawerMenu";
 import { useEffect, useState } from "react";
+import "../styles/TextStyles.css";
+import "../styles/ButtonsStyles.css";
+import "../styles/CardsStyles.css";
+import "../styles/TogglesStyles.css";
 
 function Layout({ content, Demo = false }) {
   const [isToggle, setIsToggle] = useState(false);

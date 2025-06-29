@@ -1,0 +1,39 @@
+/* ========================================
+  Animation: CardHoverRippleWave
+  ======================================== */
+
+@keyframes rippleEffect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* ========================================
+  Animation: CardGlitchHoverEffect
+  ======================================== */
+
+@keyframes glitch {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  20% {
+    clip-path: inset(10% 0 10% 0);
+  }
+  40% {
+    clip-path: inset(0 10% 0 10%);
+  }
+  60% {
+    clip-path: inset(10% 10% 10% 10%);
+  }
+  80% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-glitch {
+  animation: glitch 0.5s infinite;
+}

@@ -1,0 +1,430 @@
+/* ========================================
+  Animation: Button Glow (LOOP)
+  ======================================== */
+@keyframes glowLoop {
+  0%,
+  100% {
+    box-shadow:
+      0 0 10px #1d4ed8,
+      0 0 20px #1d4ed8;
+  }
+  50% {
+    box-shadow:
+      0 0 20px #1d4ed8,
+      0 0 40px #1d4ed8;
+  }
+}
+.btn-glow {
+  background: #1d4ed8;
+  animation: glowLoop 2s ease-in-out infinite;
+}
+
+/* ========================================
+  Animation: Button Pulse (LOOP)
+  ======================================== */
+@keyframes pulseLoop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.btn-pulse {
+  background: #2563eb;
+  animation: pulseLoop 2s infinite;
+}
+
+/* ========================================
+  Animation: Button Slide In Loop (Clip)
+  ======================================== */
+@keyframes slideInClipLoop {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+.btn-slide-in {
+  background: #3b82f6;
+  animation: slideInClipLoop 3s ease-in-out infinite;
+}
+
+/* ========================================
+  Animation: Button Slide Out Loop (Clip)
+  ======================================== */
+@keyframes slideOutClipLoop {
+  0% {
+    clip-path: inset(0 0 0 100%);
+  }
+  50% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+.btn-slide-out {
+  background: #3b82f6;
+  animation: slideOutClipLoop 3s ease-in-out infinite;
+}
+
+/* ========================================
+  Animation: Button Border Glow (LOOP)
+  ======================================== */
+@keyframes borderGlowLoop {
+  0%,
+  100% {
+    box-shadow: 0 0 5px #3b82f6;
+  }
+  50% {
+    box-shadow: 0 0 20px #3b82f6;
+  }
+}
+.btn-border-glow {
+  border: 2px solid #3b82f6;
+  background: transparent;
+  animation: borderGlowLoop 2s infinite;
+}
+
+/* ========================================
+  Animation: Button Bounce (LOOP)
+  ======================================== */
+@keyframes bounceLoop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.btn-bounce {
+  background: #2563eb;
+  animation: bounceLoop 1s infinite;
+}
+
+/* ========================================
+  Animation: Button Ripple (LOOP)
+  ======================================== */
+@keyframes rippleLoop {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.btn-ripple {
+  background: #1d4ed8;
+  animation: rippleLoop 2s infinite;
+}
+
+/* ========================================
+  Animation: Button Gradient Shift (LOOP)
+  ======================================== */
+@keyframes gradientShiftLoop {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.btn-gradient-shift {
+  background: linear-gradient(270deg, #3b82f6, #9333ea, #3b82f6);
+  background-size: 400% 400%;
+  animation: gradientShiftLoop 5s ease infinite;
+}
+
+/* ========================================
+  Animation: Button Wiggle (LOOP)
+  ======================================== */
+@keyframes wiggleLoop {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+.btn-wiggle {
+  background: #2563eb;
+  animation: wiggleLoop 0.5s infinite;
+}
+
+/* ========================================
+  Animation: Button Scale (LOOP)
+  ======================================== */
+@keyframes scaleLoopBtn {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.btn-scale {
+  background: #3b82f6;
+  animation: scaleLoopBtn 1.5s infinite;
+}
+
+/* ========================================
+  Animation: Button Flash (LOOP)
+  ======================================== */
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+.btn-flash {
+  animation: flash 1.5s infinite;
+  background: #2563eb;
+}
+
+/* ========================================
+  Animation: Button Flip (LOOP)
+  ======================================== */
+@keyframes flip {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+.btn-flip {
+  animation: flip 2s infinite;
+  background: #3b82f6;
+}
+
+/* ========================================
+  Animation: Button Rotate (LOOP)
+  ======================================== */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.btn-rotate {
+  animation: rotate 3s infinite linear;
+  background: #1d4ed8;
+}
+
+/* ========================================
+  Animation: Button Swing (LOOP)
+  ======================================== */
+@keyframes swing {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.btn-swing {
+  animation: swing 2s infinite;
+  background: #2563eb;
+}
+
+/* ========================================
+  Animation: Button Shadow Pulse (LOOP)
+  ======================================== */
+@keyframes shadowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 5px #3b82f6;
+  }
+  50% {
+    box-shadow: 0 0 20px #3b82f6;
+  }
+}
+.btn-shadow-pulse {
+  animation: shadowPulse 2s infinite;
+  background: #3b82f6;
+}
+
+/* ========================================
+  Animation: Button Tilt (LOOP)
+  ======================================== */
+@keyframes tilt {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.btn-tilt {
+  animation: tilt 2s infinite;
+  background: #1d4ed8;
+}
+
+/* ========================================
+  Animation: Button Shimmer (LOOP)
+  ======================================== */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.btn-shimmer {
+  background: linear-gradient(270deg, #3b82f6, #9333ea, #3b82f6);
+  background-size: 400% 400%;
+  animation: shimmer 4s infinite;
+}
+
+/* ========================================
+  Animation: Button Heartbeat (LOOP)
+  ======================================== */
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+.btn-heartbeat {
+  animation: heartbeat 1.5s infinite;
+  background: #2563eb;
+}
+
+/* ========================================
+  Animation: Button Glow Border (LOOP)
+  ======================================== */
+@keyframes glowBorder {
+  0%,
+  100% {
+    box-shadow: 0 0 5px #9333ea;
+  }
+  50% {
+    box-shadow: 0 0 15px #9333ea;
+  }
+}
+.btn-glow-border {
+  border: 2px solid #9333ea;
+  animation: glowBorder 2s infinite;
+  background: transparent;
+}
+
+/* ========================================
+  Animation: Button Diagonal Slide (LOOP)
+  ======================================== */
+@keyframes diagonalSlide {
+  0% {
+    transform: translate(-100%, -100%);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%);
+  }
+}
+.btn-diagonal-slide {
+  animation: diagonalSlide 3s infinite;
+  background: #3b82f6;
+}
+
+/* ========================================
+  Animation: Shooting Star Border (Non-Tailwind)
+  ======================================== */
+.button-shooting-star .spark {
+  -webkit-mask-image: linear-gradient(white, transparent 50%);
+  mask-image: linear-gradient(white, transparent 50%);
+}
+
+.button-shooting-star .spark::before {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  width: 200%;
+  background: conic-gradient(from 0deg, transparent 0deg 340deg, white 360deg);
+  left: 50%;
+  top: -15%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+/* ========================================
+  Animation: Button Flip (Alternative)
+  ======================================== */
+@keyframes flip {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+/* ========================================
+  Animation: Gooey Button (Non-Tailwind)
+  ======================================== */
+.button-symbion-wrapper {
+  filter: url("#symbion");
+}
+
+.bubble-symbion {
+  z-index: -10;
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2);
+  transform: translateX(80%);
+}
+
+.button-symbion:hover .bubble-symbion {
+  transform: translateX(180%);
+}

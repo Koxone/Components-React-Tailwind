@@ -1,0 +1,45 @@
+/* ========================================
+  Scale Pulse Animation (ScalePulseToggle)
+  ======================================== */
+@keyframes scale-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.animate-scale-pulse {
+  animation: scale-pulse 1s infinite;
+}
+
+/* ========================================
+  Glow Purple (GlowToggle)
+  ======================================== */
+.shadow-glow-purple {
+  box-shadow:
+    0 0 20px #a855f7,
+    0 0 40px #a855f7,
+    0 0 60px #a855f7;
+}
+
+/* ========================================
+  Neon Pink Glow (NeonBorderToggle)
+  ======================================== */
+.shadow-neon-pink {
+  box-shadow:
+    0 0 10px #ec4899,
+    0 0 20px #ec4899,
+    0 0 40px #ec4899;
+}
+
+/* ========================================
+  Glow Green (GlowDotToggle)
+  ======================================== */
+.shadow-glow-green {
+  box-shadow:
+    0 0 10px #22c55e,
+    0 0 20px #22c55e,
+    0 0 40px #22c55e;
+}
