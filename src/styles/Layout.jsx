@@ -14,15 +14,15 @@ function Layout({ content, Demo = false }) {
 
   useEffect(() => {});
   return (
-    <div className="flex min-h-screen w-full flex-col">
+    <div className="grid grid-rows-[auto_1fr_auto]">
       {/* HEADER */}
-      <div className="sticky top-0 z-50 mb-6 w-full sm:mb-10">
+      <div className="sticky top-0 z-50 mb-6 w-full sm:mb-0">
         <SearchBar onClick={handleClick} />
         <DrawerMenu isToggle={isToggle} />
       </div>
 
       {/* MAIN: SIDEBAR + CONTENT */}
-      <div className="mx-auto flex w-full max-w-[1280px] flex-1">
+      <div className="mx-auto flex w-full max-w-[1280px] flex-1 p-6">
         {/* SIDEBAR */}
         {!Demo && (
           <aside className="sticky top-[64px] hidden w-[250px] flex-shrink-0 p-4 md:block">
