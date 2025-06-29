@@ -18,7 +18,6 @@ function Demo() {
     (c) => c.title.toLowerCase() === decodedComponent,
   );
 
-  // Buscar el componente en todos los tipos de datos
   const textComponent = text.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
@@ -35,7 +34,6 @@ function Demo() {
     (item) => item.title.toLowerCase() === decodedComponent,
   );
 
-  // Determinar qué componente usar
   const currentComponent =
     textComponent ||
     buttonComponent ||
@@ -51,10 +49,8 @@ function Demo() {
 
   const navigate = useNavigate();
 
-  // Función para renderizar el efecto según el tipo de componente
   const renderEffect = () => {
     if (inputComponent) {
-      // Para inputs, renderizar sin children y con props comunes
       return <currentComponent.Component placeholder="Sample placeholder" />;
     } else if (textComponent) {
       return (
@@ -70,7 +66,6 @@ function Demo() {
       return <currentComponent.Component>Toggle Me</currentComponent.Component>;
     }
 
-    // Fallback
     return <currentComponent.Component />;
   };
 
@@ -86,7 +81,6 @@ function Demo() {
         Go Back
       </button>
 
-      {/* Renderizar la MainCard completa en lugar del h1 */}
       <div className="flex max-h-60 max-w-60 justify-self-center">
         <MainCard
           svg="hidden"
