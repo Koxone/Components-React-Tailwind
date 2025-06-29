@@ -1,7 +1,7 @@
 import React from "react";
 import data from "/data.json";
 import CodeSnippet from "./CodeSnippet";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Demo({ element }) {
   const { component } = useParams();
@@ -15,8 +15,19 @@ function Demo({ element }) {
       <div className="p-8 text-center text-red-400">Component not found.</div>
     );
   }
+
+  const navigate = useNavigate();
   return (
     <div className="flex items-center justify-center space-y-8 p-8">
+      <button
+        onClick={() => {
+          sessionStorage.setItem("scrollToPosition", window.scrollY);
+          navigate(-1);
+        }}
+        className="absolute cursor-pointer rounded-lg border border-white p-3 text-white transition-all duration-300 ease-in-out hover:bg-blue-700 sm:top-7 sm:left-7"
+      >
+        Go Back
+      </button>
       <div className="flex w-fit flex-col sm:gap-8">
         <h1
           className={`mb-2 flex w-full items-center justify-center text-2xl font-semibold ${componentData.effectClass}`}
