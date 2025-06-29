@@ -1,8 +1,12 @@
 import React from "react";
 
-function SearchBar() {
+function SearchBar({ onClick }) {
   return (
-    <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-gray-50 p-4 lg:flex-row dark:border-gray-700 dark:bg-gray-800">
+    <div
+      onClick={onClick}
+      className="flex flex-row-reverse items-center justify-between rounded-lg border border-gray-200 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800"
+    >
+      {/* INPUT A LA DERECHA */}
       <div className="relative max-w-[600px] sm:w-full">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
           <svg
@@ -27,21 +31,20 @@ function SearchBar() {
         <input
           id="search"
           type="text"
-          className="block rounded-lg border border-gray-300 bg-white p-2.5 py-2.5 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 sm:w-full dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+          className="block w-full rounded-lg border border-gray-300 bg-white p-2.5 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
           placeholder="Search components..."
           defaultValue=""
         />
       </div>
 
-      <button type="button" className="sm:hidden">
+      {/* BOTÓN A LA IZQUIERDA */}
+      <button onClick={onClick} type="button" className="sm:hidden">
         <svg
           className="h-10 w-10 cursor-pointer fill-current text-gray-500 hover:text-blue-700"
           xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
           viewBox="0 0 72 72"
         >
-          <path d="M56 48c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 48 54.798 48 56 48zM56 32c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 32 54.798 32 56 32zM56 16c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4-1.202 0-38.798 0-40 0-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4C17.202 16 54.798 16 56 16z"></path>
+          <path d="M56 48c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4H16c-2.209 0-4-1.791-4-4s1.791-4 4-4h40zM56 32c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4H16c-2.209 0-4-1.791-4-4s1.791-4 4-4h40zM56 16c2.209 0 4 1.791 4 4 0 2.209-1.791 4-4 4H16c-2.209 0-4-1.791-4-4s1.791-4 4-4h40z"></path>
         </svg>
       </button>
     </div>
