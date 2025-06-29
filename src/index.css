@@ -1,20 +1,29 @@
 @import "tailwindcss";
 
+/* ========================================
+  Reset & Base Styles
+  ======================================== */
 html,
 body {
   margin: 0;
 }
 
+/* ========================================
+  Body Styles
+  ======================================== */
 body {
   background-color: black;
   margin: 0;
   transition: all 0.3s ease-in-out;
   scroll-behavior: smooth;
   transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+   background-color 0.3s ease,
+   color 0.3s ease;
 }
 
+/* ========================================
+  Root Container
+  ======================================== */
 #root {
   display: flex;
   flex-direction: column;
@@ -22,14 +31,14 @@ body {
 }
 
 /* ========================================
-   Animation: Text Gradient
-   ======================================== */
+  Animation: Text Gradient
+  ======================================== */
 @keyframes text-gradient {
   0% {
-    background-position: 200% center;
+   background-position: 200% center;
   }
   100% {
-    background-position: 0% center;
+   background-position: 0% center;
   }
 }
 
@@ -38,14 +47,14 @@ body {
 }
 
 /* ========================================
-   Animation: Background Shine
-   ======================================== */
+  Animation: Background Shine
+  ======================================== */
 @keyframes background-shine {
   from {
-    background-position: 0 0;
+   background-position: 0 0;
   }
   to {
-    background-position: -200% 0;
+   background-position: -200% 0;
   }
 }
 
@@ -54,15 +63,14 @@ body {
 }
 
 /* ========================================
-   Animation: Animation Horizontal
-   ======================================== */
-
+  Animation: Animation Horizontal
+  ======================================== */
 @keyframes horizontal {
   0% {
-    background-position: 0% 0%;
+   background-position: 0% 0%;
   }
   100% {
-    background-position: 200% 0%;
+   background-position: 200% 0%;
   }
 }
 
@@ -76,6 +84,9 @@ body {
   background-repeat: no-repeat;
 }
 
+/* ========================================
+  Hide Scrollbar
+  ======================================== */
 .hide-scrollbar {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
@@ -86,17 +97,16 @@ body {
 }
 
 /* ========================================
-   Animation: Text Wave
-   ======================================== */
-
+  Animation: Text Wave
+  ======================================== */
 @keyframes wave {
   0%,
   60%,
   100% {
-    transform: translateY(0);
+   transform: translateY(0);
   }
   30% {
-    transform: translateY(-10px);
+   transform: translateY(-10px);
   }
 }
 
@@ -141,18 +151,17 @@ body {
 /* Aumenta según la longitud de tu texto */
 
 /* ========================================
-   Animation: Typewriter (LOOP)
-   ======================================== */
-
+  Animation: Typewriter (LOOP)
+  ======================================== */
 @keyframes typewriter {
   0% {
-    width: 0;
+   width: 0;
   }
   50% {
-    width: 100%;
+   width: 100%;
   }
   100% {
-    width: 0;
+   width: 0;
   }
 }
 
@@ -160,11 +169,11 @@ body {
   0%,
   50%,
   100% {
-    border-color: transparent;
+   border-color: transparent;
   }
   25%,
   75% {
-    border-color: white;
+   border-color: white;
   }
 }
 
@@ -174,30 +183,29 @@ body {
   white-space: nowrap;
   border-right: 2px solid white;
   animation:
-    typewriter 4s steps(40) infinite,
-    blink 0.75s step-end infinite;
+   typewriter 4s steps(40) infinite,
+   blink 0.75s step-end infinite;
 }
 
 /* ========================================
-   Animation: Fade In Up (LOOP)
-   ======================================== */
-
+  Animation: Fade In Up (LOOP)
+  ======================================== */
 @keyframes fadeInUp {
   0% {
-    opacity: 0;
-    transform: translateY(20px);
+   opacity: 0;
+   transform: translateY(20px);
   }
   30% {
-    opacity: 1;
-    transform: translateY(0);
+   opacity: 1;
+   transform: translateY(0);
   }
   70% {
-    opacity: 1;
-    transform: translateY(0);
+   opacity: 1;
+   transform: translateY(0);
   }
   100% {
-    opacity: 0;
-    transform: translateY(-20px);
+   opacity: 0;
+   transform: translateY(-20px);
   }
 }
 
@@ -206,16 +214,15 @@ body {
 }
 
 /* ========================================
-   Animation: Text Pulse
-   ======================================== */
-
+  Animation: Text Pulse
+  ======================================== */
 @keyframes pulseText {
   0%,
   100% {
-    opacity: 1;
+   opacity: 1;
   }
   50% {
-    opacity: 0.4;
+   opacity: 0.4;
   }
 }
 
@@ -224,16 +231,15 @@ body {
 }
 
 /* ========================================
-   Animation: Text Bounce
-   ======================================== */
-
+  Animation: Text Bounce
+  ======================================== */
 @keyframes bounceText {
   0%,
   100% {
-    transform: translateY(0);
+   transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+   transform: translateY(-10px);
   }
 }
 
@@ -242,18 +248,17 @@ body {
 }
 
 /* ========================================
-   Animation: Text Rotate
-   ======================================== */
-
+  Animation: Text Rotate
+  ======================================== */
 @keyframes rotateText {
   0% {
-    transform: rotate(0deg);
+   transform: rotate(0deg);
   }
   50% {
-    transform: rotate(10deg);
+   transform: rotate(10deg);
   }
   100% {
-    transform: rotate(0deg);
+   transform: rotate(0deg);
   }
 }
 
@@ -262,24 +267,23 @@ body {
 }
 
 /* ========================================
-   Animation: Text Color Cycle
-   ======================================== */
-
+  Animation: Text Color Cycle
+  ======================================== */
 @keyframes colorCycle {
   0% {
-    color: #f87171; /* red-400 */
+   color: #f87171; /* red-400 */
   }
   25% {
-    color: #60a5fa; /* blue-400 */
+   color: #60a5fa; /* blue-400 */
   }
   50% {
-    color: #34d399; /* green-400 */
+   color: #34d399; /* green-400 */
   }
   75% {
-    color: #fbbf24; /* yellow-400 */
+   color: #fbbf24; /* yellow-400 */
   }
   100% {
-    color: #f87171; /* red-400 */
+   color: #f87171; /* red-400 */
   }
 }
 
@@ -288,16 +292,15 @@ body {
 }
 
 /* ========================================
-   Animation: Text Scale Pulse
-   ======================================== */
-
+  Animation: Text Scale Pulse
+  ======================================== */
 @keyframes scalePulse {
   0%,
   100% {
-    transform: scale(1);
+   transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+   transform: scale(1.1);
   }
 }
 
@@ -306,16 +309,15 @@ body {
 }
 
 /* ========================================
-   Animation: Text Wiggle
-   ======================================== */
-
+  Animation: Text Wiggle
+  ======================================== */
 @keyframes wiggle {
   0%,
   100% {
-    transform: rotate(-3deg);
+   transform: rotate(-3deg);
   }
   50% {
-    transform: rotate(3deg);
+   transform: rotate(3deg);
   }
 }
 
@@ -324,20 +326,20 @@ body {
 }
 
 /* ========================================
-   Animation: Slide In Left Loop
-   ======================================== */
+  Animation: Slide In Left Loop
+  ======================================== */
 @keyframes slideInLeftLoop {
   0% {
-    transform: translateX(-100%);
-    opacity: 0;
+   transform: translateX(-100%);
+   opacity: 0;
   }
   50% {
-    transform: translateX(0%);
-    opacity: 1;
+   transform: translateX(0%);
+   opacity: 1;
   }
   100% {
-    transform: translateX(-100%);
-    opacity: 0;
+   transform: translateX(-100%);
+   opacity: 0;
   }
 }
 
@@ -346,21 +348,20 @@ body {
 }
 
 /* ========================================
-   Animation: Slide In Right Loop
-   ======================================== */
-
+  Animation: Slide In Right Loop
+  ======================================== */
 @keyframes slideInRightLoop {
   0% {
-    transform: translateX(100%);
-    opacity: 0;
+   transform: translateX(100%);
+   opacity: 0;
   }
   50% {
-    transform: translateX(0%);
-    opacity: 1;
+   transform: translateX(0%);
+   opacity: 1;
   }
   100% {
-    transform: translateX(100%);
-    opacity: 0;
+   transform: translateX(100%);
+   opacity: 0;
   }
 }
 
@@ -371,16 +372,15 @@ body {
 }
 
 /* ========================================
-   Animation: Text Fade Loop
-   ======================================== */
-
+  Animation: Text Fade Loop
+  ======================================== */
 @keyframes fadeLoop {
   0%,
   100% {
-    opacity: 1;
+   opacity: 1;
   }
   50% {
-    opacity: 0.3;
+   opacity: 0.3;
   }
 }
 
@@ -389,16 +389,15 @@ body {
 }
 
 /* ========================================
-   Animation: Text Skew Loop
-   ======================================== */
-
+  Animation: Text Skew Loop
+  ======================================== */
 @keyframes skewLoop {
   0%,
   100% {
-    transform: skewX(0deg);
+   transform: skewX(0deg);
   }
   50% {
-    transform: skewX(10deg);
+   transform: skewX(10deg);
   }
 }
 
@@ -407,16 +406,15 @@ body {
 }
 
 /* ========================================
-   Animation: Text Scale Loop
-   ======================================== */
-
+  Animation: Text Scale Loop
+  ======================================== */
 @keyframes scaleLoop {
   0%,
   100% {
-    transform: scale(1);
+   transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+   transform: scale(1.2);
   }
 }
 
@@ -425,15 +423,14 @@ body {
 }
 
 /* ========================================
-   Animation: Text Spin Loop
-   ======================================== */
-
+  Animation: Text Spin Loop
+  ======================================== */
 @keyframes spinLoop {
   0% {
-    transform: rotate(0deg);
+   transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+   transform: rotate(360deg);
   }
 }
 
@@ -442,19 +439,19 @@ body {
 }
 
 /* ========================================
-   Animation: Button Glow (LOOP)
-   ======================================== */
+  Animation: Button Glow (LOOP)
+  ======================================== */
 @keyframes glowLoop {
   0%,
   100% {
-    box-shadow:
-      0 0 10px #1d4ed8,
-      0 0 20px #1d4ed8;
+   box-shadow:
+    0 0 10px #1d4ed8,
+    0 0 20px #1d4ed8;
   }
   50% {
-    box-shadow:
-      0 0 20px #1d4ed8,
-      0 0 40px #1d4ed8;
+   box-shadow:
+    0 0 20px #1d4ed8,
+    0 0 40px #1d4ed8;
   }
 }
 .btn-glow {
@@ -463,15 +460,15 @@ body {
 }
 
 /* ========================================
-   Animation: Button Pulse (LOOP)
-   ======================================== */
+  Animation: Button Pulse (LOOP)
+  ======================================== */
 @keyframes pulseLoop {
   0%,
   100% {
-    transform: scale(1);
+   transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+   transform: scale(1.05);
   }
 }
 .btn-pulse {
@@ -480,17 +477,17 @@ body {
 }
 
 /* ========================================
-   Animation: Button Slide In Loop (Clip)
-   ======================================== */
+  Animation: Button Slide In Loop (Clip)
+  ======================================== */
 @keyframes slideInClipLoop {
   0% {
-    clip-path: inset(0 100% 0 0);
+   clip-path: inset(0 100% 0 0);
   }
   50% {
-    clip-path: inset(0 0 0 0);
+   clip-path: inset(0 0 0 0);
   }
   100% {
-    clip-path: inset(0 100% 0 0);
+   clip-path: inset(0 100% 0 0);
   }
 }
 .btn-slide-in {
@@ -499,17 +496,17 @@ body {
 }
 
 /* ========================================
-   Animation: Button Slide Out Loop (Clip)
-   ======================================== */
+  Animation: Button Slide Out Loop (Clip)
+  ======================================== */
 @keyframes slideOutClipLoop {
   0% {
-    clip-path: inset(0 0 0 100%);
+   clip-path: inset(0 0 0 100%);
   }
   50% {
-    clip-path: inset(0 0 0 0);
+   clip-path: inset(0 0 0 0);
   }
   100% {
-    clip-path: inset(0 0 0 100%);
+   clip-path: inset(0 0 0 100%);
   }
 }
 .btn-slide-out {
@@ -518,15 +515,15 @@ body {
 }
 
 /* ========================================
-   Animation: Button Border Glow (LOOP)
-   ======================================== */
+  Animation: Button Border Glow (LOOP)
+  ======================================== */
 @keyframes borderGlowLoop {
   0%,
   100% {
-    box-shadow: 0 0 5px #3b82f6;
+   box-shadow: 0 0 5px #3b82f6;
   }
   50% {
-    box-shadow: 0 0 20px #3b82f6;
+   box-shadow: 0 0 20px #3b82f6;
   }
 }
 .btn-border-glow {
@@ -536,15 +533,15 @@ body {
 }
 
 /* ========================================
-   Animation: Button Bounce (LOOP)
-   ======================================== */
+  Animation: Button Bounce (LOOP)
+  ======================================== */
 @keyframes bounceLoop {
   0%,
   100% {
-    transform: translateY(0);
+   transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+   transform: translateY(-5px);
   }
 }
 .btn-bounce {
@@ -553,17 +550,17 @@ body {
 }
 
 /* ========================================
-   Animation: Button Ripple (LOOP)
-   ======================================== */
+  Animation: Button Ripple (LOOP)
+  ======================================== */
 @keyframes rippleLoop {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
 .btn-ripple {
@@ -572,17 +569,17 @@ body {
 }
 
 /* ========================================
-   Animation: Button Gradient Shift (LOOP)
-   ======================================== */
+  Animation: Button Gradient Shift (LOOP)
+  ======================================== */
 @keyframes gradientShiftLoop {
   0% {
-    background-position: 0% 50%;
+   background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%;
+   background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+   background-position: 0% 50%;
   }
 }
 .btn-gradient-shift {
@@ -592,15 +589,15 @@ body {
 }
 
 /* ========================================
-   Animation: Button Wiggle (LOOP)
-   ======================================== */
+  Animation: Button Wiggle (LOOP)
+  ======================================== */
 @keyframes wiggleLoop {
   0%,
   100% {
-    transform: rotate(-3deg);
+   transform: rotate(-3deg);
   }
   50% {
-    transform: rotate(3deg);
+   transform: rotate(3deg);
   }
 }
 .btn-wiggle {
@@ -609,15 +606,15 @@ body {
 }
 
 /* ========================================
-   Animation: Button Scale (LOOP)
-   ======================================== */
+  Animation: Button Scale (LOOP)
+  ======================================== */
 @keyframes scaleLoopBtn {
   0%,
   100% {
-    transform: scale(1);
+   transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+   transform: scale(1.1);
   }
 }
 .btn-scale {
@@ -625,14 +622,16 @@ body {
   animation: scaleLoopBtn 1.5s infinite;
 }
 
-/* Flash */
+/* ========================================
+  Animation: Button Flash (LOOP)
+  ======================================== */
 @keyframes flash {
   0%,
   100% {
-    opacity: 1;
+   opacity: 1;
   }
   50% {
-    opacity: 0.1;
+   opacity: 0.1;
   }
 }
 .btn-flash {
@@ -640,16 +639,18 @@ body {
   background: #2563eb;
 }
 
-/* Flip */
+/* ========================================
+  Animation: Button Flip (LOOP)
+  ======================================== */
 @keyframes flip {
   0% {
-    transform: rotateY(0);
+   transform: rotateY(0);
   }
   50% {
-    transform: rotateY(180deg);
+   transform: rotateY(180deg);
   }
   100% {
-    transform: rotateY(0);
+   transform: rotateY(0);
   }
 }
 .btn-flip {
@@ -657,16 +658,18 @@ body {
   background: #3b82f6;
 }
 
-/* Rotate */
+/* ========================================
+  Animation: Button Rotate (LOOP)
+  ======================================== */
 @keyframes rotate {
   0% {
-    transform: rotate(0);
+   transform: rotate(0);
   }
   50% {
-    transform: rotate(180deg);
+   transform: rotate(180deg);
   }
   100% {
-    transform: rotate(0);
+   transform: rotate(0);
   }
 }
 .btn-rotate {
@@ -674,22 +677,24 @@ body {
   background: #1d4ed8;
 }
 
-/* Swing */
+/* ========================================
+  Animation: Button Swing (LOOP)
+  ======================================== */
 @keyframes swing {
   0% {
-    transform: rotate(0);
+   transform: rotate(0);
   }
   25% {
-    transform: rotate(10deg);
+   transform: rotate(10deg);
   }
   50% {
-    transform: rotate(-10deg);
+   transform: rotate(-10deg);
   }
   75% {
-    transform: rotate(5deg);
+   transform: rotate(5deg);
   }
   100% {
-    transform: rotate(0);
+   transform: rotate(0);
   }
 }
 .btn-swing {
@@ -697,14 +702,16 @@ body {
   background: #2563eb;
 }
 
-/* Shadow Pulse */
+/* ========================================
+  Animation: Button Shadow Pulse (LOOP)
+  ======================================== */
 @keyframes shadowPulse {
   0%,
   100% {
-    box-shadow: 0 0 5px #3b82f6;
+   box-shadow: 0 0 5px #3b82f6;
   }
   50% {
-    box-shadow: 0 0 20px #3b82f6;
+   box-shadow: 0 0 20px #3b82f6;
   }
 }
 .btn-shadow-pulse {
@@ -712,16 +719,18 @@ body {
   background: #3b82f6;
 }
 
-/* Tilt */
+/* ========================================
+  Animation: Button Tilt (LOOP)
+  ======================================== */
 @keyframes tilt {
   0% {
-    transform: rotateZ(0deg);
+   transform: rotateZ(0deg);
   }
   50% {
-    transform: rotateZ(5deg);
+   transform: rotateZ(5deg);
   }
   100% {
-    transform: rotateZ(0deg);
+   transform: rotateZ(0deg);
   }
 }
 .btn-tilt {
@@ -729,13 +738,15 @@ body {
   background: #1d4ed8;
 }
 
-/* Shimmer */
+/* ========================================
+  Animation: Button Shimmer (LOOP)
+  ======================================== */
 @keyframes shimmer {
   0% {
-    background-position: -200% 0;
+   background-position: -200% 0;
   }
   100% {
-    background-position: 200% 0;
+   background-position: 200% 0;
   }
 }
 .btn-shimmer {
@@ -744,23 +755,25 @@ body {
   animation: shimmer 4s infinite;
 }
 
-/* Heartbeat */
+/* ========================================
+  Animation: Button Heartbeat (LOOP)
+  ======================================== */
 @keyframes heartbeat {
   0%,
   100% {
-    transform: scale(1);
+   transform: scale(1);
   }
   14% {
-    transform: scale(1.3);
+   transform: scale(1.3);
   }
   28% {
-    transform: scale(1);
+   transform: scale(1);
   }
   42% {
-    transform: scale(1.3);
+   transform: scale(1.3);
   }
   70% {
-    transform: scale(1);
+   transform: scale(1);
   }
 }
 .btn-heartbeat {
@@ -768,14 +781,16 @@ body {
   background: #2563eb;
 }
 
-/* Glow Border */
+/* ========================================
+  Animation: Button Glow Border (LOOP)
+  ======================================== */
 @keyframes glowBorder {
   0%,
   100% {
-    box-shadow: 0 0 5px #9333ea;
+   box-shadow: 0 0 5px #9333ea;
   }
   50% {
-    box-shadow: 0 0 15px #9333ea;
+   box-shadow: 0 0 15px #9333ea;
   }
 }
 .btn-glow-border {
@@ -784,23 +799,28 @@ body {
   background: transparent;
 }
 
-/* Diagonal Slide */
+/* ========================================
+  Animation: Button Diagonal Slide (LOOP)
+  ======================================== */
 @keyframes diagonalSlide {
   0% {
-    transform: translate(-100%, -100%);
+   transform: translate(-100%, -100%);
   }
   50% {
-    transform: translate(0, 0);
+   transform: translate(0, 0);
   }
   100% {
-    transform: translate(-100%, -100%);
+   transform: translate(-100%, -100%);
   }
 }
 .btn-diagonal-slide {
   animation: diagonalSlide 3s infinite;
   background: #3b82f6;
 }
-/* Scrollbar discreto y bonito */
+
+/* ========================================
+  Custom Scrollbar Styles
+  ======================================== */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -819,13 +839,17 @@ body {
   background: transparent;
 }
 
-/* Firefox */
+/* ========================================
+  Custom Scrollbar Styles (Firefox)
+  ======================================== */
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(100, 100, 100, 0.4) transparent;
 }
 
-/* ====== Shooting Star Border: Non-Tailwind Needed CSS ====== */
+/* ========================================
+  Animation: Shooting Star Border (Non-Tailwind)
+  ======================================== */
 .button-shooting-star .spark {
   -webkit-mask-image: linear-gradient(white, transparent 50%);
   mask-image: linear-gradient(white, transparent 50%);
@@ -843,19 +867,23 @@ body {
   border-radius: 50%;
 }
 
+/* ========================================
+  Animation: Button Flip (Alternative)
+  ======================================== */
 @keyframes flip {
   to {
-    transform: rotate(360deg);
+   transform: rotate(360deg);
   }
 }
-
 @keyframes rotate {
   to {
-    transform: rotate(90deg);
+   transform: rotate(90deg);
   }
 }
 
-/* ====== Gooey Button: Non-Tailwind Needed CSS ====== */
+/* ========================================
+  Animation: Gooey Button (Non-Tailwind)
+  ======================================== */
 .button-symbion-wrapper {
   filter: url("#symbion");
 }

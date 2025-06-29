@@ -76,7 +76,7 @@ export const text = [
   { title: "Text Color Cycle", Component: TextColorCycle },
   { title: "Text Pulse", Component: TextPulse },
   { title: "Text Rotate", Component: TextRotate },
-  { title: "Text Scale Plus", Component: TextScalePulse },
+  { title: "Text Scale Pulse", Component: TextScalePulse },
   { title: "Text Wiggle", Component: TextWiggle },
   { title: "Text Slide In Left", Component: TextSlideInLeft },
   { title: "Text Slide In Right", Component: TextSlideInRight },

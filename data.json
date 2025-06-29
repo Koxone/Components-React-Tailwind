@@ -4,9 +4,145 @@
       "title": "Text Animated Gradient",
       "effectClass": "animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-transparent",
       "category": "Text",
-      "componentCode": "const TextAnimatedGradient = () => {\n  return (\n    <span className=\"inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-xl text-transparent\">\n      Sample Text\n    </span>\n  );\n};\n\nexport default TextAnimatedGradient;",
-      "tailwindConfigCode": "{\n  \"animation\": {\n    \"text-gradient\": \"text-gradient 1.5s linear infinite\"\n  },\n  \"keyframes\": {\n    \"text-gradient\": {\n      \"to\": {\n        \"backgroundPosition\": \"200% center\"\n      }\n    }\n  }\n}",
+      "componentCode": "import React from \"react\";\n\nconst TextAnimatedGradient = ({ children = \"Sample Text\", className = \"\" }) => {\n  return (\n    <span\n      className={`inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-[40px] text-transparent ${className}`}\n    >\n      {children}\n    </span>\n  );\n};\n\nexport default TextAnimatedGradient;",
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"text-gradient\": \"text-gradient 3s ease infinite\"\n  },\n  \"keyframes\": {\n    \"text-gradient\": {\n      \"0%\": { \"backgroundPosition\": \"200% center\" },\n      \"100%\": { \"backgroundPosition\": \"0% center\" }\n    }\n  }\n}",
       "cssCode": "/* ========================================\n   Animation: Button Border Glow (LOOP)\n   ======================================== */\n@keyframes borderGlowLoop {\n  0%,\n  100% {\n    box-shadow: 0 0 5px #3b82f6;\n  }\n  50% {\n    box-shadow: 0 0 20px #3b82f6;\n  }\n}\n.btn-border-glow {\n  border: 2px solid #3b82f6;\n  background: transparent;\n  animation: borderGlowLoop 2s infinite;\n}"
+    },
+    {
+      "title": "Text Animation Horizontal",
+      "effectClass": "animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-transparent",
+      "category": "Text",
+      "componentCode": "import React from \"react\";\n\nfunction TextAnimationHorizontal({ children }) {\n  return (\n    <span className=\"animate-horizontal inline-flex bg-[linear-gradient(110deg,#939393,45%,#1e293b,55%,#939393)] bg-[length:250%_100%] bg-clip-text text-[40px] text-transparent\">\n      {children}\n    </span>\n  );\n}\n\nexport default TextAnimationHorizontal;",
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"horizontal\": \"horizontal 3s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"horizontal\": {}\n  }\n}",
+      "cssCode": "/* ========================================\n   Animation: Animation Horizontal\n   ======================================== */\n@keyframes horizontal {\n  0% {\n    background-position: 0% 0%;\n  }\n  100% {\n    background-position: 200% 0%;\n  }\n}\n\n.animate-horizontal {\n  background-image: linear-gradient(270deg, #f76927, #fdfa29, #f76927);\n  background-size: 200%;\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  animation: horizontal 3s ease-in-out infinite;\n  background-repeat: no-repeat;\n}"
+    },
+    {
+      "title": "Text Bounce",
+      "effectClass": "animate-bounceText text-[40px] font-bold text-white",
+      "category": "Text",
+      "componentCode": "function TextBounce({ children }) {\n  return (\n    <div className=\"animate-bounceText text-[40px] font-bold text-white\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextBounce;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"bounceText\": \"bounceText 1s infinite\" },\n  \"keyframes\": { \"bounceText\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Bounce\n   ======================================== */\n@keyframes bounceText {\n  0%,\n  100% {\n    transform: translateY(0);\n  }\n  50% {\n    transform: translateY(-10px);\n  }\n}\n\n.animate-bounceText {\n  animation: bounceText 1s infinite;\n}"
+    },
+    {
+      "title": "Text Color Cycle",
+      "effectClass": "animate-colorCycle text-[40px] font-bold",
+      "category": "Text",
+      "componentCode": "function TextColorCycle({ children }) {\n  return (\n    <div className=\"animate-colorCycle text-[40px] font-bold\">{children}</div>\n  );\n}\n\nexport default TextColorCycle;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"colorCycle\": \"colorCycle 5s infinite\" },\n  \"keyframes\": { \"colorCycle\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Color Cycle\n   ======================================== */\n@keyframes colorCycle {\n  0% {\n    color: #f87171; /* red-400 */\n  }\n  25% {\n    color: #60a5fa; /* blue-400 */\n  }\n  50% {\n    color: #34d399; /* green-400 */\n  }\n  75% {\n    color: #fbbf24; /* yellow-400 */\n  }\n  100% {\n    color: #f87171; /* red-400 */\n  }\n}\n\n.animate-colorCycle {\n  animation: colorCycle 5s infinite;\n}"
+    },
+    {
+      "title": "Text Fade In",
+      "effectClass": "animate-fadeInUp inline-block text-[40px] text-white",
+      "category": "Text",
+      "componentCode": "import React from \"react\";\n\nconst TextFadeIn = ({ children = \"Sample Text\" }) => {\n  return (\n    <span className={`animate-fadeInUp inline-block text-[40px] text-white`}>{children}</span>\n  );\n};\n\nexport default TextFadeIn;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"fadeInUp\": \"fadeInUp 4s ease-in-out infinite\" },\n  \"keyframes\": { \"fadeInUp\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Fade In Up (LOOP)\n   ======================================== */\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  30% {\n    opacity: 1;\n    transform: translateY(0);\n  }\n  70% {\n    opacity: 1;\n    transform: translateY(0);\n  }\n  100% {\n    opacity: 0;\n    transform: translateY(-20px);\n  }\n}\n\n.animate-fadeInUp {\n  animation: fadeInUp 4s ease-in-out infinite;\n}"
+    },
+    {
+      "title": "Text Fade Loop",
+      "effectClass": "animate-fadeLoop inline-block text-[40px] font-bold text-white",
+      "category": "Text",
+      "componentCode": "function TextFadeLoop({ children }) {\n  return (\n    <div className=\"animate-fadeLoop inline-block text-[40px] font-bold text-white\">{children}</div>\n  );\n}\n\nexport default TextFadeLoop;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"fadeLoop\": \"fadeLoop 3s infinite\" },\n  \"keyframes\": { \"fadeLoop\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Fade Loop\n   ======================================== */\n@keyframes fadeLoop {\n  0%,\n  100% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.3;\n  }\n}\n\n.animate-fadeLoop {\n  animation: fadeLoop 3s infinite;\n}"
+    },
+    {
+      "title": "Text Pulse",
+      "effectClass": "animate-pulseText text-white text-[40px] font-bold",
+      "category": "Text",
+      "componentCode": "function TextPulse({ children }) {\n  return (\n    <div className=\"animate-pulseText text-white text-[40px] font-bold\">{children}</div>\n  );\n}\n\nexport default TextPulse;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"pulseText\": \"pulseText 2s infinite\" },\n  \"keyframes\": { \"pulseText\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Button Pulse (LOOP)\n   ======================================== */\n@keyframes pulseLoop {\n  0%,\n  100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.05);\n  }\n}\n\n.btn-pulse {\n  background: #2563eb;\n  animation: pulseLoop 2s infinite;\n}"
+    },
+    {
+      "title": "Text Rotate",
+      "effectClass": "animate-rotateText inline-block text-[40px] font-bold text-white",
+      "category": "Text",
+      "componentCode": "function TextRotate({ children }) {\n  return (\n    <div className=\"animate-rotateText inline-block text-[40px] font-bold text-white\">{children}</div>\n  );\n}\n\nexport default TextRotate;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"rotateText\": \"rotateText 2s infinite ease-in-out\" },\n  \"keyframes\": { \"rotateText\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Rotate\n   ======================================== */\n@keyframes rotateText {\n  0% {\n    transform: rotate(0deg);\n  }\n  50% {\n    transform: rotate(10deg);\n  }\n  100% {\n    transform: rotate(0deg);\n  }\n}\n\n.animate-rotateText {\n  animation: rotateText 2s infinite ease-in-out;\n}"
+    },
+    {
+      "title": "Text Scale Loop",
+      "effectClass": "animate-scaleLoop inline-block text-[40px] font-bold text-white",
+      "category": "Text",
+      "componentCode": "function TextScaleLoop({ children }) {\n  return (\n    <div className=\"animate-scaleLoop inline-block text-[40px] font-bold text-white\">{children}</div>\n  );\n}\n\nexport default TextScaleLoop;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"scaleLoop\": \"scaleLoop 2s infinite ease-in-out\" },\n  \"keyframes\": { \"scaleLoop\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Scale Loop\n   ======================================== */\n@keyframes scaleLoop {\n  0%,\n  100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.2);\n  }\n}\n\n.animate-scaleLoop {\n  animation: scaleLoop 2s infinite ease-in-out;\n}"
+    },
+    {
+      "title": "Text Scale Pulse",
+      "effectClass": "animate-scalePulse text-white text-[40px] font-bold",
+      "category": "Text",
+      "componentCode": "function TextScalePulse({ children }) {\n  return (\n    <div className=\"animate-scalePulse text-white text-[40px] font-bold\">{children}</div>\n  );\n}\n\nexport default TextScalePulse;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"scalePulse\": \"scalePulse 1.5s infinite ease-in-out\" },\n  \"keyframes\": { \"scalePulse\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Scale Pulse\n   ======================================== */\n@keyframes scalePulse {\n  0%,\n  100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.1);\n  }\n}\n\n.animate-scalePulse {\n  animation: scalePulse 1.5s infinite ease-in-out;\n}"
+    },
+    {
+      "title": "Text Shine",
+      "effectClass": "animate-background-shine inline-flex bg-[linear-gradient(110deg,#939393,45%,#1e293b,55%,#939393)] bg-[length:250%_100%] bg-clip-text text-[40px] text-transparent",
+      "category": "Text",
+      "componentCode": "import React from \"react\";\n\nfunction TextShine({ children }) {\n  return (\n    <span className=\"animate-background-shine inline-flex bg-[linear-gradient(110deg,#939393,45%,#1e293b,55%,#939393)] bg-[length:250%_100%] bg-clip-text text-[40px] text-transparent\">{children}</span>\n  );\n}\n\nexport default TextShine;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"background-shine\": \"background-shine 2s linear infinite\" },\n  \"keyframes\": { \"background-shine\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Background Shine\n   ======================================== */\n@keyframes background-shine {\n  from {\n    background-position: 0 0;\n  }\n  to {\n    background-position: -200% 0;\n  }\n}\n\n.animate-background-shine {\n  animation: background-shine 2s linear infinite;\n}"
+    },
+    {
+      "title": "Text Skew Loop",
+      "effectClass": "animate-skewLoop inline-block text-[40px] font-bold text-white",
+      "category": "Text",
+      "componentCode": "function TextSkewLoop({ children }) {\n  return (\n    <div className=\"animate-skewLoop inline-block text-[40px] font-bold text-white\">{children}</div>\n  );\n}\n\nexport default TextSkewLoop;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"skewLoop\": \"skewLoop 2s infinite ease-in-out\" },\n  \"keyframes\": { \"skewLoop\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Skew Loop\n   ======================================== */\n@keyframes skewLoop {\n  0%,\n  100% {\n    transform: skewX(0deg);\n  }\n  50% {\n    transform: skewX(10deg);\n  }\n}\n\n.animate-skewLoop {\n  animation: skewLoop 2s infinite ease-in-out;\n}"
+    },
+    {
+      "title": "Text Slide In Left",
+      "effectClass": "animate-slideInLeftLoop text-[40px] text-white",
+      "category": "Text",
+      "componentCode": "function TextSlideInLeft({ children }) {\n  return (\n    <div className=\"overflow-hidden w-full\"><div className=\"animate-slideInLeftLoop text-[40px] text-white\">{children}</div></div>\n  );\n}\n\nexport default TextSlideInLeft;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"slideInLeftLoop\": \"slideInLeftLoop 3s ease-in-out infinite\" },\n  \"keyframes\": { \"slideInLeftLoop\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Slide In Left Loop\n   ======================================== */\n@keyframes slideInLeftLoop {\n  0% {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateX(0%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n}\n\n.animate-slideInLeftLoop {\n  animation: slideInLeftLoop 3s ease-in-out infinite;\n}"
+    },
+    {
+      "title": "Text Slide In Right",
+      "effectClass": "animate-slideInRightLoop inline-block text-[40px] text-white",
+      "category": "Text",
+      "componentCode": "function TextSlideInRight({ children }) {\n  return (\n    <div className=\"relative inline-block w-full overflow-hidden\"><span className=\"animate-slideInRightLoop inline-block text-[40px] text-white\">{children}</span></div>\n  );\n}\n\nexport default TextSlideInRight;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"slideInRightLoop\": \"slideInRightLoop 3s ease-in-out infinite\" },\n  \"keyframes\": { \"slideInRightLoop\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Slide In Right Loop\n   ======================================== */\n@keyframes slideInRightLoop {\n  0% {\n    transform: translateX(100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateX(0%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateX(100%);\n    opacity: 0;\n  }\n}\n\n.animate-slideInRightLoop {\n  display: inline-block;\n  white-space: nowrap;\n  animation: slideInRightLoop 3s ease-in-out infinite;\n}"
+    },
+    {
+      "title": "Text Spin Loop",
+      "effectClass": "animate-spinLoop text-white text-[40px] font-bold inline-block",
+      "category": "Text",
+      "componentCode": "function TextSpinLoop({ children }) {\n  return (\n    <div className=\"animate-spinLoop text-white text-[40px] font-bold inline-block\">{children}</div>\n  );\n}\n\nexport default TextSpinLoop;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"spinLoop\": \"spinLoop 5s linear infinite\" },\n  \"keyframes\": { \"spinLoop\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Spin Loop\n   ======================================== */\n@keyframes spinLoop {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n\n.animate-spinLoop {\n  animation: spinLoop 5s linear infinite;\n}"
+    },
+    {
+      "title": "Text Typewriter",
+      "effectClass": "animate-typewriter border-r-2 border-white pr-1 text-[40px] whitespace-nowrap text-white",
+      "category": "Text",
+      "componentCode": "import React from \"react\";\n\nexport default function TextTypewriter({ children = \"Sample Text\" }) {\n  return <span className=\"animate-typewriter text-[40px] text-white\">{children}</span>;\n}",
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"typewriter\": \"typewriter 4s steps(40) infinite\",\n    \"blink\": \"blink 0.75s step-end infinite\"\n  },\n  \"keyframes\": {\n    \"typewriter\": {},\n    \"blink\": {}\n  }\n}",
+      "cssCode": "/* ========================================\n   Animation: Typewriter (LOOP)\n   ======================================== */\n@keyframes typewriter {\n  0% {\n    width: 0;\n  }\n  50% {\n    width: 100%;\n  }\n  100% {\n    width: 0;\n  }\n}\n\n@keyframes blink {\n  0%,\n  50%,\n  100% {\n    border-color: transparent;\n  }\n  25%,\n  75% {\n    border-color: white;\n  }\n}\n\n.animate-typewriter {\n  display: inline-block;\n  overflow: hidden;\n  white-space: nowrap;\n  border-right: 2px solid white;\n  animation:\n    typewriter 4s steps(40) infinite,\n    blink 0.75s step-end infinite;\n}"
+    },
+    {
+      "title": "Text Wave",
+      "effectClass": "animate-wave text-white text-[40px] font-bold",
+      "category": "Text",
+      "componentCode": "function TextWave({ children }) {\n  return (\n    <div className=\"animate-wave text-white text-[40px] font-bold\">\n      {children.split(\"\").map((char, index) => (\n        <span key={index}>{char === \" \" ? \"\\u00A0\" : char}</span>\n      ))}\n    </div>\n  );\n}\n\nexport default TextWave;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"wave\": \"wave 1.5s infinite\" },\n  \"keyframes\": { \"wave\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Wave\n   ======================================== */\n@keyframes wave {\n  0%,\n  60%,\n  100% {\n    transform: translateY(0);\n  }\n  30% {\n    transform: translateY(-10px);\n  }\n}\n\n.animate-wave span {\n  display: inline-block;\n  animation: wave 1.5s infinite;\n}\n\n.animate-wave span:nth-child(1) {\n  animation-delay: 0s;\n}\n.animate-wave span:nth-child(2) {\n  animation-delay: 0.05s;\n}\n.animate-wave span:nth-child(3) {\n  animation-delay: 0.1s;\n}\n.animate-wave span:nth-child(4) {\n  animation-delay: 0.15s;\n}\n.animate-wave span:nth-child(5) {\n  animation-delay: 0.2s;\n}\n.animate-wave span:nth-child(6) {\n  animation-delay: 0.25s;\n}\n.animate-wave span:nth-child(7) {\n  animation-delay: 0.3s;\n}\n.animate-wave span:nth-child(8) {\n  animation-delay: 0.35s;\n}\n.animate-wave span:nth-child(9) {\n  animation-delay: 0.4s;\n}\n.animate-wave span:nth-child(10) {\n  animation-delay: 0.45s;\n}\n.animate-wave span:nth-child(11) {\n  animation-delay: 0.5s;\n}"
+    },
+    {
+      "title": "Text Wiggle",
+      "effectClass": "animate-wiggle text-white text-[40px] font-bold inline-block",
+      "category": "Text",
+      "componentCode": "function TextWiggle({ children }) {\n  return (\n    <div className=\"animate-wiggle text-white text-[40px] font-bold inline-block\">{children}</div>\n  );\n}\n\nexport default TextWiggle;",
+      "tailwindConfigCode": "{\n  \"animation\": { \"wiggle\": \"wiggle 0.5s infinite\" },\n  \"keyframes\": { \"wiggle\": {} }\n}",
+      "cssCode": "/* ========================================\n   Animation: Text Wiggle\n   ======================================== */\n@keyframes wiggle {\n  0%,\n  100% {\n    transform: rotate(-3deg);\n  }\n  50% {\n    transform: rotate(3deg);\n  }\n}\n\n.animate-wiggle {\n  animation: wiggle 0.5s infinite;\n}"
     }
   ]
 }
