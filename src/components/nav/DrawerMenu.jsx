@@ -6,7 +6,7 @@ function DrawerMenu({ isToggle }) {
 
   return (
     <aside
-      className={`hide-scrollbar ${isToggle ? "flex" : "hidden"} absolute z-50 col-span-1 h-[100dvh] max-w-[250px] flex-1 overflow-y-hidden rounded-lg border border-transparent bg-gray-50 p-5 pb-[400px] sm:hidden dark:border-gray-700 dark:bg-gray-800`}
+      className={`hide-scrollbar ${isToggle ? "flex" : "hidden"} absolute z-50 col-span-1 h-[100dvh] max-w-[250px] flex-1 rounded-lg border border-transparent bg-gray-50 p-5 pb-[400px] sm:hidden dark:border-gray-700 dark:bg-gray-800`}
     >
       <div className="h-full grid-rows-[auto_auto_auto_auto] sm:grid">
         <div className="mb-5">
