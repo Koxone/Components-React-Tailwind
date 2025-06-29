@@ -18,15 +18,64 @@ function Demo() {
     (c) => c.title.toLowerCase() === decodedComponent,
   );
 
-  if (!componentData) {
+  // Buscar el componente en todos los tipos de datos
+  const textComponent = text.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const buttonComponent = buttons.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const cardComponent = cards.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const inputComponent = inputs.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const toggleComponent = toggles.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+
+  // Determinar qué componente usar
+  const currentComponent =
+    textComponent ||
+    buttonComponent ||
+    cardComponent ||
+    inputComponent ||
+    toggleComponent;
+
+  if (!componentData || !currentComponent) {
     return (
       <div className="p-8 text-center text-red-400">Component not found.</div>
     );
   }
 
   const navigate = useNavigate();
+
+  // Función para renderizar el efecto según el tipo de componente
+  const renderEffect = () => {
+    if (inputComponent) {
+      // Para inputs, renderizar sin children y con props comunes
+      return <currentComponent.Component placeholder="Sample placeholder" />;
+    } else if (textComponent) {
+      return (
+        <currentComponent.Component>Sample Text</currentComponent.Component>
+      );
+    } else if (buttonComponent) {
+      return <currentComponent.Component>Click Me</currentComponent.Component>;
+    } else if (cardComponent) {
+      return (
+        <currentComponent.Component>Card Content</currentComponent.Component>
+      );
+    } else if (toggleComponent) {
+      return <currentComponent.Component>Toggle Me</currentComponent.Component>;
+    }
+
+    // Fallback
+    return <currentComponent.Component />;
+  };
+
   return (
-    <div className="grid grid-rows-[auto_1fr] items-center justify-center space-y-8">
+    <div className="grid grid-rows-[auto_1fr] items-center justify-center space-y-8 p-4">
       <button
         onClick={() => {
           sessionStorage.setItem("scrollToPosition", window.scrollY);
@@ -37,12 +86,13 @@ function Demo() {
         Go Back
       </button>
 
-      <div className="flex h-[230px] items-center justify-center rounded-lg border border-white p-4">
-        <h1
-          className={`mb-2 flex w-full items-center justify-center text-2xl font-semibold ${componentData.effectClass}`}
-        >
-          {componentData.title}
-        </h1>
+      {/* Renderizar la MainCard completa en lugar del h1 */}
+      <div className="flex max-h-60 max-w-60 justify-self-center">
+        <MainCard
+          svg="hidden"
+          effect={renderEffect()}
+          url={`/demo/${encodeURIComponent(componentData.title.toLowerCase().replace(/\s+/g, "-"))}`}
+        />
       </div>
 
       <div className="flex w-fit flex-col sm:gap-8">

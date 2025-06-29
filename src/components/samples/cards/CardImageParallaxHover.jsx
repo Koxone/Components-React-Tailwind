@@ -36,7 +36,7 @@ const CardImageParallaxHover = () => {
         src="/paralax.png
         "
         alt="Parallax"
-        className="pointer-events-none h-full w-full object-cover opacity-80"
+        className="pointer-events-none  h-full w-full object-contain opacity-80"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-center text-white">
         <h2 className="text-2xl font-bold drop-shadow-lg">Parallax Hover</h2>
