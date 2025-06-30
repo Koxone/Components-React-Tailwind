@@ -1,7 +1,6 @@
 import CategoriesSideBar from "../components/nav/CategoriesSideBar";
 import SearchBar from "../components/nav/SearchBar";
 import Footer from "../components/footer/Footer";
-import Demo from "../demos/Demo";
 import DrawerMenu from "../components/nav/DrawerMenu";
 import { useEffect, useState } from "react";
 import "../styles/TextStyles.css";
