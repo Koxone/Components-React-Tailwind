@@ -10,6 +10,7 @@ import Demo from "./demos/Demo";
 import { Analytics } from "@vercel/analytics/react";
 import CardsContainer from "./components/containers/CardsContainer";
 import TogglesContainer from "./components/containers/TogglesContainer";
+import ModalComingSoon from "./components/feedback/ModalComingSoon";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -23,6 +24,30 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
           path="/inputs"
           element={<Layout content={<InputsContainer />} />}
+        />
+        <Route
+          path="/sliders"
+          element={<Layout content={<ModalComingSoon />} />}
+        />
+        <Route
+          path="/modals"
+          element={<Layout content={<ModalComingSoon />} />}
+        />
+        <Route
+          path="/dropdowns"
+          element={<Layout content={<ModalComingSoon />} />}
+        />
+        <Route
+          path="/selects"
+          element={<Layout content={<ModalComingSoon />} />}
+        />
+        <Route
+          path="/sidebars"
+          element={<Layout content={<ModalComingSoon />} />}
+        />
+        <Route
+          path="/tooltips"
+          element={<Layout content={<ModalComingSoon />} />}
         />
         <Route
           path="/cards"
