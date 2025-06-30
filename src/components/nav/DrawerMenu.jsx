@@ -5,6 +5,14 @@ import { motion, AnimatePresence } from "framer-motion";
 function DrawerMenu({ isToggle }) {
   const navigate = useNavigate();
 
+  const menuItems = [
+    { id: "texts", type: "Text", path: "/" },
+    { id: "buttons", type: "Buttons", path: "/buttons" },
+    { id: "inputs", type: "Input Field", path: "/inputs" },
+    { id: "cards", type: "Cards", path: "/cards" },
+    { id: "toggles", type: "Toggles", path: "/toggles" },
+  ];
+
   return (
     <AnimatePresence>
       {isToggle && (
@@ -80,23 +88,14 @@ function DrawerMenu({ isToggle }) {
               <h2 className="mb-4 text-sm font-medium text-gray-500 uppercase dark:text-gray-400">
                 Components
               </h2>
-              <CategorieCard onClick={() => navigate("/")} type="Text" />
-              <CategorieCard
-                onClick={() => navigate("/buttons")}
-                type="Buttons"
-              />
-              <CategorieCard
-                onClick={() => navigate("/inputs")}
-                type="Input Field"
-              />
-              <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-              <CategorieCard
-                onClick={() => navigate("/buttons")}
-                type="Buttons"
-              />
-              <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-              <CategorieCard type="Input Field" />
-              <CategorieCard type="Toggle" />
+              {menuItems.map((menu) => (
+                <CategorieCard
+                  key={menu.id}
+                  onClick={() => navigate(menu.path)}
+                  type={menu.type}
+                  path={menu.path}
+                />
+              ))}
             </div>
 
             {/* FOOTER */}
