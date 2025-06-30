@@ -25,7 +25,7 @@ function CategoriesSideBar() {
     { type: "Dropdowns", path: "/dropdowns" },
     { type: "Selects", path: "/selects" },
     { type: "Sidebars", path: "/sidebars" },
-    { type: "Toolstips", path: "/tooltips" },
+    { type: "Tooltips", path: "/tooltips" },
   ];
 
   return (
