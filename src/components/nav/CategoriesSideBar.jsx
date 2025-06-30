@@ -14,18 +14,19 @@ function CategoriesSideBar() {
     "group inline-flex cursor-pointer items-center justify-center border gap-1 border-gray-600 bg-gray-700 p-2 text-sm font-medium text-gray-100 hover:bg-gray-900 hover:text-blue-600 focus:z-10 focus:ring-2 focus:ring-blue-500";
   const activeClass = "text-blue-600 ring-2 ring-blue-500 bg-gray-900";
 
-  const categories = [
-    { type: "Text", path: "/" },
-    { type: "Buttons", path: "/buttons" },
-    { type: "Input Field", path: "/inputs" },
-    { type: "Cards", path: "/cards" },
-    { type: "Toggles", path: "/toggles" },
-    { type: "Sliders", path: "/sliders" },
-    { type: "Modals", path: "/modals" },
-    { type: "Dropdowns", path: "/dropdowns" },
-    { type: "Selects", path: "/selects" },
-    { type: "Sidebars", path: "/sidebars" },
-    { type: "Tooltips", path: "/tooltips" },
+  const menuItems = [
+    { id: "texts", type: "Text", path: "/" },
+    { id: "buttons", type: "Buttons", path: "/buttons" },
+    { id: "inputs", type: "Input Field", path: "/inputs" },
+    { id: "cards", type: "Cards", path: "/cards" },
+    { id: "toggles", type: "Toggles", path: "/toggles" },
+    { id: "tooltips", type: "Tooltips", path: "/tooltips" },
+    { id: "modals", type: "Modals", path: "/modals" },
+    { id: "sliders", type: "Sliders", path: "/sliders" },
+    { id: "dropdowns", type: "Dropdowns", path: "/dropdowns" },
+    { id: "badges", type: "Badges", path: "/badges" },
+
+
   ];
 
   return (
@@ -103,15 +104,15 @@ function CategoriesSideBar() {
           <h2 className="mb-4 text-sm font-medium text-gray-500 uppercase dark:text-gray-400">
             Components
           </h2>
-          {Array.from({ length: 1 }).map((_, i) =>
-            categories.map((cat, idx) => (
-              <CategorieCard
-                key={`${i}-${idx}`}
-                onClick={() => navigate(cat.path)}
-                type={cat.type}
-              />
-            )),
-          )}
+          {menuItems.map((menu) => (
+            <CategorieCard
+              key={menu.id}
+              onClick={() => navigate(menu.path)}
+              type={menu.type}
+              path={menu.path}
+            />
+          ))}
+
         </div>
 
         {/* FOOTER */}
