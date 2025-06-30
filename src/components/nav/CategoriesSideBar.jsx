@@ -25,8 +25,6 @@ function CategoriesSideBar() {
     { id: "sliders", type: "Sliders", path: "/sliders" },
     { id: "dropdowns", type: "Dropdowns", path: "/dropdowns" },
     { id: "badges", type: "Badges", path: "/badges" },
-
-
   ];
 
   return (
@@ -112,7 +110,6 @@ function CategoriesSideBar() {
               path={menu.path}
             />
           ))}
-
         </div>
 
         {/* FOOTER */}
