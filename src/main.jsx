@@ -50,6 +50,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           element={<Layout content={<ModalComingSoon />} />}
         />
         <Route
+          path="/badges"
+          element={<Layout content={<ModalComingSoon />} />}
+        />
+        <Route
           path="/cards"
           element={<Layout content={<CardsContainer />} />}
         />
