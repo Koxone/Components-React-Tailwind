@@ -107,8 +107,8 @@ This library is designed to **accelerate your workflow**, inspire your projects,
 - [x] Add interactive demo for each component
 - [x] Include code snippets for Tailwind config and CSS
 - [x] Add dark mode
+- [x] Add "copy to clipboard" functionality on code snippets
 - [ ] Add filter and search by component type
-- [ ] Add "copy to clipboard" functionality on code snippets
 - [ ] Export as a reusable npm package for projects
 
 ---
