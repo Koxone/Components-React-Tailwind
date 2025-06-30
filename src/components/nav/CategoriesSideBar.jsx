@@ -29,7 +29,7 @@ function CategoriesSideBar() {
   ];
 
   return (
-    <aside className="hide-scrollbar col-span-1 hidden h-[calc(100vh-100px)] max-h-[100dvh] max-w-[250px] flex-1 overflow-y-hidden rounded-lg border border-gray-700 bg-gray-800 p-5 sm:flex">
+    <aside className="hide-scrollbar col-span-1 hidden h-full max-h-[calc(100dvh-100px)] max-w-[250px] flex-1 overflow-y-hidden rounded-lg border border-gray-700 bg-gray-800 p-5 sm:flex">
       <div className="hidden h-full grid-rows-[auto_auto_auto_auto] sm:grid">
         {/* HEADER */}
         <div className="mb-5">
@@ -115,14 +115,14 @@ function CategoriesSideBar() {
         </div>
 
         {/* FOOTER */}
-        <hr className="mb-5 bg-gray-200 dark:border-gray-700" />
+        <hr className="mb-2 bg-gray-200 dark:border-gray-700" />
         <div>
-          <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+          <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
             Welcome to your component library! Here you’ll find both our own
             handcrafted components and open-source gems from around the web,
             ready to power your projects.
           </p>
-          <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
+          <p className="mb-0 text-sm text-gray-500 dark:text-gray-400">
             Free under the MIT License
           </p>
         </div>
