@@ -14,6 +14,14 @@ function CategoriesSideBar() {
     "group inline-flex cursor-pointer items-center justify-center border gap-1 border-gray-600 bg-gray-700 p-2 text-sm font-medium text-gray-100 hover:bg-gray-900 hover:text-blue-600 focus:z-10 focus:ring-2 focus:ring-blue-500";
   const activeClass = "text-blue-600 ring-2 ring-blue-500 bg-gray-900";
 
+  const menuItems = [
+    { id: "texts", type: "Text", path: "/" },
+    { id: "buttons", type: "Buttons", path: "/buttons" },
+    { id: "inputs", type: "Input Field", path: "/inputs" },
+    { id: "cards", type: "Cards", path: "/cards" },
+    { id: "toggles", type: "Toggles", path: "/toggles" },
+  ];
+
   return (
     <aside className="hide-scrollbar col-span-1 hidden h-[calc(100vh-100px)] max-h-[100dvh] max-w-[250px] flex-1 overflow-y-hidden rounded-lg border border-gray-700 bg-gray-800 p-5 sm:flex">
       <div className="hidden h-full grid-rows-[auto_auto_auto_auto] sm:grid">
@@ -89,61 +97,14 @@ function CategoriesSideBar() {
           <h2 className="mb-4 text-sm font-medium text-gray-500 uppercase dark:text-gray-400">
             Components
           </h2>
-          <CategorieCard onClick={() => navigate("/")} type="Text" />
-          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
-          <CategorieCard
-            onClick={() => navigate("/inputs")}
-            type="Input Field"
-          />
-          <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-          <CategorieCard onClick={() => navigate("/toggles")} type="Toggles" />
-          <CategorieCard onClick={() => navigate("/")} type="Text" />
-          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
-          <CategorieCard
-            onClick={() => navigate("/inputs")}
-            type="Input Field"
-          />
-          <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-          <CategorieCard onClick={() => navigate("/")} type="Text" />
-          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
-          <CategorieCard
-            onClick={() => navigate("/inputs")}
-            type="Input Field"
-          />
-          <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-          <CategorieCard type="Toggle" />
-          <CategorieCard onClick={() => navigate("/")} type="Text" />
-          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
-          <CategorieCard
-            onClick={() => navigate("/inputs")}
-            type="Input Field"
-          />
-          <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-          <CategorieCard type="Toggle" />
-          <CategorieCard onClick={() => navigate("/")} type="Text" />
-          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
-          <CategorieCard
-            onClick={() => navigate("/inputs")}
-            type="Input Field"
-          />
-          <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-          <CategorieCard type="Toggle" />
-          <CategorieCard onClick={() => navigate("/")} type="Text" />
-          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
-          <CategorieCard
-            onClick={() => navigate("/inputs")}
-            type="Input Field"
-          />
-          <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-          <CategorieCard type="Toggle" />
-          <CategorieCard onClick={() => navigate("/")} type="Text" />
-          <CategorieCard onClick={() => navigate("/buttons")} type="Buttons" />
-          <CategorieCard
-            onClick={() => navigate("/inputs")}
-            type="Input Field"
-          />
-          <CategorieCard onClick={() => navigate("/cards")} type="Cards" />
-          <CategorieCard type="Toggle" />
+          {menuItems.map((menu) => (
+            <CategorieCard
+              key={menu.id}
+              onClick={() => navigate(menu.path)}
+              type={menu.type}
+              path={menu.path}
+            />
+          ))}
         </div>
 
         {/* FOOTER */}
