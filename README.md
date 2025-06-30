@@ -2,7 +2,7 @@
 
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 ![React](https://img.shields.io/badge/React-18-blue.svg)
-![Tailwind](https://img.shields.io/badge/Tailwind-3.0-cyan.svg)
+![Tailwind](https://img.shields.io/badge/Tailwind-4.0-cyan.svg)
 ![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen.svg)
 
 A **modern component library** built with **React**, **Tailwind CSS**, and **Vite**, featuring a clean UI, smooth animations, and modular structure for learning, showcasing, and reusing frontend components in your projects.
