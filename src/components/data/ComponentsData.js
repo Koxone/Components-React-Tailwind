@@ -1,107 +1,122 @@
-import ButtonGlow from "../samples/buttons/ButtonGlow";
-import ButtonPulse from "../samples/buttons/ButtonPulse";
-import ButtonSlideIn from "../samples/buttons/ButtonSlideIn";
-import ButtonSlideOut from "../samples/buttons/ButtonSlideOut";
-import ButtonBorderGlow from "../samples/buttons/ButtonBorderGlow";
-import ButtonBounce from "../samples/buttons/ButtonBounce";
-import ButtonRipple from "../samples/buttons/ButtonRipple";
-import ButtonGradientShift from "../samples/buttons/ButtonGradientShift";
-import ButtonWiggle from "../samples/buttons/ButtonWiggle";
-import ButtonScale from "../samples/buttons/ButtonScale";
-import ButtonFlash from "../samples/buttons/ButtonFlash";
-import ButtonFlip from "../samples/buttons/ButtonFlip";
-import ButtonRotate from "../samples/buttons/ButtonRotate";
-import ButtonSwing from "../samples/buttons/ButtonSwing";
-import ButtonShadowPulse from "../samples/buttons/ButtonShadowPulse";
-import ButtonTilt from "../samples/buttons/ButtonTilt";
-import ButtonShimmer from "../samples/buttons/ButtonShimmer";
-import ButtonHeartbeat from "../samples/buttons/ButtonHeartbeat";
-import ButtonGlowBorder from "../samples/buttons/ButtonGlowBorder";
-import ButtonDiagonalSlide from "../samples/buttons/ButtonDiagonalSlide";
-import ButtonShootingStarBorder from "../samples/buttons/ButtonShootingStarBorder";
-import ButtonSymbion from "../samples/buttons/ButtonSymbion";
+// buttons
+import {
+  ButtonBounce,
+  ButtonGlow,
+  ButtonBorderGlow,
+  ButtonGlowBorder,
+  ButtonGradientShift,
+  ButtonHeartbeat,
+  ButtonPulse,
+  ButtonRipple,
+  ButtonRotate,
+  ButtonScale,
+  ButtonShadowPulse,
+  ButtonShootingStarBorder,
+  ButtonSlideIn,
+  ButtonSlideOut,
+  ButtonSwing,
+  ButtonSymbion,
+  ButtonTilt,
+  ButtonWiggle,
+  ButtonShimmer,
+  ButtonFlash,
+  ButtonFlip,
+  ButtonDiagonalSlide,
+} from "../samples/buttons";
 
-import TextAnimatedGradient from "../samples/text/TextAnimatedGradient";
-import TextAnimationHorizontal from "../samples/text/TextAnimationHorizontal";
-import TextBounce from "../samples/text/TextBounce";
-import TextColorCycle from "../samples/text/TextColorCycle";
-import TextFadeIn from "../samples/text/TextFadeIn";
-import TextPulse from "../samples/text/TextPulse";
-import TextRotate from "../samples/text/TextRotate";
-import TextScalePulse from "../samples/text/TextScalePlus";
-import TextShine from "../samples/text/TextShine";
-import TextTypewriter from "../samples/text/TextTypewriter";
-import TextWave from "../samples/text/TextWave";
-import TextWiggle from "../samples/text/TextWiggle";
-import TextSlideInLeft from "../samples/text/TextSlideInLeft";
-import TextSlideInRight from "../samples/text/TextSlideInRight";
-import TextFadeLoop from "../samples/text/TextFadeLoop";
-import TextSkewLoop from "../samples/text/TextSkewLoop";
-import TextScaleLoop from "../samples/text/TextScaleLoop";
-import TextSpinLoop from "../samples/text/TextSpinLoop";
+// texts
+import {
+  TextAnimatedGradient,
+  TextAnimationHorizontal,
+  TextBounce,
+  TextColorCycle,
+  TextFadeIn,
+  TextFadeLoop,
+  TextPulse,
+  TextRotate,
+  TextScaleLoop,
+  TextScalePulse,
+  TextShine,
+  TextSlideInLeft,
+  TextSlideInRight,
+  TextSkewLoop,
+  TextSpinLoop,
+  TextTypewriter,
+  TextWave,
+  TextWiggle,
+} from "../samples/text";
 
-import InputGlassmorphism from "../samples/inputs/InputGlassmorphism";
-import InputAnimatedUnderline from "../samples/inputs/InputAnimatedUnderline";
-import InputFloatingLabel from "../samples/inputs/InputFloatingLabel";
-import InputGradientBorder from "../samples/inputs/InputGradientBorder";
-import InputNeonGlow from "../samples/inputs/InputNeonGlow";
-import InputIconInside from "../samples/inputs/InputIconInside";
-import InputAnimatedPlaceholder from "../samples/inputs/InputAnimatedPlaceholder";
-import InputGradientText from "../samples/inputs/InputGradientText";
-import InputGlassNeon from "../samples/inputs/InputGlassNeon";
-import InputTextareaAnimatedBorder from "../samples/inputs/InputTextareaAnimatedBorder";
-import InputBorderGlowOnHover from "../samples/inputs/InputBorderGlowOnHover";
-import InputRoundedFull from "../samples/inputs/InputRoundedFull";
-import InputAnimatedLabelSlide from "../samples/inputs/InputAnimatedLabelSlide";
-import InputDarkGlassBlur from "../samples/inputs/InputDarkGlassBlur";
-import InputVibrantFocusRing from "../samples/inputs/InputVibrantFocusRing";
-import InputLeftAccentBorder from "../samples/inputs/InputLeftAccentBorder";
-import InputWithGradientText from "../samples/inputs/InputWithGradientText";
-import InputIconRight from "../samples/inputs/InputIconRight";
-import InputDoubleShadow from "../samples/inputs/InputDoubleShadow";
-import InputAnimatedGradientBorder from "../samples/inputs/InputAnimatedGradientBorder";
+// inputs
+import {
+  InputAnimatedGradientBorder,
+  InputAnimatedLabelSlide,
+  InputAnimatedPlaceholder,
+  InputAnimatedUnderline,
+  InputBorderGlowOnHover,
+  InputDarkGlassBlur,
+  InputDoubleShadow,
+  InputFloatingLabel,
+  InputGlassNeon,
+  InputGlassmorphism,
+  InputGradientBorder,
+  InputGradientText,
+  InputIconInside,
+  InputIconRight,
+  InputLeftAccentBorder,
+  InputNeonGlow,
+  InputRoundedFull,
+  InputTextareaAnimatedBorder,
+  InputVibrantFocusRing,
+  InputWithGradientText,
+} from "../samples/inputs";
 
-import CardFrostedGlassHoverExpand from "../samples/cards/CardFrostedGlassHoverExpand";
-import Card3DTiltWithShadow from "../samples/cards/Card3DTiltWithShadow";
-import CardNeonGlowBorder from "../samples/cards/CardNeonGlowBorder";
-import CardGlassReflectionShine from "../samples/cards/CardGlassReflectionShine";
-import CardImageParallaxHover from "../samples/cards/CardImageParallaxHover";
-import CardLayeredGradientAccent from "../samples/cards/CardLayeredGradientAccent";
-import CardSplitHoverReveal from "../samples/cards/CardSplitHoverReveal";
-import CardSlideContentOnHover from "../samples/cards/CardSlideContentOnHover";
-import CardMorphingShapeHover from "../samples/cards/CardMorphingShapeHover";
-import CardBorderPulseAnimation from "../samples/cards/CardBorderPulseAnimation";
-import CardFlipGlassmorphism from "../samples/cards/CardFlipGlassmorphism";
-import CardHoverGradientBorderAnimation from "../samples/cards/CardHoverGradientBorderAnimation";
-import CardBackgroundVideoHover from "../samples/cards/CardBackgroundVideoHover";
-import CardMagneticHoverFollow from "../samples/cards/CardMagneticHoverFollow";
-import CardGlitchHoverEffect from "../samples/cards/CardGlitchHoverEffect";
-import CardCircularRevealHover from "../samples/cards/CardCircularRevealHover";
-import CardGlassGradientShineSweep from "../samples/cards/CardGlassGradientShineSweep";
-import CardAnimatedConfettiCelebration from "../samples/cards/CardAnimatedConfettiCelebration";
-import CardHoverRippleWave from "../samples/cards/CardHoverRippleWave";
-import CardEmojiReactAnimation from "../samples/cards/CardEmojiReactAnimation";
+// cards
+import {
+  Card3DTiltWithShadow,
+  CardAnimatedConfettiCelebration,
+  CardBackgroundVideoHover,
+  CardBorderPulseAnimation,
+  CardCircularRevealHover,
+  CardEmojiReactAnimation,
+  CardFlipGlassmorphism,
+  CardFrostedGlassHoverExpand,
+  CardGlassGradientShineSweep,
+  CardGlassReflectionShine,
+  CardGlitchHoverEffect,
+  CardHoverGradientBorderAnimation,
+  CardHoverRippleWave,
+  CardImageParallaxHover,
+  CardLayeredGradientAccent,
+  CardMagneticHoverFollow,
+  CardMorphingShapeHover,
+  CardNeonGlowBorder,
+  CardSlideContentOnHover,
+  CardSplitHoverReveal,
+} from "../samples/cards";
 
-import IconToggle from "../samples/toggles/IconToggle";
-import NeonBorderToggle from "../samples/toggles/NeonBorderToggle";
-import RotateToggle from "../samples/toggles/RotateToggle";
-import ScalePulseToggle from "../samples/toggles/ScalePulseToggle";
-import SlideTextToggle from "../samples/toggles/SlideTextToggle";
-import ToggleSwitch from "../samples/toggles/ToggleSwitch";
-import BorderFlipToggle from "../samples/toggles/BorderFlipToggle";
-import EmojiToggle from "../samples/toggles/EmojiToggle";
-import GlowDotToggle from "../samples/toggles/GlowDotToggle";
-import GlowToggle from "../samples/toggles/GlowToggle";
-import ToggleBounce from "../samples/toggles/ToggleBounce";
-import ToggleDot from "../samples/toggles/ToggleDot";
-import ToggleGlow from "../samples/toggles/ToggleGlow";
-import ToggleGradient from "../samples/toggles/ToggleGradient";
-import ToggleIconInside from "../samples/toggles/ToggleIconInside";
-import ToggleOutline from "../samples/toggles/ToggleOutline";
-import TogglePulse from "../samples/toggles/TogglePulse";
-import ToggleRing from "../samples/toggles/ToggleRing";
-import ToggleShadow from "../samples/toggles/ToggleShadow";
-import ToggleSlide from "../samples/toggles/ToggleSlide";
+// toggles
+import {
+  BorderFlipToggle,
+  EmojiToggle,
+  GlowDotToggle,
+  GlowToggle,
+  IconToggle,
+  NeonBorderToggle,
+  RotateToggle,
+  ScalePulseToggle,
+  SlideTextToggle,
+  ToggleBounce,
+  ToggleDot,
+  ToggleGlow,
+  ToggleIconInside,
+  ToggleOutline,
+  TogglePulse,
+  ToggleRing,
+  ToggleShadow,
+  ToggleSlide,
+  ToggleGradient,
+  ToggleSwitch,
+} from "../samples/toggles";
 
 export const buttons = [
   { title: "Button Glow", Component: ButtonGlow },
