@@ -77,7 +77,7 @@ function Demo() {
   }
 
   return (
-    <div className="relative grid grid-rows-[auto_1fr] items-center justify-center space-y-8 p-4">
+    <div className="relative grid grid-rows-[auto_1fr] items-center justify-center space-y-8 overflow-hidden p-4 md:overflow-visible">
       <button
         onClick={() => {
           sessionStorage.setItem("scrollToPosition", window.scrollY);
