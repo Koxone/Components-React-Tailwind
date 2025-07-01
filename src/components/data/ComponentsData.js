@@ -144,6 +144,27 @@ import ModalSlideUp from "../samples/modals/ModalSlideUp";
 import ModalSwingIn from "../samples/modals/ModalSwingIn";
 import ModalZoomIn from "../samples/modals/ModalZoomIn";
 
+import Slider3D from "../samples/sliders/Slider3D";
+import SliderAutoPlay from "../samples/sliders/SliderAutoPlay";
+import SliderBlur from "../samples/sliders/SliderBlur";
+import SliderCards from "../samples/sliders/SliderCards";
+import SliderCoverflow from "../samples/sliders/SliderCoverflow";
+import SliderDrag from "../samples/sliders/SliderDrag";
+import SliderFade from "../samples/sliders/SliderFade";
+import SliderFlip from "../samples/sliders/SliderFlip";
+import SliderGallery from "../samples/sliders/SliderGallery";
+import SliderHorizontal from "../samples/sliders/SliderHorizontal";
+import SliderLoop from "../samples/sliders/SliderLoop";
+import SliderOpacity from "../samples/sliders/SliderOpacity";
+import SliderParallax from "../samples/sliders/SliderParallax";
+import SliderProgress from "../samples/sliders/SliderProgress";
+import SliderRotate from "../samples/sliders/SliderRotate";
+import SliderScale from "../samples/sliders/SliderScale";
+import SliderSkew from "../samples/sliders/SliderSkew";
+import SliderSlide from "../samples/sliders/SliderSlide";
+import SliderVertical from "../samples/sliders/SliderVertical";
+import SliderZoom from "../samples/sliders/SliderZoom";
+
 export const buttons = [
   { title: "Button Glow", Component: ButtonGlow },
   { title: "Button Pulse", Component: ButtonPulse },
@@ -323,4 +344,27 @@ export const modals = [
   { title: "Modal Slide Up", Component: ModalSlideUp },
   { title: "Modal Swing In", Component: ModalSwingIn },
   { title: "Modal Zoom In", Component: ModalZoomIn },
+];
+
+export const sliders = [
+  { title: "Slider 3D", Component: Slider3D },
+  { title: "Slider Auto Play", Component: SliderAutoPlay },
+  { title: "Slider Blur", Component: SliderBlur },
+  { title: "Slider Cards", Component: SliderCards },
+  { title: "Slider Coverflow", Component: SliderCoverflow },
+  { title: "Slider Drag", Component: SliderDrag },
+  { title: "Slider Fade", Component: SliderFade },
+  { title: "Slider Flip", Component: SliderFlip },
+  { title: "Slider Gallery", Component: SliderGallery },
+  { title: "Slider Horizontal", Component: SliderHorizontal },
+  { title: "Slider Loop", Component: SliderLoop },
+  { title: "Slider Opacity", Component: SliderOpacity },
+  { title: "Slider Parallax", Component: SliderParallax },
+  { title: "Slider Progress", Component: SliderProgress },
+  { title: "Slider Rotate", Component: SliderRotate },
+  { title: "Slider Scale", Component: SliderScale },
+  { title: "Slider Skew", Component: SliderSkew },
+  { title: "Slider Slide", Component: SliderSlide },
+  { title: "Slider Vertical", Component: SliderVertical },
+  { title: "Slider Zoom", Component: SliderZoom },
 ];
