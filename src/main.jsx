@@ -11,6 +11,7 @@ import { Analytics } from "@vercel/analytics/react";
 import CardsContainer from "./components/containers/CardsContainer";
 import TogglesContainer from "./components/containers/TogglesContainer";
 import ModalComingSoon from "./components/feedback/ModalComingSoon";
+import TooltipsContainer from "./components/containers/TooltipsContainer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -47,7 +48,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         />
         <Route
           path="/tooltips"
-          element={<Layout content={<ModalComingSoon />} />}
+          element={<Layout content={<TooltipsContainer />} />}
         />
         <Route
           path="/badges"

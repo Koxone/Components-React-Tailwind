@@ -103,6 +103,26 @@ import ToggleRing from "../samples/toggles/ToggleRing";
 import ToggleShadow from "../samples/toggles/ToggleShadow";
 import ToggleSlide from "../samples/toggles/ToggleSlide";
 
+import TooltipArrow from "../samples/tooltips/TooltipArrow";
+import TooltipBlur from "../samples/tooltips/TooltipBlur";
+import TooltipBounce from "../samples/tooltips/TooltipBounce";
+import TooltipDelay from "../samples/tooltips/TooltipDelay";
+import TooltipDrop from "../samples/tooltips/TooltipDrop";
+import TooltipFade from "../samples/tooltips/TooltipFade";
+import TooltipFlip from "../samples/tooltips/TooltipFlip";
+import TooltipGradient from "../samples/tooltips/TooltipGradient";
+import TooltipGradientBorder from "../samples/tooltips/TooltipGradientBorder";
+import TooltipGlow from "../samples/tooltips/TooltipGlow";
+import TooltipIcon from "../samples/tooltips/TooltipIcon";
+import TooltipPulse from "../samples/tooltips/TooltipPulse";
+import TooltipScale from "../samples/tooltips/TooltipScale";
+import TooltipShadow from "../samples/tooltips/TooltipShadow";
+import TooltipSkew from "../samples/tooltips/TooltipSkew";
+import TooltipSlideUp from "../samples/tooltips/TooltipSlideUp";
+import TooltipSpin from "../samples/tooltips/TooltipSpin";
+import TooltipTextChange from "../samples/tooltips/TooltipTextChange";
+import TooltipZoom from "../samples/tooltips/TooltipZoom";
+
 export const buttons = [
   { title: "Button Glow", Component: ButtonGlow },
   { title: "Button Pulse", Component: ButtonPulse },
@@ -237,4 +257,26 @@ export const toggles = [
   { title: "Toggle Ring", Component: ToggleRing },
   { title: "Toggle Shadow", Component: ToggleShadow },
   { title: "Toggle Slide", Component: ToggleSlide },
+];
+
+export const tooltips = [
+  { title: "Tooltip Arrow", Component: TooltipArrow },
+  { title: "Tooltip Blur", Component: TooltipBlur },
+  { title: "Tooltip Bounce", Component: TooltipBounce },
+  { title: "Tooltip Delay", Component: TooltipDelay },
+  { title: "Tooltip Drop", Component: TooltipDrop },
+  { title: "Tooltip Fade", Component: TooltipFade },
+  { title: "Tooltip Flip", Component: TooltipFlip },
+  { title: "Tooltip Gradient", Component: TooltipGradient },
+  { title: "Tooltip Gradient Border", Component: TooltipGradientBorder },
+  { title: "Tooltip Glow", Component: TooltipGlow },
+  { title: "Tooltip Icon", Component: TooltipIcon },
+  { title: "Tooltip Pulse", Component: TooltipPulse },
+  { title: "Tooltip Scale", Component: TooltipScale },
+  { title: "Tooltip Shadow", Component: TooltipShadow },
+  { title: "Tooltip Skew", Component: TooltipSkew },
+  { title: "Tooltip Slide Up", Component: TooltipSlideUp },
+  { title: "Tooltip Spin", Component: TooltipSpin },
+  { title: "Tooltip Text Change", Component: TooltipTextChange },
+  { title: "Tooltip Zoom", Component: TooltipZoom },
 ];
