@@ -32,7 +32,6 @@ function CategorieCard({ type = "", path, onClick }) {
     count = sliders.length;
   }
 
-  // check if current route matches the menu
   const isActive = location.pathname === path;
 
   return (
