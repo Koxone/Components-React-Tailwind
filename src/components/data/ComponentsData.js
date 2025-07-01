@@ -123,6 +123,27 @@ import TooltipSpin from "../samples/tooltips/TooltipSpin";
 import TooltipTextChange from "../samples/tooltips/TooltipTextChange";
 import TooltipZoom from "../samples/tooltips/TooltipZoom";
 
+import ModalBounceIn from "../samples/modals/ModalBounceIn";
+import ModalBounceSlide from "../samples/modals/ModalBounceSlide";
+import ModalDropIn from "../samples/modals/ModalDropIn";
+import ModalElasticIn from "../samples/modals/ModalElasticIn";
+import ModalExpandIn from "../samples/modals/ModalExpandIn";
+import ModalFadeIn from "../samples/modals/ModalFadeIn";
+import ModalFadeSlide from "../samples/modals/ModalFadeSlide";
+import ModalFlipIn from "../samples/modals/ModalFlipIn";
+import ModalGrowIn from "../samples/modals/ModalGrowIn";
+import ModalGrowShrink from "../samples/modals/ModalGrowShrink";
+import ModalPopIn from "../samples/modals/ModalPopIn";
+import ModalPulseIn from "../samples/modals/ModalPulseIn";
+import ModalRotateIn from "../samples/modals/ModalRotateIn";
+import ModalShakeIn from "../samples/modals/ModalShakeIn";
+import ModalShrinkIn from "../samples/modals/ModalShrinkIn";
+import ModalSlideLeft from "../samples/modals/ModalSlideLeft";
+import ModalSlideRight from "../samples/modals/ModalSlideRight";
+import ModalSlideUp from "../samples/modals/ModalSlideUp";
+import ModalSwingIn from "../samples/modals/ModalSwingIn";
+import ModalZoomIn from "../samples/modals/ModalZoomIn";
+
 export const buttons = [
   { title: "Button Glow", Component: ButtonGlow },
   { title: "Button Pulse", Component: ButtonPulse },
@@ -279,4 +300,27 @@ export const tooltips = [
   { title: "Tooltip Spin", Component: TooltipSpin },
   { title: "Tooltip Text Change", Component: TooltipTextChange },
   { title: "Tooltip Zoom", Component: TooltipZoom },
+];
+
+export const modals = [
+  { title: "Modal Bounce In", Component: ModalBounceIn },
+  { title: "Modal Bounce Slide", Component: ModalBounceSlide },
+  { title: "Modal Drop In", Component: ModalDropIn },
+  { title: "Modal Elastic In", Component: ModalElasticIn },
+  { title: "Modal Expand In", Component: ModalExpandIn },
+  { title: "Modal Fade In", Component: ModalFadeIn },
+  { title: "Modal Fade Slide", Component: ModalFadeSlide },
+  { title: "Modal Flip In", Component: ModalFlipIn },
+  { title: "Modal Grow In", Component: ModalGrowIn },
+  { title: "Modal Grow Shrink", Component: ModalGrowShrink },
+  { title: "Modal Pop In", Component: ModalPopIn },
+  { title: "Modal Pulse In", Component: ModalPulseIn },
+  { title: "Modal Rotate In", Component: ModalRotateIn },
+  { title: "Modal Shake In", Component: ModalShakeIn },
+  { title: "Modal Shrink In", Component: ModalShrinkIn },
+  { title: "Modal Slide Left", Component: ModalSlideLeft },
+  { title: "Modal Slide Right", Component: ModalSlideRight },
+  { title: "Modal Slide Up", Component: ModalSlideUp },
+  { title: "Modal Swing In", Component: ModalSwingIn },
+  { title: "Modal Zoom In", Component: ModalZoomIn },
 ];

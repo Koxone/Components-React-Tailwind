@@ -12,6 +12,7 @@ import CardsContainer from "./components/containers/CardsContainer";
 import TogglesContainer from "./components/containers/TogglesContainer";
 import ModalComingSoon from "./components/feedback/ModalComingSoon";
 import TooltipsContainer from "./components/containers/TooltipsContainer";
+import ModalsContainer from "./components/containers/ModalsContainer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -32,7 +33,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         />
         <Route
           path="/modals"
-          element={<Layout content={<ModalComingSoon />} />}
+          element={<Layout content={<ModalsContainer />} />}
         />
         <Route
           path="/dropdowns"
