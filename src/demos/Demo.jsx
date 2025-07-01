@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import data from "/data.json";
 import CodeSnippet from "./CodeSnippet";
 import { useNavigate, useParams } from "react-router-dom";
@@ -41,12 +41,6 @@ function Demo() {
     inputComponent ||
     toggleComponent;
 
-  if (!componentData || !currentComponent) {
-    return (
-      <div className="p-8 text-center text-red-400">Component not found.</div>
-    );
-  }
-
   const navigate = useNavigate();
 
   const renderEffect = () => {
@@ -65,27 +59,60 @@ function Demo() {
     } else if (toggleComponent) {
       return <currentComponent.Component>Toggle Me</currentComponent.Component>;
     }
-
     return <currentComponent.Component />;
   };
 
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setShowModal(true);
+    }
+  }, []);
+
+  if (!componentData || !currentComponent) {
+    return (
+      <div className="p-8 text-center text-red-400">Component not found.</div>
+    );
+  }
+
   return (
-    <div className="grid grid-rows-[auto_1fr] items-center justify-center space-y-8 p-4">
+    <div className="relative grid grid-rows-[auto_1fr] items-center justify-center space-y-8 p-4">
       <button
         onClick={() => {
           sessionStorage.setItem("scrollToPosition", window.scrollY);
           navigate(-1);
         }}
-        className="absolute cursor-pointer rounded-lg border border-white p-3 text-white transition-all duration-300 ease-in-out hover:bg-blue-700 sm:top-7 sm:left-7"
+        className="absolute top-4 left-4 z-50 cursor-pointer rounded-lg border border-white bg-black/60 p-3 text-white transition-all duration-300 hover:bg-blue-700"
       >
         Go Back
       </button>
+
+      {showModal && (
+        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
+          <div className="max-w-sm rounded-lg bg-gray-800 p-6 text-center text-white shadow-lg">
+            <h2 className="mb-2 text-lg font-semibold">Heads Up</h2>
+            <p className="mb-4 text-sm text-gray-300">
+              This snippets view is not optimized for mobile devices. For the
+              best experience, please use a desktop.
+            </p>
+            <button
+              onClick={() => setShowModal(false)}
+              className="rounded bg-blue-600 px-4 py-2 text-sm font-medium transition hover:bg-blue-500"
+            >
+              Continue Anyway
+            </button>
+          </div>
+        </div>
+      )}
 
       <div className="flex max-h-60 max-w-60 justify-self-center">
         <MainCard
           svg="hidden"
           effect={renderEffect()}
-          url={`/demo/${encodeURIComponent(componentData.title.toLowerCase().replace(/\s+/g, "-"))}`}
+          url={`/demo/${encodeURIComponent(
+            componentData.title.toLowerCase().replace(/\s+/g, "-"),
+          )}`}
         />
       </div>
 
