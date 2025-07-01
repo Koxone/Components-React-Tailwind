@@ -1,5 +1,12 @@
 import { useLocation } from "react-router-dom";
-import { buttons, text, inputs, cards, toggles } from "../data/ComponentsData";
+import {
+  buttons,
+  text,
+  inputs,
+  cards,
+  toggles,
+  tooltips,
+} from "../data/ComponentsData";
 
 function CategorieCard({ type = "", path, onClick }) {
   const location = useLocation();
@@ -15,6 +22,8 @@ function CategorieCard({ type = "", path, onClick }) {
     count = cards.length;
   } else if (type.toLowerCase() === "toggles") {
     count = toggles.length;
+  } else if (type.toLowerCase() === "tooltips") {
+    count = tooltips.length;
   }
 
   // check if current route matches the menu

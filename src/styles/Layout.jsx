@@ -7,6 +7,8 @@ import "../styles/TextStyles.css";
 import "../styles/ButtonsStyles.css";
 import "../styles/CardsStyles.css";
 import "../styles/TogglesStyles.css";
+import "../styles/TooltipsStyles.css";
+import "../styles/ModalsStyles.css";
 
 function Layout({ content, Demo = false }) {
   const [isToggle, setIsToggle] = useState(false);
