@@ -1,10 +1,9 @@
 import { useState } from "react";
 import TogglesWrapper from "../wrapper/TogglesWrapper";
-
 export default function ToggleBounce() {
   const [on, setOn] = useState(false);
   return (
-    <TogglesWrapper>
+    <ToggleBounce>
       <button
         onClick={() => setOn(!on)}
         className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${
@@ -17,6 +16,6 @@ export default function ToggleBounce() {
           }`}
         />
       </button>
-    </TogglesWrapper>
+    </ToggleBounce>
   );
 }

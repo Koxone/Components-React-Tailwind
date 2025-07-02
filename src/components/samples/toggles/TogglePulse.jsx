@@ -1,6 +1,5 @@
 import { useState } from "react";
 import TogglesWrapper from "../wrapper/TogglesWrapper";
-
 export default function TogglePulse() {
   const [on, setOn] = useState(false);
   return (
