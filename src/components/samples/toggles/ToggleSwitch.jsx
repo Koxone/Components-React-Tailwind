@@ -1,6 +1,5 @@
 import { useState } from "react";
 import TogglesWrapper from "../wrapper/TogglesWrapper";
-
 export default function ToggleSwitch() {
   const [enabled, setEnabled] = useState(false);
   return (

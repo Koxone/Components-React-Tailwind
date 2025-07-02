@@ -1,6 +1,5 @@
 import { useState } from "react";
 import TogglesWrapper from "../wrapper/TogglesWrapper";
-
 import { CheckIcon, XIcon } from "@heroicons/react/solid";
 export default function ToggleIconInside() {
   const [on, setOn] = useState(false);

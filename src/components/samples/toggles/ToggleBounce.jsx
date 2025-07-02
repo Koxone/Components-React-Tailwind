@@ -1,6 +1,5 @@
 import { useState } from "react";
 import TogglesWrapper from "../wrapper/TogglesWrapper";
-
 export default function ToggleBounce() {
   const [on, setOn] = useState(false);
   return (
