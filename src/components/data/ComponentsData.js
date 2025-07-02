@@ -118,67 +118,76 @@ import {
   ToggleSwitch,
 } from "../samples/toggles";
 
-import TooltipArrow from "../samples/tooltips/TooltipArrow";
-import TooltipBlur from "../samples/tooltips/TooltipBlur";
-import TooltipBounce from "../samples/tooltips/TooltipBounce";
-import TooltipDelay from "../samples/tooltips/TooltipDelay";
-import TooltipDrop from "../samples/tooltips/TooltipDrop";
-import TooltipFade from "../samples/tooltips/TooltipFade";
-import TooltipFlip from "../samples/tooltips/TooltipFlip";
-import TooltipGradient from "../samples/tooltips/TooltipGradient";
-import TooltipGradientBorder from "../samples/tooltips/TooltipGradientBorder";
-import TooltipGlow from "../samples/tooltips/TooltipGlow";
-import TooltipIcon from "../samples/tooltips/TooltipIcon";
-import TooltipPulse from "../samples/tooltips/TooltipPulse";
-import TooltipScale from "../samples/tooltips/TooltipScale";
-import TooltipShadow from "../samples/tooltips/TooltipShadow";
-import TooltipSkew from "../samples/tooltips/TooltipSkew";
-import TooltipSlideUp from "../samples/tooltips/TooltipSlideUp";
-import TooltipSpin from "../samples/tooltips/TooltipSpin";
-import TooltipTextChange from "../samples/tooltips/TooltipTextChange";
-import TooltipZoom from "../samples/tooltips/TooltipZoom";
+// tooltips
+import {
+  TooltipArrow,
+  TooltipBlur,
+  TooltipBounce,
+  TooltipDelay,
+  TooltipDrop,
+  TooltipFade,
+  TooltipFlip,
+  TooltipGlow,
+  TooltipGradient,
+  TooltipGradientBorder,
+  TooltipIcon,
+  TooltipPulse,
+  TooltipScale,
+  TooltipShadow,
+  TooltipSkew,
+  TooltipSlideUp,
+  TooltipSpin,
+  TooltipTextChange,
+  TooltipZoom,
+} from "../samples/tooltips";
 
-import ModalBounceIn from "../samples/modals/ModalBounceIn";
-import ModalBounceSlide from "../samples/modals/ModalBounceSlide";
-import ModalDropIn from "../samples/modals/ModalDropIn";
-import ModalElasticIn from "../samples/modals/ModalElasticIn";
-import ModalExpandIn from "../samples/modals/ModalExpandIn";
-import ModalFadeIn from "../samples/modals/ModalFadeIn";
-import ModalFadeSlide from "../samples/modals/ModalFadeSlide";
-import ModalFlipIn from "../samples/modals/ModalFlipIn";
-import ModalGrowIn from "../samples/modals/ModalGrowIn";
-import ModalGrowShrink from "../samples/modals/ModalGrowShrink";
-import ModalPopIn from "../samples/modals/ModalPopIn";
-import ModalPulseIn from "../samples/modals/ModalPulseIn";
-import ModalRotateIn from "../samples/modals/ModalRotateIn";
-import ModalShakeIn from "../samples/modals/ModalShakeIn";
-import ModalShrinkIn from "../samples/modals/ModalShrinkIn";
-import ModalSlideLeft from "../samples/modals/ModalSlideLeft";
-import ModalSlideRight from "../samples/modals/ModalSlideRight";
-import ModalSlideUp from "../samples/modals/ModalSlideUp";
-import ModalSwingIn from "../samples/modals/ModalSwingIn";
-import ModalZoomIn from "../samples/modals/ModalZoomIn";
+// modals
+import {
+  ModalBounceIn,
+  ModalBounceSlide,
+  ModalDropIn,
+  ModalElasticIn,
+  ModalExpandIn,
+  ModalFadeIn,
+  ModalFadeSlide,
+  ModalFlipIn,
+  ModalGrowIn,
+  ModalGrowShrink,
+  ModalPopIn,
+  ModalPulseIn,
+  ModalRotateIn,
+  ModalShakeIn,
+  ModalShrinkIn,
+  ModalSlideLeft,
+  ModalSlideRight,
+  ModalSlideUp,
+  ModalSwingIn,
+  ModalZoomIn,
+} from "../samples/modals";
 
-import Slider3D from "../samples/sliders/Slider3D";
-import SliderAutoPlay from "../samples/sliders/SliderAutoPlay";
-import SliderBlur from "../samples/sliders/SliderBlur";
-import SliderCards from "../samples/sliders/SliderCards";
-import SliderCoverflow from "../samples/sliders/SliderCoverflow";
-import SliderDrag from "../samples/sliders/SliderDrag";
-import SliderFade from "../samples/sliders/SliderFade";
-import SliderFlip from "../samples/sliders/SliderFlip";
-import SliderGallery from "../samples/sliders/SliderGallery";
-import SliderHorizontal from "../samples/sliders/SliderHorizontal";
-import SliderLoop from "../samples/sliders/SliderLoop";
-import SliderOpacity from "../samples/sliders/SliderOpacity";
-import SliderParallax from "../samples/sliders/SliderParallax";
-import SliderProgress from "../samples/sliders/SliderProgress";
-import SliderRotate from "../samples/sliders/SliderRotate";
-import SliderScale from "../samples/sliders/SliderScale";
-import SliderSkew from "../samples/sliders/SliderSkew";
-import SliderSlide from "../samples/sliders/SliderSlide";
-import SliderVertical from "../samples/sliders/SliderVertical";
-import SliderZoom from "../samples/sliders/SliderZoom";
+// sliders
+import {
+  Slider3D,
+  SliderAutoPlay,
+  SliderBlur,
+  SliderCards,
+  SliderCoverflow,
+  SliderDrag,
+  SliderFade,
+  SliderFlip,
+  SliderGallery,
+  SliderHorizontal,
+  SliderLoop,
+  SliderOpacity,
+  SliderParallax,
+  SliderProgress,
+  SliderRotate,
+  SliderScale,
+  SliderSkew,
+  SliderSlide,
+  SliderVertical,
+  SliderZoom,
+} from "../samples/sliders";
 
 export const buttons = [
   { title: "Button Glow", Component: ButtonGlow },
