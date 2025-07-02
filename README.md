@@ -1,3 +1,8 @@
+## 👥 Contributors
+
+- [Koxone](https://github.com/Koxone) – Creator and maintainer
+- [BytePudding](https://github.com/puddingForever) – Contributor
+
 # ✨ Components Library – React + Tailwind CSS
 
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)

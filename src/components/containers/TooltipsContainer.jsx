@@ -1,0 +1,19 @@
+import MainCard from "../cards/MainCard";
+import { tooltips } from "../data/ComponentsData";
+
+function TooltipsContainer() {
+  return (
+    <div className="hide-scrollbar grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {tooltips.map(({ title, Component }, index) => (
+        <MainCard
+          key={index}
+          title={title}
+          effect={<Component />}
+          url={`/demo/${encodeURIComponent(title.toLowerCase().replace(/\s+/g, "-"))}`}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default TooltipsContainer;

@@ -1,0 +1,129 @@
+/* ========================================
+  Tooltip Drop
+  ======================================== */
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-dropIn {
+  animation: dropIn 0.3s ease-out forwards;
+}
+
+/* ========================================
+  Tooltip Fade
+  ======================================== */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* ========================================
+  Tooltip Gradient Border
+  ======================================== */
+
+.tooltip-gradient-border {
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  padding: 2px;
+  border-radius: 0.5rem;
+}
+
+.tooltip-gradient-border-inner {
+  background-color: #1e293b;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  color: white;
+  font-size: 0.875rem;
+}
+
+/* ========================================
+  Tooltip Scale
+  ======================================== */
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.2s ease-out forwards;
+}
+
+/* ========================================
+  Tooltip Scale
+  ======================================== */
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.25s ease-out forwards;
+}
+
+/* ========================================
+  Tooltip Spin
+  ======================================== */
+
+@keyframes spinIn {
+  0% {
+    transform: rotate(-180deg) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-spinIn {
+  animation: spinIn 0.4s ease-out forwards;
+}
+
+/* ========================================
+  Tooltip Zoom
+  ======================================== */
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-zoomIn {
+  animation: zoomIn 0.25s ease-out forwards;
+}
