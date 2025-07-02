@@ -4,9 +4,9 @@ import { buttons } from "../data/ComponentsData";
 function ButtonsContainer() {
   return (
     <div className="hide-scrollbar grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {buttons.map(({ title, Component }, index) => (
+      {buttons.map(({ title, Component, id }) => (
         <MainCard
-          key={index}
+          key={id}
           title={title}
           effect={<Component>Click Me</Component>}
           url={`/demo/${encodeURIComponent(title.toLowerCase().replace(/\s+/g, "-"))}`}

@@ -149,120 +149,121 @@
       "effectClass": "btn-border-glow px-4 py-2 rounded-md text-white text-xl border-2",
       "category": "Button",
       "componentCode": "function ButtonBorderGlow({ children }) {\n  return (\n    <button className=\"btn-border-glow px-4 py-2 rounded-md text-white text-xl border-2\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonBorderGlow;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonBorderGlow\n   ======================================== */\n/* Custom styles for ButtonBorderGlow */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"borderGlowLoop\": \"borderGlowLoop 2s infinite\"\n  },\n  \"keyframes\": {\n    \"borderGlowLoop\": {\n      \"0%, 100%\": { \"box-shadow\": \"0 0 5px #3b82f6\" },\n      \"50%\": { \"box-shadow\": \"0 0 20px #3b82f6\" }\n    }\n  }\n}",
+
+      "cssCode": "/* ========================================\n  Animation: Button Border Glow (LOOP)\n  ======================================== */\n@keyframes borderGlowLoop {\n  0%,\n  100% {\n    box-shadow: 0 0 5px #3b82f6;\n  }\n  50% {\n    box-shadow: 0 0 20px #3b82f6;\n  }\n}\n.btn-border-glow {\n  border: 2px solid #3b82f6;\n  background: transparent;\n  animation: borderGlowLoop 2s infinite;\n}"
     },
     {
       "title": "Button Bounce",
       "effectClass": "btn-bounce px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonBounce({ children }) {\n  return (\n    <button className=\"btn-bounce px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonBounce;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonBounce\n   ======================================== */\n/* Custom styles for ButtonBounce */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"bounceLoop\": \"bounceLoop 1s infinite\"\n  },\n  \"keyframes\": {\n    \"bounceLoop\": {\n      \"0%, 100%\": { \"transform\": \"translateY(0)\" },\n      \"50%\": { \"transform\": \"translateY(-5px)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Bounce (LOOP)\n  ======================================== */\n@keyframes bounceLoop {\n  0%,\n  100% {\n    transform: translateY(0);\n  }\n  50% {\n    transform: translateY(-5px);\n  }\n}\n.btn-bounce {\n  background: #2563eb;\n  animation: bounceLoop 1s infinite;\n}"
     },
     {
       "title": "Button Diagonal Slide",
       "effectClass": "btn-diagonal-slide text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonDiagonalSlide({ children }) {\n  return <button className=\"btn-diagonal-slide text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonDiagonalSlide;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonDiagonalSlide\n   ======================================== */\n/* Custom styles for ButtonDiagonalSlide */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"diagonalSlide\": \"diagonalSlide 3s infinite\"\n  },\n  \"keyframes\": {\n    \"diagonalSlide\": {\n      \"0%\": { \"transform\": \"translate(-100%, -100%)\" },\n      \"50%\": { \"transform\": \"translate(0, 0)\" },\n      \"100%\": { \"transform\": \"translate(-100%, -100%)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Diagonal Slide (LOOP)\n  ======================================== */\n@keyframes diagonalSlide {\n  0% {\n    transform: translate(-100%, -100%);\n  }\n  50% {\n    transform: translate(0, 0);\n  }\n  100% {\n    transform: translate(-100%, -100%);\n  }\n}\n.btn-diagonal-slide {\n  animation: diagonalSlide 3s infinite;\n  background: #3b82f6;\n}"
     },
     {
       "title": "Button Flash",
       "effectClass": "btn-flash text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonFlash({ children }) {\n  return <button className=\"btn-flash text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonFlash;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonFlash\n   ======================================== */\n/* Custom styles for ButtonFlash */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"flash\": \"flash 1.5s infinite\"\n  },\n  \"keyframes\": {\n    \"flash\": {\n      \"0%, 100%\": { \"opacity\": \"1\" },\n      \"50%\": { \"opacity\": \"0.1\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Flash (LOOP)\n  ======================================== */\n@keyframes flash {\n  0%,\n  100% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.1;\n  }\n}\n.btn-flash {\n  animation: flash 1.5s infinite;\n  background: #2563eb;\n}"
     },
     {
       "title": "Button Flip",
       "effectClass": "btn-flip text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonFlip({ children }) {\n  return <button className=\"btn-flip text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonFlip;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonFlip\n   ======================================== */\n/* Custom styles for ButtonFlip */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"flip\": \"flip 2s infinite\"\n  },\n  \"keyframes\": {\n    \"flip\": {\n      \"0%\": { \"transform\": \"rotateY(0)\" },\n      \"50%\": { \"transform\": \"rotateY(180deg)\" },\n      \"100%\": { \"transform\": \"rotateY(0)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Flip (LOOP)\n  ======================================== */\n@keyframes flip {\n  0% {\n    transform: rotateY(0);\n  }\n  50% {\n    transform: rotateY(180deg);\n  }\n  100% {\n    transform: rotateY(0);\n  }\n}\n.btn-flip {\n  animation: flip 2s infinite;\n  background: #3b82f6;\n}"
     },
     {
       "title": "Button Glow",
       "effectClass": "btn-glow px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonGlow({ children }) {\n  return (\n    <button className=\"btn-glow px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonGlow;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonGlow\n   ======================================== */\n/* Custom styles for ButtonGlow */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"glowLoop\": \"glowLoop 2s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"glowLoop\": {\n      \"0%, 100%\": { \"box-shadow\": \"0 0 10px #1d4ed8, 0 0 20px #1d4ed8\" },\n      \"50%\": { \"box-shadow\": \"0 0 20px #1d4ed8, 0 0 40px #1d4ed8\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Glow (LOOP)\n  ======================================== */\n@keyframes glowLoop {\n  0%,\n  100% {\n    box-shadow:\n      0 0 10px #1d4ed8,\n      0 0 20px #1d4ed8;\n  }\n  50% {\n    box-shadow:\n      0 0 20px #1d4ed8,\n      0 0 40px #1d4ed8;\n  }\n}\n.btn-glow {\n  background: #1d4ed8;\n  animation: glowLoop 2s ease-in-out infinite;\n}"
     },
     {
       "title": "Button Glow Border",
       "effectClass": "btn-glow-border text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonGlowBorder({ children }) {\n  return <button className=\"btn-glow-border text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonGlowBorder;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonGlowBorder\n   ======================================== */\n/* Custom styles for ButtonGlowBorder */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"glowBorder\": \"glowBorder 2s infinite\"\n  },\n  \"keyframes\": {\n    \"glowBorder\": {\n      \"0%, 100%\": { \"box-shadow\": \"0 0 5px #9333ea\" },\n      \"50%\": { \"box-shadow\": \"0 0 15px #9333ea\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Glow Border (LOOP)\n  ======================================== */\n@keyframes glowBorder {\n  0%,\n  100% {\n    box-shadow: 0 0 5px #9333ea;\n  }\n  50% {\n    box-shadow: 0 0 15px #9333ea;\n  }\n}\n.btn-glow-border {\n  border: 2px solid #9333ea;\n  animation: glowBorder 2s infinite;\n  background: transparent;\n}"
     },
     {
       "title": "Button Gradient Shift",
       "effectClass": "btn-gradient-shift px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonGradientShift({ children }) {\n  return (\n    <button className=\"btn-gradient-shift px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonGradientShift;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonGradientShift\n   ======================================== */\n/* Custom styles for ButtonGradientShift */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"gradientShiftLoop\": \"gradientShiftLoop 5s ease infinite\"\n  },\n  \"keyframes\": {\n    \"gradientShiftLoop\": {\n      \"0%\": { \"background-position\": \"0% 50%\" },\n      \"50%\": { \"background-position\": \"100% 50%\" },\n      \"100%\": { \"background-position\": \"0% 50%\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Gradient Shift (LOOP)\n  ======================================== */\n@keyframes gradientShiftLoop {\n  0% {\n    background-position: 0% 50%;\n  }\n  50% {\n    background-position: 100% 50%;\n  }\n  100% {\n    background-position: 0% 50%;\n  }\n}\n.btn-gradient-shift {\n  background: linear-gradient(270deg, #3b82f6, #9333ea, #3b82f6);\n  background-size: 400% 400%;\n  animation: gradientShiftLoop 5s ease infinite;\n}"
     },
     {
       "title": "Button Heartbeat",
       "effectClass": "btn-heartbeat text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonHeartbeat({ children }) {\n  return <button className=\"btn-heartbeat text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonHeartbeat;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonHeartbeat\n   ======================================== */\n/* Custom styles for ButtonHeartbeat */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"heartbeat\": \"heartbeat 1.5s infinite\"\n  },\n  \"keyframes\": {\n    \"heartbeat\": {\n      \"0%, 100%\": { \"transform\": \"scale(1)\" },\n      \"14%\": { \"transform\": \"scale(1.3)\" },\n      \"28%\": { \"transform\": \"scale(1)\" },\n      \"42%\": { \"transform\": \"scale(1.3)\" },\n      \"70%\": { \"transform\": \"scale(1)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Heartbeat (LOOP)\n  ======================================== */\n@keyframes heartbeat {\n  0%,\n  100% {\n    transform: scale(1);\n  }\n  14% {\n    transform: scale(1.3);\n  }\n  28% {\n    transform: scale(1);\n  }\n  42% {\n    transform: scale(1.3);\n  }\n  70% {\n    transform: scale(1);\n  }\n}\n.btn-heartbeat {\n  animation: heartbeat 1.5s infinite;\n  background: #2563eb;\n}"
     },
     {
       "title": "Button Pulse",
       "effectClass": "btn-pulse px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonPulse({ children }) {\n  return (\n    <button className=\"btn-pulse px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonPulse;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonPulse\n   ======================================== */\n/* Custom styles for ButtonPulse */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"pulseLoop\": \"pulseLoop 2s infinite\"\n  },\n  \"keyframes\": {\n    \"pulseLoop\": {\n      \"0%, 100%\": { \"transform\": \"scale(1)\" },\n      \"50%\": { \"transform\": \"scale(1.05)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Pulse (LOOP)\n  ======================================== */\n@keyframes pulseLoop {\n  0%,\n  100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.05);\n  }\n}\n.btn-pulse {\n  background: #2563eb;\n  animation: pulseLoop 2s infinite;\n}"
     },
     {
       "title": "Button Ripple",
       "effectClass": "btn-ripple px-4 py-2 rounded-md text-white text-xl overflow-hidden relative",
       "category": "Button",
       "componentCode": "function ButtonRipple({ children }) {\n  return (\n    <button className=\"btn-ripple px-4 py-2 rounded-md text-white text-xl overflow-hidden relative\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonRipple;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonRipple\n   ======================================== */\n/* Custom styles for ButtonRipple */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"rippleLoop\": \"rippleLoop 2s infinite\"\n  },\n  \"keyframes\": {\n    \"rippleLoop\": {\n      \"0%\": { \"box-shadow\": \"0 0 0 0 rgba(255, 255, 255, 0.4)\" },\n      \"50%\": { \"box-shadow\": \"0 0 0 10px rgba(255, 255, 255, 0)\" },\n      \"100%\": { \"box-shadow\": \"0 0 0 0 rgba(255, 255, 255, 0)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Ripple (LOOP)\n  ======================================== */\n@keyframes rippleLoop {\n  0% {\n    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);\n  }\n  50% {\n    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);\n  }\n  100% {\n    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);\n  }\n}\n.btn-ripple {\n  background: #1d4ed8;\n  animation: rippleLoop 2s infinite;\n}"
     },
     {
       "title": "Button Rotate",
       "effectClass": "btn-rotate text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonRotate({ children }) {\n  return <button className=\"btn-rotate text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonRotate;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonRotate\n   ======================================== */\n/* Custom styles for ButtonRotate */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"rotate\": \"rotate 3s infinite linear\"\n  },\n  \"keyframes\": {\n    \"rotate\": {\n      \"0%\": { \"transform\": \"rotate(0)\" },\n      \"50%\": { \"transform\": \"rotate(180deg)\" },\n      \"100%\": { \"transform\": \"rotate(0)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Rotate (LOOP)\n  ======================================== */\n@keyframes rotate {\n  0% {\n    transform: rotate(0);\n  }\n  50% {\n    transform: rotate(180deg);\n  }\n  100% {\n    transform: rotate(0);\n  }\n}\n.btn-rotate {\n  animation: rotate 3s infinite linear;\n  background: #1d4ed8;\n}"
     },
     {
       "title": "Button Scale",
       "effectClass": "btn-scale px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonScale({ children }) {\n  return (\n    <button className=\"btn-scale px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonScale;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonScale\n   ======================================== */\n/* Custom styles for ButtonScale */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"scaleLoopBtn\": \"scaleLoopBtn 1.5s infinite\"\n  },\n  \"keyframes\": {\n    \"scaleLoopBtn\": {\n      \"0%, 100%\": { \"transform\": \"scale(1)\" },\n      \"50%\": { \"transform\": \"scale(1.1)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Scale (LOOP)\n  ======================================== */\n@keyframes scaleLoopBtn {\n  0%,\n  100% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.1);\n  }\n}\n.btn-scale {\n  background: #3b82f6;\n  animation: scaleLoopBtn 1.5s infinite;\n}"
     },
     {
       "title": "Button Shadow Pulse",
       "effectClass": "btn-shadow-pulse text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonShadowPulse({ children }) {\n  return <button className=\"btn-shadow-pulse text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonShadowPulse;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonShadowPulse\n   ======================================== */\n/* Custom styles for ButtonShadowPulse */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"shadowPulse\": \"shadowPulse 2s infinite\"\n  },\n  \"keyframes\": {\n    \"shadowPulse\": {\n      \"0%, 100%\": { \"box-shadow\": \"0 0 5px #3b82f6\" },\n      \"50%\": { \"box-shadow\": \"0 0 20px #3b82f6\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Shadow Pulse (LOOP)\n  ======================================== */\n@keyframes shadowPulse {\n  0%,\n  100% {\n    box-shadow: 0 0 5px #3b82f6;\n  }\n  50% {\n    box-shadow: 0 0 20px #3b82f6;\n  }\n}\n.btn-shadow-pulse {\n  animation: shadowPulse 2s infinite;\n  background: #3b82f6;\n}"
     },
     {
       "title": "Button Shimmer",
       "effectClass": "btn-shimmer text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonShimmer({ children }) {\n  return <button className=\"btn-shimmer text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonShimmer;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonShimmer\n   ======================================== */\n/* Custom styles for ButtonShimmer */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"shimmer\": \"shimmer 4s infinite\"\n  },\n  \"keyframes\": {\n    \"shimmer\": {\n      \"0%\": { \"background-position\": \"-200% 0\" },\n      \"100%\": { \"background-position\": \"200% 0\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Shimmer (LOOP)\n  ======================================== */\n@keyframes shimmer {\n  0% {\n    background-position: -200% 0;\n  }\n  100% {\n    background-position: 200% 0;\n  }\n}\n.btn-shimmer {\n  background: linear-gradient(270deg, #3b82f6, #9333ea, #3b82f6);\n  background-size: 400% 400%;\n  animation: shimmer 4s infinite;\n}"
     },
     {
       "title": "Button Shooting Star Border",
@@ -270,31 +271,31 @@
       "category": "Button",
       "componentCode": "export default function ButtonShootingStarBorder() {\n  return (\n    <button className=\"button-shooting-star group relative grid overflow-hidden rounded-full px-4 py-2 shadow-[inset_0_1000px_0_0_hsl(0_0%_20%)] transition-colors duration-200\">\n      <span className=\"spark absolute inset-0 h-full w-full animate-[flip_6s_steps(2,end)_infinite] before:absolute before:inset-0 before:animate-[rotate_3s_linear_infinite]\"></span>\n      <span className=\"absolute inset-[3px] rounded-full bg-blue-600 transition-colors duration-200 group-hover:bg-neutral-800\"></span>\n      <span className=\"relative z-10 py-0.5 text-lg text-neutral-100\">\n        Hover Me!\n      </span>\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonShootingStarBorder\n   ======================================== */\n/* Custom styles for ButtonShootingStarBorder */"
+      "cssCode": "/* ========================================\n  Animation: Shooting Star Border (Non-Tailwind)\n  ======================================== */\n.button-shooting-star .spark {\n  -webkit-mask-image: linear-gradient(white, transparent 50%);\n  mask-image: linear-gradient(white, transparent 50%);\n}\n\n.button-shooting-star .spark::before {\n  content: \"\";\n  position: absolute;\n  aspect-ratio: 1 / 1;\n  width: 200%;\n  background: conic-gradient(from 0deg, transparent 0deg 340deg, white 360deg);\n  left: 50%;\n  top: -15%;\n  transform: translateX(-50%);\n  border-radius: 50%;\n}"
     },
     {
       "title": "Button Slide In",
       "effectClass": "btn-slide-in px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonSlideIn({ children }) {\n  return (\n    <button className=\"btn-slide-in px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonSlideIn;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonSlideIn\n   ======================================== */\n/* Custom styles for ButtonSlideIn */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"slideInClipLoop\": \"slideInClipLoop 3s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"slideInClipLoop\": {\n      \"0%\": { \"clip-path\": \"inset(0 100% 0 0)\" },\n      \"50%\": { \"clip-path\": \"inset(0 0 0 0)\" },\n      \"100%\": { \"clip-path\": \"inset(0 100% 0 0)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Slide In Loop (Clip)\n  ======================================== */\n@keyframes slideInClipLoop {\n  0% {\n    clip-path: inset(0 100% 0 0);\n  }\n  50% {\n    clip-path: inset(0 0 0 0);\n  }\n  100% {\n    clip-path: inset(0 100% 0 0);\n  }\n}\n.btn-slide-in {\n  background: #3b82f6;\n  animation: slideInClipLoop 3s ease-in-out infinite;\n}"
     },
     {
       "title": "Button Slide Out",
       "effectClass": "btn-slide-out px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonSlideOut({ children }) {\n  return (\n    <button className=\"btn-slide-out px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonSlideOut;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonSlideOut\n   ======================================== */\n/* Custom styles for ButtonSlideOut */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"slideOutClipLoop\": \"slideOutClipLoop 3s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"slideOutClipLoop\": {\n      \"0%\": { \"clip-path\": \"inset(0 0 0 100%)\" },\n      \"50%\": { \"clip-path\": \"inset(0 0 0 0)\" },\n      \"100%\": { \"clip-path\": \"inset(0 0 0 100%)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Slide Out Loop (Clip)\n  ======================================== */\n@keyframes slideOutClipLoop {\n  0% {\n    clip-path: inset(0 0 0 100%);\n  }\n  50% {\n    clip-path: inset(0 0 0 0);\n  }\n  100% {\n    clip-path: inset(0 0 0 100%);\n  }\n}\n.btn-slide-out {\n  background: #3b82f6;\n  animation: slideOutClipLoop 3s ease-in-out infinite;\n}"
     },
     {
       "title": "Button Swing",
       "effectClass": "btn-swing text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonSwing({ children }) {\n  return <button className=\"btn-swing text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonSwing;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonSwing\n   ======================================== */\n/* Custom styles for ButtonSwing */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"swing\": \"swing 2s infinite\"\n  },\n  \"keyframes\": {\n    \"swing\": {\n      \"0%\": { \"transform\": \"rotate(0)\" },\n      \"25%\": { \"transform\": \"rotate(10deg)\" },\n      \"50%\": { \"transform\": \"rotate(-10deg)\" },\n      \"75%\": { \"transform\": \"rotate(5deg)\" },\n      \"100%\": { \"transform\": \"rotate(0)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Swing (LOOP)\n  ======================================== */\n@keyframes swing {\n  0% {\n    transform: rotate(0);\n  }\n  25% {\n    transform: rotate(10deg);\n  }\n  50% {\n    transform: rotate(-10deg);\n  }\n  75% {\n    transform: rotate(5deg);\n  }\n  100% {\n    transform: rotate(0);\n  }\n}\n.btn-swing {\n  animation: swing 2s infinite;\n  background: #2563eb;\n}"
     },
     {
       "title": "Button Symbion",
@@ -302,23 +303,23 @@
       "category": "Button",
       "componentCode": "export default function ButtonSymbion() {\n  return (\n    <div className=\"button-symbion-wrapper relative flex h-full w-full items-center justify-center\">\n      <button className=\"button-symbion relative inline-flex items-center justify-center rounded-xl bg-white px-6 py-4 text-xl font-bold text-black\">\n        Hover me\n        <div className=\"bubble-symbion absolute flex h-16 w-16 items-center justify-center rounded-xl bg-white\">\n          <svg\n            width=\"15\"\n            height=\"15\"\n            viewBox=\"0 0 15 15\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n            className=\"h-8 w-8 text-white\"\n          >\n            <path\n              d=\"M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z\"\n              fill=\"currentColor\"\n              fillRule=\"evenodd\"\n              clipRule=\"evenodd\"\n            ></path>\n          </svg>\n        </div>\n      </button>\n\n      <svg\n        className=\"absolute hidden\"\n        width=\"0\"\n        height=\"0\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n      >\n        <defs>\n          <filter id=\"symbion\">\n            <feGaussianBlur\n              in=\"SourceGraphic\"\n              stdDeviation=\"10\"\n              result=\"blur\"\n            />\n            <feColorMatrix\n              in=\"blur\"\n              mode=\"matrix\"\n              values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10\"\n              result=\"symbion\"\n            />\n            <feComposite in=\"SourceGraphic\" in2=\"symbion\" operator=\"atop\" />\n          </filter>\n        </defs>\n      </svg>\n    </div>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonSymbion\n   ======================================== */\n/* Custom styles for ButtonSymbion */"
+      "cssCode": "/* ========================================\n  Animation: Gooey Button (Non-Tailwind)\n  ======================================== */\n.button-symbion-wrapper {\n  filter: url(\"#symbion\");\n}\n\n.bubble-symbion {\n  z-index: -10;\n  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2);\n  transform: translateX(80%);\n}\n\n.button-symbion:hover .bubble-symbion {\n  transform: translateX(180%);\n}"
     },
     {
       "title": "Button Tilt",
       "effectClass": "btn-tilt text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonTilt({ children }) {\n  return <button className=\"btn-tilt text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonTilt;",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonTilt\n   ======================================== */\n/* Custom styles for ButtonTilt */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"tilt\": \"tilt 2s infinite\"\n  },\n  \"keyframes\": {\n    \"tilt\": {\n      \"0%\": { \"transform\": \"rotateZ(0deg)\" },\n      \"50%\": { \"transform\": \"rotateZ(5deg)\" },\n      \"100%\": { \"transform\": \"rotateZ(0deg)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Tilt (LOOP)\n  ======================================== */\n@keyframes tilt {\n  0% {\n    transform: rotateZ(0deg);\n  }\n  50% {\n    transform: rotateZ(5deg);\n  }\n  100% {\n    transform: rotateZ(0deg);\n  }\n}\n.btn-tilt {\n  animation: tilt 2s infinite;\n  background: #1d4ed8;\n}"
     },
     {
       "title": "Button Wiggle",
       "effectClass": "btn-wiggle px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonWiggle({ children }) {\n  return (\n    <button className=\"btn-wiggle px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonWiggle;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: ButtonWiggle\n   ======================================== */\n/* Custom styles for ButtonWiggle */"
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"wiggleLoop\": \"wiggleLoop 0.5s infinite\"\n  },\n  \"keyframes\": {\n    \"wiggleLoop\": {\n      \"0%, 100%\": { \"transform\": \"rotate(-3deg)\" },\n      \"50%\": { \"transform\": \"rotate(3deg)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: Button Wiggle (LOOP)\n  ======================================== */\n@keyframes wiggleLoop {\n  0%,\n  100% {\n    transform: rotate(-3deg);\n  }\n  50% {\n    transform: rotate(3deg);\n  }\n}\n.btn-wiggle {\n  background: #2563eb;\n  animation: wiggleLoop 0.5s infinite;\n}"
     },
     {
       "title": "Input Animated Gradient Border",
@@ -564,9 +565,9 @@
       "title": "Card Glitch Hover Effect",
       "effectClass": "relative flex h-[200px] w-[200px] items-center justify-center overflow-hidden rounded-lg border bg-black text-xl font-bold text-white",
       "category": "Card",
-      "componentCode": "import React, { useState, useEffect } from \"react\";\n\nfunction CardGlitchHoverEffect() {\n  const [glitchStyle, setGlitchStyle] = useState({});\n\n  useEffect(() => {\n    let interval;\n    const glitch = () => {\n      const translateX = Math.random() * 8 - 4; // -4 to 4 px\n      const translateY = Math.random() * 8 - 4;\n      const skewX = Math.random() * 10 - 5; // -5 to 5 deg\n      const skewY = Math.random() * 10 - 5;\n\n      setGlitchStyle({\n        transform: `translate(${translateX}px, ${translateY}px) skew(${skewX}deg, ${skewY}deg)`,\n      });\n    };\n\n    interval = setInterval(glitch, 100);\n\n    return () => clearInterval(interval);\n  }, []);\n\n  return (\n    <div className=\"relative flex h-[200px] w-[200px] items-center justify-center overflow-hidden rounded-lg border bg-black text-xl font-bold text-white\">\n      <span className=\"absolute text-white\" style={glitchStyle}>\n        GLITCH\n      </span>\n      <span className=\"text-white opacity-30\">GLITCH</span>\n    </div>\n  );\n}\n\nexport default CardGlitchHoverEffect;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: CardGlitchHoverEffect\n   ======================================== */\n/* Custom styles for CardGlitchHoverEffect */"
+      "componentCode": "import React, { useState, useEffect } from \"react\";\n\nfunction CardGlitchHoverEffect() {\n  const [glitchStyle, setGlitchStyle] = useState({});\n\n  useEffect(() => {\n    let interval;\n    const glitch = () => {\n      const translateX = Math.random() * 8 - 4;\n      const translateY = Math.random() * 8 - 4;\n      const skewX = Math.random() * 10 - 5;\n      const skewY = Math.random() * 10 - 5;\n      setGlitchStyle({ transform: `translate(${translateX}px, ${translateY}px) skew(${skewX}deg, ${skewY}deg)` });\n    };\n    interval = setInterval(glitch, 100);\n    return () => clearInterval(interval);\n  }, []);\n\n  return (\n    <div className=\"relative flex h-[200px] w-[200px] items-center justify-center overflow-hidden rounded-lg border bg-black text-xl font-bold text-white\">\n      <span className=\"absolute text-white\" style={glitchStyle}>GLITCH</span>\n      <span className=\"text-white opacity-30\">GLITCH</span>\n    </div>\n  );\n}\n\nexport default CardGlitchHoverEffect;",
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"glitch\": \"glitch 0.5s infinite\"\n  },\n  \"keyframes\": {\n    \"glitch\": {\n      \"0%\": { \"clip-path\": \"inset(0 0 0 0)\" },\n      \"20%\": { \"clip-path\": \"inset(10% 0 10% 0)\" },\n      \"40%\": { \"clip-path\": \"inset(0 10% 0 10%)\" },\n      \"60%\": { \"clip-path\": \"inset(10% 10% 10% 10%)\" },\n      \"80%\": { \"clip-path\": \"inset(0 0 0 0)\" },\n      \"100%\": { \"clip-path\": \"inset(0 0 0 0)\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: CardGlitchHoverEffect\n  ======================================== */\n@keyframes glitch {\n  0% { clip-path: inset(0 0 0 0); }\n  20% { clip-path: inset(10% 0 10% 0); }\n  40% { clip-path: inset(0 10% 0 10%); }\n  60% { clip-path: inset(10% 10% 10% 10%); }\n  80% { clip-path: inset(0 0 0 0); }\n  100% { clip-path: inset(0 0 0 0); }\n}\n\n.animate-glitch {\n  animation: glitch 0.5s infinite;\n}"
     },
     {
       "title": "Card Hover Gradient Border Animation",
@@ -580,9 +581,9 @@
       "title": "Card Hover Ripple Wave",
       "effectClass": "relative flex h-[200px] w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-blue-600 font-bold text-white select-none",
       "category": "Card",
-      "componentCode": "import React, { useRef } from \"react\";\n\nfunction CardHoverRippleWave() {\n  const containerRef = useRef(null);\n\n  const handleClick = (e) => {\n    const container = containerRef.current;\n    const circle = document.createElement(\"span\");\n\n    const diameter = Math.max(container.clientWidth, container.clientHeight);\n    const radius = diameter / 2;\n\n    circle.style.width = circle.style.height = `${diameter}px`;\n    circle.style.left = `${e.clientX - container.getBoundingClientRect().left - radius}px`;\n    circle.style.top = `${e.clientY - container.getBoundingClientRect().top - radius}px`;\n    circle.style.position = \"absolute\";\n    circle.style.borderRadius = \"50%\";\n    circle.style.backgroundColor = \"rgba(255, 255, 255, 0.4)\";\n    circle.style.transform = \"scale(0)\";\n    circle.style.animation = \"rippleEffect 0.6s linear\";\n    circle.style.pointerEvents = \"none\";\n\n    container.appendChild(circle);\n\n    circle.addEventListener(\"animationend\", () => {\n      circle.remove();\n    });\n  };\n\n  return (\n    <div\n      ref={containerRef}\n      onClick={handleClick}\n      className=\"relative flex h-[200px] w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-blue-600 font-bold text-white select-none\"\n    >\n      Click Me!\n    </div>\n  );\n}\n\nexport default CardHoverRippleWave;\n",
-      "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
-      "cssCode": "/* ========================================\n   Animation: CardHoverRippleWave\n   ======================================== */\n/* Custom styles for CardHoverRippleWave */"
+      "componentCode": "import React, { useRef } from \"react\";\n\nfunction CardHoverRippleWave() {\n  const containerRef = useRef(null);\n\n  const handleClick = (e) => {\n    const container = containerRef.current;\n    const circle = document.createElement(\"span\");\n    const diameter = Math.max(container.clientWidth, container.clientHeight);\n    const radius = diameter / 2;\n    circle.style.width = circle.style.height = `${diameter}px`;\n    circle.style.left = `${e.clientX - container.getBoundingClientRect().left - radius}px`;\n    circle.style.top = `${e.clientY - container.getBoundingClientRect().top - radius}px`;\n    circle.style.position = \"absolute\";\n    circle.style.borderRadius = \"50%\";\n    circle.style.backgroundColor = \"rgba(255, 255, 255, 0.4)\";\n    circle.style.transform = \"scale(0)\";\n    circle.style.animation = \"rippleEffect 0.6s linear\";\n    circle.style.pointerEvents = \"none\";\n    container.appendChild(circle);\n    circle.addEventListener(\"animationend\", () => { circle.remove(); });\n  };\n\n  return (\n    <div ref={containerRef} onClick={handleClick} className=\"relative flex h-[200px] w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-blue-600 font-bold text-white select-none\">\n      Click Me!\n    </div>\n  );\n}\n\nexport default CardHoverRippleWave;",
+      "tailwindConfigCode": "{\n  \"animation\": {\n    \"rippleEffect\": \"rippleEffect 0.6s ease-out forwards\"\n  },\n  \"keyframes\": {\n    \"rippleEffect\": {\n      \"to\": { \"transform\": \"scale(4)\", \"opacity\": \"0\" }\n    }\n  }\n}",
+      "cssCode": "/* ========================================\n  Animation: CardHoverRippleWave\n  ======================================== */\n@keyframes rippleEffect {\n  to {\n    transform: scale(4);\n    opacity: 0;\n  }\n}"
     },
     {
       "title": "Card Image Parallax Hover",
