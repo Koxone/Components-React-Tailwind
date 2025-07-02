@@ -6,6 +6,8 @@ import {
   cards,
   toggles,
   tooltips,
+  modals,
+  sliders,
 } from "../data/ComponentsData";
 
 function CategorieCard({ type = "", path, onClick }) {
@@ -24,9 +26,12 @@ function CategorieCard({ type = "", path, onClick }) {
     count = toggles.length;
   } else if (type.toLowerCase() === "tooltips") {
     count = tooltips.length;
+  } else if (type.toLowerCase() === "modals") {
+    count = modals.length;
+  } else if (type.toLowerCase() === "sliders") {
+    count = sliders.length;
   }
 
-  // check if current route matches the menu
   const isActive = location.pathname === path;
 
   return (
