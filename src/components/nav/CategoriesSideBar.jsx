@@ -11,7 +11,7 @@ function CategoriesSideBar() {
   };
 
   const baseButtonClass =
-    "group inline-flex cursor-pointer items-center justify-center border gap-1 border-gray-600 bg-gray-700 p-2 text-sm font-medium text-gray-100 hover:bg-gray-900 hover:text-blue-600 focus:z-10 focus:ring-2 focus:ring-blue-500";
+    "group inline-flex items-center justify-center border gap-1 border-gray-600 bg-gray-700 p-2 text-sm font-medium text-gray-100 hover:bg-gray-900 hover:text-blue-600 focus:z-10 focus:ring-2 focus:ring-blue-500";
   const activeClass = "text-blue-600 ring-2 ring-blue-500 bg-gray-900";
 
   const menuItems = [
@@ -44,7 +44,7 @@ function CategoriesSideBar() {
               id="categorieTailwind"
               type="button"
               onClick={() => handleButtonClick("tailwind")}
-              className={`${baseButtonClass} rounded-l-lg ${
+              className={`${baseButtonClass} cursor-pointer rounded-l-lg ${
                 activeButton === "tailwind" ? activeClass : ""
               }`}
             >
@@ -62,8 +62,9 @@ function CategoriesSideBar() {
             <button
               id="categorieReact"
               type="button"
+              disabled
               onClick={() => handleButtonClick("react")}
-              className={`${baseButtonClass} rounded-r-lg px-4 py-2 ${
+              className={`${baseButtonClass} cursor-not-allowed rounded-r-lg px-4 py-2 opacity-50 ${
                 activeButton === "react" ? activeClass : ""
               }`}
             >
