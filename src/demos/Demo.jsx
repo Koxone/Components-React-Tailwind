@@ -5,6 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import MainCard from "../components/cards/MainCard";
 import KoxlandCli from "./KoxlandCli";
 import npxButtons from "../utils/npx/buttons.json";
+import npxTexts from "../utils/npx/texts.json";
 import {
   buttons,
   text,
@@ -78,7 +79,10 @@ function Demo() {
     );
   }
 
-  const koxlandNpxCommand = npxButtons[currentComponent.title] || "";
+  const koxlandNpxCommand =
+    npxButtons[currentComponent.title] ||
+    npxTexts[currentComponent.title] ||
+    "";
 
   return (
     <div className="relative grid grid-rows-[auto_1fr] items-center justify-center space-y-8 overflow-hidden p-4 md:overflow-visible">
