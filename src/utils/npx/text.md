@@ -1,0 +1,37 @@
+//text
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/c81f301c3bbea18862129e90e92178ca/raw/03d1846a61783b7a881e860b39b11c13089c90b0/text-animated-gradient.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/b4720f10510d98068db6712fd7757c78/raw/0b3aa9a6ca4537e832e808b4950159ee937749ad/text-animation-horizontal.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/daf9731f626d3cc2f0b5ad9a7454489d/raw/e29180084bdab0525d334fc61d1e897809845dfa/text-bounce.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/c84ac81cda6dc239832ce212e0db7a07/raw/749905ea9b6db0ac5ff4585619a5f68075e6703f/text-color-cycle.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/a76c069b570802baad981d87cf275490/raw/7831e83bf7ceceb9a686b289798c4730820da0e0/text-fade-in.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/b6ac0719d043bfe6bbdd9152ddb572c2/raw/35409c9a407afcbe80f321e433ed3996d2213c31/text-fade-loop.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/8a404938d0fa3fa9e70d1b95e88c75d0/raw/5aa2488ab1dc36e772c4642934fce7b8b26f88d6/text-pulse.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/52351a7de203728b7fc354b38b54c434/raw/a569898de97de354849dc9f2eb41d351225f2c9b/text-rotate.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/5b7871a647e826ed6e0fce36474828a7/raw/3e5880d1556538cd45467b4240347a134eb54262/text-scale-loop.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/9cd38c13be5d4e2f3aa024d3f4b96274/raw/594fe1b9faac3d28c11f5d67258f007535881ce6/text-scale-pulse.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/1e3c92eca48c1ef25232a15d6ef4abf3/raw/154ffc63317c8dc106f4bd56cc298930ab9b1877/text-shine.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/3c48251069b3706c16fd5856a6f62ad1/raw/6ef7e5b970ccba0599d93478285cdc152913af60/text-skew-loop.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/9a470b6d23cccf90ad5fc8953c415197/raw/e57127a46a02bb75f01064ff42a0c953f32cbca7/text-slide-in-left.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/e657b39f0c70a9d4d24dc253ac37fc1c/raw/df0bf16422ccdb6a9cd0c2f97a4787332a87321c/text-slide-in-right.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/2850481f509b5989f4fe705831afafeb/raw/4eb158485e49a4c1cd7e8f61481cd506a540671e/text-spin-loop.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/a5e5a64b62abb65f6ea7250477bb2d21/raw/d19a157282442169d7e84920d203880d16f57bfc/text-typewriter.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/d62c46366d8f37c6f7602d4147c56afe/raw/d2319453c189260be983f3dd8fd573dffc83e86e/text-wave.json
+
+npx koxlandui add https://gist.githubusercontent.com/Koxone/77c5b58e67f8b5735898c678c34c0991/raw/758916fb4122ba216dfaeeeb225ae708aca1111e/text-wiggle.json

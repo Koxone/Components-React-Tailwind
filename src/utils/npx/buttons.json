@@ -1,0 +1,23 @@
+{
+  "Button Border Glow": "npx koxlandui add https://gist.githubusercontent.com/Koxone/8d405e182585375f0f23661e20940c68/raw/617fc221b0b92489b40b3e42abf21bd27191fcf0/button-border-glow.json",
+  "Button Bounce": "npx koxlandui add https://gist.githubusercontent.com/Koxone/d12aba3b75cdccbdba0694925728da5f/raw/e116f9c6e75b60789e1ee82332bca83c4619bee6/button-bounce.json",
+  "Button Diagonal Slide": "npx koxlandui add https://gist.githubusercontent.com/Koxone/e27301636b15620338695924215a454d/raw/f6ff06be5b4160d51a35f50199af3a4fbea2c7e1/button-diagonal-slide.json",
+  "Button Flip": "npx koxlandui add https://gist.githubusercontent.com/Koxone/9e496187f3f8092483cf89dc83aec78a/raw/661ab3a735ae3bf3e441975c416610caffea398f/button-flip.json",
+  "Button Glow": "npx koxlandui add https://gist.githubusercontent.com/Koxone/f236dd2ed8ef853d5aa153cfbeabceb1/raw/36224963a219747f503b41793becf4d06a9a9d6a/button-glow.json",
+  "Button Glow Border": "npx koxlandui add https://gist.githubusercontent.com/Koxone/79d9303787e38c1f38a182ccd30f46d6/raw/0103d9fe09fa9302eb309002de58d267f0137bd5/button-glow-border.json",
+  "Button Gradient Shift": "npx koxlandui add https://gist.githubusercontent.com/Koxone/502f556372dae07ce020039e4bd35db0/raw/15b4476e6ae416cfc54d39ff35060aa8b59a22fd/button-gradient-shift.json",
+  "Button Heartbeat": "npx koxlandui add https://gist.githubusercontent.com/Koxone/53855d73a94082792657a5115d7f2852/raw/2a6cb92b95280c271d86aaa9b27a03c7e1b2e5ab/button-heartbeat.json",
+  "Button Pulse": "npx koxlandui add https://gist.githubusercontent.com/Koxone/19ea5e97a4221fedafc3358af1b63bbc/raw/6c600e9c7538ae5acb9e1badf31cb47a8104a8d3/button-pulse.json",
+  "Button Ripple": "npx koxlandui add https://gist.githubusercontent.com/Koxone/4e1294b0d91e2e6ff61f6f714f39d652/raw/e8bc8eb8f0ad40d142a2975a2cc1cda0f2c3dd97/button-ripple.json",
+  "Button Rotate": "npx koxlandui add https://gist.githubusercontent.com/Koxone/2453399d80b7c667d18c79765e609ce2/raw/60e3125ef95e6d0a7fe9ea940b2d1736137e6c4e/button-rotate.json",
+  "Button Scale": "npx koxlandui add https://gist.githubusercontent.com/Koxone/98637bc4631b65064dda594f2fb40434/raw/e42a1a29bb329337247f81c19fadde5bd67d1217/button-scale.json",
+  "Button Shadow Pulse": "npx koxlandui add https://gist.githubusercontent.com/Koxone/9ca885303bc771e19b57dc2658fa803e/raw/3a0b27351312e2b869b239678f8704093c170d37/button-shadow-pulse.json",
+  "Button Shimmer": "npx koxlandui add https://gist.githubusercontent.com/Koxone/5a77e77acc1cee038b65b4b209a44fa4/raw/a0b2e4d836f5470c554c370942d5b5876866ab02/button-shimmer.json",
+  "Button Slide In": "npx koxlandui add https://gist.githubusercontent.com/Koxone/58127c5005308df81a317499ca36d11a/raw/4737c69fae519c66c1109d4dd6db4998cb6106e6/button-slide-in.json",
+  "Button Slide Out": "npx koxlandui add https://gist.githubusercontent.com/Koxone/642da6ee1b85f4a5e750e7d335c0f9e7/raw/3056a983c80e2b068f4f728ebc32e217325f8678/button-slide-out.json",
+  "Button Swing": "npx koxlandui add https://gist.githubusercontent.com/Koxone/311d1be901a44c4f6d82e63a276d5159/raw/8ed977b5158cec615e25719050f4187e2ade08ce/button-swing.json",
+  "Button Tilt": "npx koxlandui add https://gist.githubusercontent.com/Koxone/62ca8ba1d95ba8ef8108b3671046a0ea/raw/d594b1926f84f2cae8b27518d9574a2e6c179d70/button-tilt.json",
+  "Button Wiggle": "npx koxlandui add https://gist.githubusercontent.com/Koxone/5e7a3f74cceefee27e3cd0a4f842c915/raw/847cf48ac8436f0831233a69d919731f23a9630f/button-wiggle.json",
+  "Button Shooting Star Border": "npx koxlandui add https://gist.githubusercontent.com/Koxone/72d4ef69ccdb3d60d5d6b0b8353a4f47/raw/53af918f0761403e01bf07f53fe1982d5d331652/button-shooting-star-border.json",
+  "Button Symbion": "npx koxlandui add https://gist.githubusercontent.com/Koxone/941f6eeefa5155bd1ab9133b0b524218/raw/47dc1280543633257f5a9c7120ddd3495a0e57fc/button-symbion.json"
+}
