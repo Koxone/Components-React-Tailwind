@@ -1,0 +1,99 @@
+[33m5cc1193[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update CategoriesSideBar button styles and disable React button
+[33mf9b1e3c[m Add fallback npx commands for text components
+[33md7671f6[m Add KoxlandCli component and NPX command integration
+[33m3e2d20a[m Update data.json
+[33m06a6c7c[m Add glitch and ripple animations to card effects
+[33m83e012a[m Add custom Tailwind animations for button effects
+[33m52bc1e5[m Merge pull request #5 from Koxone/staging
+[33mdf1321e[m Merge pull request #4 from puddingForever/refactor/barrel-exports
+[33m28cf8a9[m fix/resolve infinite recursion in ToggleBounce component
+[33mc3be51d[m Merge branch 'staging' of https://github.com/Koxone/Components-React-Tailwind into refactor/barrel-exports
+[33m61b626e[m refactor/ barrel exports for sample components
+[33mad4534b[m Merge branch 'main' of https://github.com/Koxone/Components-React-Tailwind into refactor/barrel-exports
+[33m9252238[m Add contributors section to README
+[33m7e95bdb[m Update Demo.jsx
+[33mbee43f8[m Add mobile warning modal to Demo component
+[33mf06d524[m Update CategorieCard.jsx
+[33m619d062[m Update CategorieCard.jsx
+[33m421d161[m Merge branch 'main' of https://github.com/Koxone/Components-React-Tailwind into refactor/barrel-exports merge upstream branch to origin.
+[33m45a86e8[m Add slider components and styles for sliders page
+[33md91b386[m Add animated modal samples and ModalsContainer
+[33m1aee6db[m implement barrel pattern for component exports in ComponentsData.js
+[33md633012[m Add tooltips component library and styles
+[33m8d3beed[m Wrap all toggle samples with TogglesWrapper
+[33m23c6ebc[m Create TogglesWrapper.jsx
+[33m05c0e85[m Wrap toggle components with TogglesWrapper
+[33mbb1f79a[m Update main.jsx
+[33me0549de[m Update CategoriesSideBar.jsx
+[33m80eeef8[m Merge pull request #1 from puddingForever/feature/menu-highlight-current-route
+[33m3576222[m Merge branch 'main' into feature/menu-highlight-current-route
+[33m0a4b9ee[m[33m ([m[1;32mpr/1[m[33m)[m Create ModalComingSoon.jsx
+[33md4277c0[m Update CategoriesSideBar.jsx
+[33mdcf4453[m Update CategoriesSideBar.jsx
+[33ma99df85[m Add 'Coming Soon' modal and refactor sidebar categories
+[33m463d2e1[m Merge branch 'feature/menu-highlight-current-route' of https://github.com/puddingForever/Components-React-Tailwind into feature/menu-highlight-current-route
+[33m0fd5935[m feat : highlight current route in navigation
+[33m3365b91[m feat : highlight current route in navigation
+[33m381ae58[m Update index.html
+[33m85c857d[m Update Card-Twitter-Linkedin.png
+[33mabafa99[m Update README.md
+[33m9d2fa34[m Update README.md
+[33m3f97a27[m Update README.md
+[33mbc99b39[m Add badges to README for license, React, Tailwind, and demo
+[33mf43302e[m Update README.md
+[33m2420ffa[m Update README with project details and usage
+[33m158057f[m Add copy-to-clipboard button to CodeSnippet
+[33md3f7ae1[m Update Demo.jsx
+[33m1102743[m Enhance Demo rendering and card customization
+[33mb6f5f48[m x
+[33m749cb3d[m Fix SVG attribute casing and update button text
+[33m9910329[m Update InputsContainer.jsx
+[33me741915[m Add toggles category with sample toggle components
+[33m0528c04[m x
+[33maafe44f[m Update Layout.jsx
+[33m51d8617[m Update DrawerMenu.jsx
+[33m633c85c[m Add DrawerMenu and integrate with SearchBar toggle
+[33md67ed7d[m Refactor card samples for unified sizing and improved effects
+[33m22ec13c[m Add cards showcase with animated card samples
+[33mab4f611[m Add input field components and inputs category
+[33m44ff66e[m Update CategoriesSideBar.jsx
+[33m8e527f2[m Update MainCard.jsx
+[33me41163f[m Add 'Go Back' button to Demo component
+[33mc14b6bf[m Update MainCard.jsx
+[33ma8a6092[m Add and refine text animation effects and styles
+[33m7e88a23[m Enhance MainCard button and icon interactivity
+[33m823b7a4[m Add dynamic routing for component demos
+[33me0369bf[m Create data.json
+[33m0a49425[m Add demo components and integrate code snippet display
+[33m3aefe0a[m Add Vercel Analytics integration
+[33mbc3f809[m Update index.html
+[33mc1d74de[m Add Facebook app ID meta tag to index.html
+[33mf38671e[m Enhance SEO and add social media assets
+[33m0684687[m Update TextSlideInLeft.jsx
+[33madb0a96[m Increase text size in animated text components
+[33m5783088[m Update Footer.jsx
+[33m2187b5b[m Remove icon from CategorieCard and adjust Footer padding
+[33m4dbecc5[m Improve UI responsiveness and styling for cards and nav
+[33mb7bad09[m Buttons
+[33ma8b12ea[m Update main.jsx
+[33m78eea21[m Rename CardsContainer to TextsContainer and update import
+[33mc9a68c4[m Improve scrollbar appearance and layout styles
+[33mf917f44[m Add navigation to Text and Buttons category cards
+[33m9932f90[m Adjust layout and spacing in ButtonsContainer and Layout
+[33mf68c41d[m Add footer component and update layout structure
+[33m771cf17[m Refactor MainContainer to Layout and update imports
+[33m6d4b03c[m x
+[33mcb8a075[m Refactor to centralize button and text data
+[33md714cc0[m Favicon
+[33me6fb81e[m Update index.html
+[33m99a6d9d[m Favicon and Title
+[33m4d3c732[m Update CategorieCard.jsx
+[33m8e3409f[m Refactor layout and add routing for category views
+[33md2fa55e[m Add react-router-dom dependency
+[33mbb210ad[m Refactor text sample imports and simplify containers
+[33mc7b574b[m Add new animated button effects and styles
+[33mbc015e3[m Add animated button samples and ButtonsContainer
+[33m6c6c3f0[m Add new text animation samples and CSS keyframes
+[33m419c4d4[m Add multiple text animation samples and styles
+[33me9bc946[m Add tailwind-scrollbar and improve sidebar scrolling
+[33md2e5a17[m first commit

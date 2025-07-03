@@ -1,0 +1,704 @@
+[33mcommit 5cc11939a3181184428dd6140c0fe1748cb31023[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Wed Jul 2 22:14:36 2025 -0600
+
+    Update CategoriesSideBar button styles and disable React button
+    
+    Removed redundant 'cursor-pointer' from baseButtonClass and added it specifically to the Tailwind button. The React button is now disabled, styled with 'cursor-not-allowed' and 'opacity-50' to indicate its inactive state.
+
+[33mcommit f9b1e3c806cefb25849687447d0f6a9721cc1a33[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Wed Jul 2 21:19:36 2025 -0600
+
+    Add fallback npx commands for text components
+    
+    Introduced a new texts.json file containing npx commands for various text components. Updated Demo.jsx to use these commands as a fallback if not found in buttons.json, improving support for additional text demos.
+
+[33mcommit d7671f62245fce0077c09f3c6326300cd6a1a80d[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Wed Jul 2 21:05:24 2025 -0600
+
+    Add KoxlandCli component and NPX command integration
+    
+    Introduces the KoxlandCli component to display and copy NPX install commands for components. Integrates NPX command mapping via a new buttons.json file and updates Demo.jsx to show the relevant command for each component. Also adds a text.md file with NPX commands for text components.
+
+[33mcommit 3e2d20aea276f7add74c63fa3ca8ce3d09c530b3[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Wed Jul 2 18:27:06 2025 -0600
+
+    Update data.json
+
+[33mcommit 06a6c7c11fe6336a8f1585e3b5158011b3b57785[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Tue Jul 1 23:14:11 2025 -0600
+
+    Add glitch and ripple animations to card effects
+    
+    Introduced keyframes and animation configs for CardGlitchHoverEffect and CardHoverRippleWave in both Tailwind config and CSS. These changes enable visual glitch and ripple effects for the respective card components.
+
+[33mcommit 83e012aa46834d78af7c6c91ee429fd8845f2690[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Tue Jul 1 23:08:04 2025 -0600
+
+    Add custom Tailwind animations for button effects
+    
+    Enhanced button effect entries in data.json with detailed Tailwind animation and keyframes configurations, and provided full CSS implementations for each effect. This enables out-of-the-box animated button styles using both Tailwind and custom CSS.
+
+[33mcommit 52bc1e520bc03ae5aeaecebb59c9324b148af438[m
+Merge: 9252238 df1321e
+Author: Carlos de Leon <69182651+Koxone@users.noreply.github.com>
+Date:   Tue Jul 1 22:42:04 2025 -0600
+
+    Merge pull request #5 from Koxone/staging
+
+[33mcommit df1321e45d31ac165a81dad5dfe8e5d6864ae7a7[m
+Merge: 05c0e85 28cf8a9
+Author: BytePudding <developerjieun94@gmail.com>
+Date:   Wed Jul 2 11:11:39 2025 +0900
+
+    Merge pull request #4 from puddingForever/refactor/barrel-exports
+    
+    fix: resolve ToggleBounce recursion and implement barrel exports for all components in sample folder
+
+[33mcommit 28cf8a9e2f32415cbc91e60199c595a17e9929b1[m
+Author: jje <jejeong@win.co.kr>
+Date:   Wed Jul 2 11:03:17 2025 +0900
+
+    fix/resolve infinite recursion in ToggleBounce component
+
+[33mcommit c3be51da4aeb81ed7941cdb7d73c16e9dcdff386[m
+Merge: 61b626e 05c0e85
+Author: jje <jejeong@win.co.kr>
+Date:   Wed Jul 2 10:51:41 2025 +0900
+
+    Merge branch 'staging' of https://github.com/Koxone/Components-React-Tailwind into refactor/barrel-exports
+
+[33mcommit 61b626e64793aeb72466233a00cd7486bd9f345c[m
+Author: jje <jejeong@win.co.kr>
+Date:   Wed Jul 2 10:42:23 2025 +0900
+
+    refactor/ barrel exports for sample components
+
+[33mcommit ad4534b57fed7d080ddcaddc3ceb1c648034a964[m
+Merge: 421d161 9252238
+Author: jje <jejeong@win.co.kr>
+Date:   Wed Jul 2 10:34:28 2025 +0900
+
+    Merge branch 'main' of https://github.com/Koxone/Components-React-Tailwind into refactor/barrel-exports
+
+[33mcommit 92522382706e7681d9a58fadd7d7e057fce75d47[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 23:13:53 2025 -0600
+
+    Add contributors section to README
+    
+    Listed project contributors with links to their GitHub profiles at the top of the README for better project attribution.
+
+[33mcommit 7e95bdb3473955e2d37c8603e155118464322936[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 23:02:07 2025 -0600
+
+    Update Demo.jsx
+
+[33mcommit bee43f85e7308c99d317ef02b440a99b0107c860[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 22:59:47 2025 -0600
+
+    Add mobile warning modal to Demo component
+    
+    Introduces a modal that warns users on mobile devices that the snippets view is not optimized for mobile, encouraging desktop use. The modal appears on screens narrower than 768px and can be dismissed by the user.
+
+[33mcommit f06d5247b4c92c7f48366451639ff836f2675614[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 22:28:07 2025 -0600
+
+    Update CategorieCard.jsx
+
+[33mcommit 619d06243630b874b7ab4f82a357e9c673f04068[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 22:24:13 2025 -0600
+
+    Update CategorieCard.jsx
+
+[33mcommit 421d1612bf7c2f11d5350439d40dd06987e5efb9[m
+Merge: 1aee6db 45a86e8
+Author: jje <jejeong@win.co.kr>
+Date:   Tue Jul 1 13:21:25 2025 +0900
+
+    Merge branch 'main' of https://github.com/Koxone/Components-React-Tailwind into refactor/barrel-exports
+    merge upstream branch to origin.
+
+[33mcommit 45a86e86b7671cf27f64944f357075f8b5f3660f[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 22:17:48 2025 -0600
+
+    Add slider components and styles for sliders page
+    
+    Introduces a suite of slider sample components with various effects (3D, autoplay, blur, cards, coverflow, drag, fade, flip, gallery, horizontal, loop, opacity, parallax, progress, rotate, scale, skew, slide, vertical, zoom). Adds a SlidersContainers component and integrates it into the /sliders route. Updates ComponentsData.js to register all slider samples and adds related CSS animations in SlidersStyles.css.
+
+[33mcommit d91b386497c2147b23b44f4074d38ba6b832de10[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 21:57:18 2025 -0600
+
+    Add animated modal samples and ModalsContainer
+    
+    Introduced a new ModalsContainer component and 22 animated modal sample components, each demonstrating a unique modal entrance animation. Updated ComponentsData.js to export the new modals and registered them for use. Modified the /modals route to display the new ModalsContainer, and added ModalsStyles.css with all related keyframes and animation classes.
+
+[33mcommit 1aee6dbc7e7ab6bd24685c13abe017d134b9055a[m
+Author: jje <jejeong@win.co.kr>
+Date:   Tue Jul 1 12:22:12 2025 +0900
+
+    implement barrel pattern for component exports in ComponentsData.js
+
+[33mcommit d633012e3a45b4225dfb9cd685075372d359fdae[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 21:16:56 2025 -0600
+
+    Add tooltips component library and styles
+    
+    Introduced a new set of tooltip components with various effects, added a TooltipsContainer for displaying them, and updated routing to render tooltips on the /tooltips path. Also included corresponding styles in TooltipsStyles.css and integrated tooltip data into ComponentsData.js and CategorieCard.
+
+[33mcommit 8d3beed77e1b3225ba9a5cb8f535db368d7dba8d[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 20:40:47 2025 -0600
+
+    Wrap all toggle samples with TogglesWrapper
+    
+    Refactored all toggle sample components to wrap their button elements with the TogglesWrapper component. This change standardizes the layout and styling for all toggle samples and improves code consistency.
+
+[33mcommit 23c6ebcc27a832ba2c34a238a15f42287684c9a1[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 17:56:40 2025 -0600
+
+    Create TogglesWrapper.jsx
+
+[33mcommit 05c0e85c1c2d926356aac2ac2f6f52e4c590c8e6[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 17:50:28 2025 -0600
+
+    Wrap toggle components with TogglesWrapper
+    
+    Introduced a new TogglesWrapper component to provide consistent layout and a 'Click Me!' label for all toggle samples. Updated all toggle components to use TogglesWrapper, improving UI consistency and code organization.
+
+[33mcommit bb1f79a92d43d057008a96f6a353a878f07bfe78[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 13:57:48 2025 -0600
+
+    Update main.jsx
+
+[33mcommit e0549deeb545853d6a031c862884512dd892ed28[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 13:55:22 2025 -0600
+
+    Update CategoriesSideBar.jsx
+
+[33mcommit 80eeef851ff683377e7d68d82fe8197f85c7e203[m
+Merge: d4277c0 3576222
+Author: Carlos de Leon <69182651+Koxone@users.noreply.github.com>
+Date:   Mon Jun 30 13:52:57 2025 -0600
+
+    Merge pull request #1 from puddingForever/feature/menu-highlight-current-route
+    
+    Feature/Refactored existing menu code and added styling for active routes.
+
+[33mcommit 3576222c387256177208bd6a2c7765c23be5f84c[m
+Merge: 0a4b9ee d4277c0
+Author: Carlos de Leon <69182651+Koxone@users.noreply.github.com>
+Date:   Mon Jun 30 13:52:45 2025 -0600
+
+    Merge branch 'main' into feature/menu-highlight-current-route
+
+[33mcommit 0a4b9ee680f54aa58ec036c9652113595169c646[m[33m ([m[1;32mpr/1[m[33m)[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 13:50:49 2025 -0600
+
+    Create ModalComingSoon.jsx
+
+[33mcommit d4277c0e5e57e3d07e035c88de1766daff342f30[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 13:15:56 2025 -0600
+
+    Update CategoriesSideBar.jsx
+
+[33mcommit dcf4453774f0558891f93b8706335b558b27da8c[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 13:13:09 2025 -0600
+
+    Update CategoriesSideBar.jsx
+
+[33mcommit a99df859151d4762b2604338a345a31ade14feec[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Mon Jun 30 13:10:40 2025 -0600
+
+    Add 'Coming Soon' modal and refactor sidebar categories
+    
+    Introduced a reusable ModalComingSoon component for incomplete categories. Refactored CategoriesSideBar to generate category cards from a single array, reducing repetition. Updated routing in main.jsx to display the 'Coming Soon' modal for categories that are not yet implemented. Removed unused Demo import from Layout.jsx.
+
+[33mcommit 463d2e189bad35c70f3132f4db0e0dc6b4ef1169[m
+Merge: 0fd5935 3365b91
+Author: jje <jejeong@win.co.kr>
+Date:   Mon Jun 30 13:18:22 2025 +0900
+
+    Merge branch 'feature/menu-highlight-current-route' of https://github.com/puddingForever/Components-React-Tailwind into feature/menu-highlight-current-route
+
+[33mcommit 0fd593586564bc048d8c7d2769c5a6fd0bd69cac[m
+Author: jje <jejeong@win.co.kr>
+Date:   Mon Jun 30 13:15:12 2025 +0900
+
+    feat : highlight current route in navigation
+
+[33mcommit 3365b91643234842879d0c0eb09765fd1937d50a[m
+Author: jje <jejeong@win.co.kr>
+Date:   Mon Jun 30 13:10:44 2025 +0900
+
+    feat : highlight current route in navigation
+
+[33mcommit 381ae5868429ad33aa4a789b1e0f3c8517c70de8[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 19:35:19 2025 -0600
+
+    Update index.html
+
+[33mcommit 85c857db85fbbde223aec5052c13ec002686b1b9[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 19:27:32 2025 -0600
+
+    Update Card-Twitter-Linkedin.png
+
+[33mcommit abafa9997bddac407d373ec2073ace71c2bb3c5b[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 19:23:17 2025 -0600
+
+    Update README.md
+
+[33mcommit 9d2fa34e12ba615728d3e25851762da4b4fb8905[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 19:17:34 2025 -0600
+
+    Update README.md
+
+[33mcommit 3f97a27cacaf6ebec587d888ba9b194e33529414[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 19:16:47 2025 -0600
+
+    Update README.md
+
+[33mcommit bc99b39c27cc71a92fc1bfe04f15ea517e9eb88c[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 19:16:22 2025 -0600
+
+    Add badges to README for license, React, Tailwind, and demo
+    
+    Introduced visual badges to the README to display the MIT license, React version, Tailwind version, and a live demo link for improved project visibility.
+
+[33mcommit f43302e8fd285455678f8bea5b589c8b8375e81c[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 17:47:36 2025 -0600
+
+    Update README.md
+
+[33mcommit 2420ffadbcd610bd9a67121876244be6655c8615[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 17:46:55 2025 -0600
+
+    Update README with project details and usage
+    
+    Expanded the README to include a project overview, features, technologies used, installation steps, project structure, usage instructions, roadmap, license, and credits. This provides clearer guidance and context for users and contributors.
+
+[33mcommit 158057f9bdd2b6b6ce7b71e13d764b90772a4e08[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 17:28:39 2025 -0600
+
+    Add copy-to-clipboard button to CodeSnippet
+    
+    Introduces a clipboard icon button to the CodeSnippet component, allowing users to copy code snippets to the clipboard. Includes visual feedback for successful copy and adds the clipboard SVG asset.
+
+[33mcommit d3f7ae1ee73350476b1563ff9b9d34e7dde10861[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 17:17:42 2025 -0600
+
+    Update Demo.jsx
+
+[33mcommit 1102743b0e423d2976eabd8720c237f93d3c0bd5[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 17:17:09 2025 -0600
+
+    Enhance Demo rendering and card customization
+    
+    Updated Demo.jsx to dynamically render components based on type, replacing the static title with a MainCard preview. MainCard now accepts a custom svg class, and CardImageParallaxHover uses object-contain for improved image display.
+
+[33mcommit b6f5f4818bab3964bb8e0e6698339f9a7f31206b[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 16:56:02 2025 -0600
+
+    x
+
+[33mcommit 749cb3d4e6a0bb3d7d8dfbefef70014ca43e9aa2[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 14:08:28 2025 -0600
+
+    Fix SVG attribute casing and update button text
+    
+    Corrected SVG attribute names in DrawerMenu.jsx to use camelCase for React compatibility. Updated the button label in ButtonShootingStarBorder.jsx from 'Get notified' to 'Hover Me!'.
+
+[33mcommit 9910329330370333795c0d203fab77f00632fb16[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 14:01:52 2025 -0600
+
+    Update InputsContainer.jsx
+
+[33mcommit e741915adfaebaef9ebbfca0314c882957527d8e[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 13:59:44 2025 -0600
+
+    Add toggles category with sample toggle components
+    
+    Introduces a new 'Toggles' category with a variety of toggle UI components and their container. Updates navigation, category card, and routing to support toggles. Adds related CSS for toggle effects and installs @heroicons/react for icon support in toggle samples.
+
+[33mcommit 0528c04cc6728c2e68d148b593362933d4c1c5bf[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 13:35:58 2025 -0600
+
+    x
+
+[33mcommit aafe44feab0ccd2c577baf8953f1657ccd62a2a6[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 12:17:27 2025 -0600
+
+    Update Layout.jsx
+
+[33mcommit 51d861750794e85ed5d0e982a93fb97156d5cfa9[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 01:49:27 2025 -0600
+
+    Update DrawerMenu.jsx
+
+[33mcommit 633c85c8ddc87bb2832f5e8860be9d8cfe77524e[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sun Jun 29 01:47:17 2025 -0600
+
+    Add DrawerMenu and integrate with SearchBar toggle
+    
+    Introduced a new DrawerMenu component for mobile navigation, updated SearchBar to accept an onClick prop for toggling the drawer, and integrated both in the Layout component using state. Improved mobile navigation experience by allowing users to open and close the drawer menu from the SearchBar.
+
+[33mcommit d67ed7d6b49fc28521b7c2eed8fffe757494d176[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 23:45:31 2025 -0600
+
+    Refactor card samples for unified sizing and improved effects
+    
+    Standardizes card component sizes to h-50 w-50 and updates various card samples with improved interactivity, hover effects, and user prompts. Adds a new parallax image asset, enhances 3D tilt, ripple, glitch, and parallax effects, and updates text/content for better user engagement. Also updates ripple animation keyframes in index.css.
+
+[33mcommit 22ec13c5343b4ed7b2f283ac358b3ae73e4c3ea2[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 23:23:24 2025 -0600
+
+    Add cards showcase with animated card samples
+    
+    Introduces a new CardsContainer and a set of animated card components, each with unique visual effects. Updates ComponentsData to include a 'cards' array, adds routing and sidebar navigation for cards, and integrates the 'react-confetti' dependency for confetti animation. Also includes related CSS for new card effects.
+
+[33mcommit ab4f61199c35ced79c1c8b3e9f5f41aa2f883cbf[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 23:04:58 2025 -0600
+
+    Add input field components and inputs category
+    
+    Introduced a new 'inputs' category with multiple animated and styled input field components. Updated ComponentsData to include the new inputs, created InputsContainer for rendering them, and integrated the new category into the sidebar and routing. Also added 'lucide-react' as a dependency for icon support in input components.
+
+[33mcommit 44ff66e35bde24e6eb93d90797c8742440f17ce1[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 22:29:54 2025 -0600
+
+    Update CategoriesSideBar.jsx
+
+[33mcommit 8e527f250f9d9e136f749d476d2c39d91b73816d[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 22:26:47 2025 -0600
+
+    Update MainCard.jsx
+
+[33mcommit e41163f96e4d50b280f3aecf35679b10cf624a4f[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 22:24:38 2025 -0600
+
+    Add 'Go Back' button to Demo component
+    
+    Introduced a 'Go Back' button that saves the current scroll position to sessionStorage and navigates back to the previous page using react-router's useNavigate. This improves navigation and user experience within the demo view.
+
+[33mcommit c14b6bf72243d4c662cef8cf946b816fe562ee53[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 22:21:09 2025 -0600
+
+    Update MainCard.jsx
+
+[33mcommit a8a609244038288289c5f74ff3b49b828f2c1c01[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 18:55:47 2025 -0600
+
+    Add and refine text animation effects and styles
+    
+    Expanded the text animation library in data.json with new effects and improved existing ones. Updated ComponentsData.js to fix a typo in the 'Text Scale Pulse' entry. Refactored TextFadeIn.jsx to remove unused className prop. Enhanced index.css with improved organization, comments, and consistent formatting for animation keyframes and utility classes.
+
+[33mcommit 7e88a23c27727cf57bc3b14a146bde1bd80cd5cc[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 18:17:04 2025 -0600
+
+    Enhance MainCard button and icon interactivity
+    
+    Updated the button and icon in MainCard to include cursor pointer and improved hover effects for better user experience. Also removed a duplicate entry for 'Text Animated Gradient' in data.json.
+
+[33mcommit 823b7a41a33922966e6c83341d8c996bce84c188[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 18:08:20 2025 -0600
+
+    Add dynamic routing for component demos
+    
+    Refactored MainCard to use buttons and programmatic navigation with react-router. Updated ButtonsContainer and TextsContainer to generate demo URLs based on component titles. Modified Demo component to load data dynamically from the URL parameter and display the corresponding component details. Updated route definition in main.jsx to support dynamic component paths.
+
+[33mcommit e0369bf11d8613f9646e314d1153418d36c1aa6b[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 17:48:59 2025 -0600
+
+    Create data.json
+
+[33mcommit 0a4942521c820c92566e4501dcd7d98f5708424d[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 17:48:48 2025 -0600
+
+    Add demo components and integrate code snippet display
+    
+    Introduced CodeSnippet and Demo components for rendering code examples with syntax highlighting. Updated main routing to include a /Demo route and modified Layout to optionally display the Demo component and conditionally render the sidebar. These changes enable interactive code demonstrations within the app.
+
+[33mcommit 3aefe0a2cdf12fae0e81c9e6c584eb67d04d9816[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 15:21:47 2025 -0600
+
+    Add Vercel Analytics integration
+    
+    Installed @vercel/analytics and added the <Analytics /> component to main.jsx to enable analytics tracking. Updated package.json and package-lock.json to include the new dependency.
+
+[33mcommit bc3f809a53e65abe63c4fd7d97863d00d4d7e103[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 15:10:58 2025 -0600
+
+    Update index.html
+
+[33mcommit c1d74deca6eaa74b8412d65a12e46230ee8ee493[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 15:09:42 2025 -0600
+
+    Add Facebook app ID meta tag to index.html
+    
+    Introduced the fb:app_id meta property to support Facebook integration and improve social sharing capabilities.
+
+[33mcommit f38671ebcaa7a4193237dade3c2db141f1c72515[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 15:07:05 2025 -0600
+
+    Enhance SEO and add social media assets
+    
+    Added comprehensive SEO, Open Graph, and Twitter meta tags to index.html, along with structured data for better discoverability. Included new social sharing and logo images (Card-Twitter-Linkedin.png, logo-512x512.png) for improved branding and link previews.
+
+[33mcommit 06846871565487e5b36662101123eeb00f783fbc[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 13:28:33 2025 -0600
+
+    Update TextSlideInLeft.jsx
+
+[33mcommit adb0a96f099ecd1ec49d5125941a007759b1e45d[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 01:38:42 2025 -0600
+
+    Increase text size in animated text components
+    
+    Updated all animated text sample components to use a larger text size (text-[40px]) for improved visibility and consistency. Also updated the sidebar description text to a more welcoming message.
+
+[33mcommit 5783088253fc552f1e21172eb5daa01842adfaed[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 01:28:37 2025 -0600
+
+    Update Footer.jsx
+
+[33mcommit 2187b5bb1520580635d7fc3625f2fe5e18950980[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 01:27:05 2025 -0600
+
+    Remove icon from CategorieCard and adjust Footer padding
+    
+    Removed the SVG icon from the CategorieCard component for a cleaner UI. Updated the Footer component to add left padding on small screens for improved layout.
+
+[33mcommit 4dbecc5997a1fb53c6b8ced5bfb718a70d1b323d[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Sat Jun 28 01:10:28 2025 -0600
+
+    Improve UI responsiveness and styling for cards and nav
+    
+    Enhanced the MainCard arrow icon with hover effects and improved the layout for the effect content. Updated CategoriesSideBar to show on small screens and adjusted grid visibility. Refactored SearchBar for a cleaner, more responsive layout and added a mobile menu button.
+
+[33mcommit b7bad094d9fc00943834d6a25259a58e9f8380e2[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 21:43:47 2025 -0600
+
+    Buttons
+
+[33mcommit a8b12eac568b7cd717dc7693a05a67d6708ad8d1[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 20:23:08 2025 -0600
+
+    Update main.jsx
+
+[33mcommit 78eea21f5dea4596af800c1d70f8499dcf313cbe[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 20:22:10 2025 -0600
+
+    Rename CardsContainer to TextsContainer and update import
+    
+    Renamed CardsContainer.jsx to TextsContainer.jsx and updated the import in main.jsx accordingly. Also removed an unused import from MainCard.jsx.
+
+[33mcommit c9a68c4cd1bcc3ba0045fb4354909825e42da1b7[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 20:02:56 2025 -0600
+
+    Improve scrollbar appearance and layout styles
+    
+    Added custom scrollbar styles for both Webkit and Firefox in index.css for a more subtle look. Removed unnecessary height constraint from CardsContainer and adjusted CategoriesSideBar to add right padding and remove redundant class.
+
+[33mcommit f917f44b990380637d0cb172c12910826548196a[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 19:53:32 2025 -0600
+
+    Add navigation to Text and Buttons category cards
+    
+    Updated CategorieCard components for 'Text' and 'Buttons' to include onClick handlers that navigate to the appropriate routes. Also improved sidebar scroll behavior with touch and overscroll properties.
+
+[33mcommit 9932f909d11556c883020bc7b682be9beb7e2a56[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 19:37:44 2025 -0600
+
+    Adjust layout and spacing in ButtonsContainer and Layout
+    
+    Removed fixed height and overflow from ButtonsContainer grid to improve layout flexibility. Updated Layout component to adjust sidebar positioning and padding, and reduced main content padding for a more consistent appearance.
+
+[33mcommit f68c41d844f600503975157ddc86f22e8c7eab8d[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 19:34:18 2025 -0600
+
+    Add footer component and update layout structure
+    
+    Introduced a new Footer component with branding and social links. Updated Layout to use a flex column structure, added sticky header and sidebar, and integrated the Footer. Adjusted MainCard and index.css for improved layout consistency and responsiveness. Added LogoKoxland.png for branding.
+
+[33mcommit 771cf17c02e8675e1f0fcf4b1347e1238209fc4c[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 18:55:29 2025 -0600
+
+    Refactor MainContainer to Layout and update imports
+    
+    Renamed MainContainer to Layout, moved it to the styles directory, and updated all relevant imports and usage in main.jsx. This improves component organization and naming consistency.
+
+[33mcommit 6d4b03c1074ad86d88a82df79e0732ba51185730[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 18:49:15 2025 -0600
+
+    x
+
+[33mcommit cb8a0753a367603eb8deb8bbb2d4fac0f68b8946[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 17:54:06 2025 -0600
+
+    Refactor to centralize button and text data
+    
+    Moved button and text component data into a new ComponentsData.js file for better maintainability and reusability. Updated CategorieCard, ButtonsContainer, and CardsContainer to import from the new data file and dynamically use the data for rendering and counting.
+
+[33mcommit d714cc0c732f4ddaf6c2c413e302b820e1ced936[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 17:37:43 2025 -0600
+
+    Favicon
+
+[33mcommit e6fb81e349ec6f34b9504c0db9348a8068424849[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 17:34:28 2025 -0600
+
+    Update index.html
+
+[33mcommit 99a6d9d6867ff8e69db33a10655dcfba929c9279[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 17:34:04 2025 -0600
+
+    Favicon and Title
+
+[33mcommit 4d3c73207b47029436c365d932bf32cf4c3f6f6b[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 17:28:14 2025 -0600
+
+    Update CategorieCard.jsx
+
+[33mcommit 8e3409f2dff9532dec48e228595aca9a532e2aa2[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 17:27:11 2025 -0600
+
+    Refactor layout and add routing for category views
+    
+    Refactored MainContainer to accept dynamic content via a prop, enabling flexible rendering of different content areas. Updated CategoriesSideBar and CategorieCard to support navigation using react-router-dom. Added routing in main.jsx to display CardsContainer or ButtonsContainer based on the current route.
+
+[33mcommit d2fa55efb58ecd35cbc63f9dab7331e944d2c42e[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 17:20:18 2025 -0600
+
+    Add react-router-dom dependency
+    
+    Added react-router-dom version 7.6.3 to package.json and updated package-lock.json accordingly to support routing in the React application.
+
+[33mcommit bb210adb4a9c53afa5ff63e2b034ff913a76cfd8[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 17:18:17 2025 -0600
+
+    Refactor text sample imports and simplify containers
+    
+    Moved all text sample components into a 'text' subdirectory and updated imports accordingly. Refactored ButtonsContainer and CardsContainer to use arrays and map for rendering MainCard components, reducing repetition and improving maintainability.
+
+[33mcommit c7b574b3ade6c89d69723ef3abb4faa65a25db97[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 16:49:29 2025 -0600
+
+    Add new animated button effects and styles
+    
+    Introduced several new button effect components (Flash, Flip, Rotate, Swing, Shadow Pulse, Tilt, Shimmer, Heartbeat, Glow Border, Diagonal Slide) and their corresponding CSS animations. Updated ButtonsContainer to showcase these new button effects.
+
+[33mcommit bc015e3f3cb068028e490c458876a52620118039[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 16:46:44 2025 -0600
+
+    Add animated button samples and ButtonsContainer
+    
+    Introduced several animated button components (Glow, Pulse, Slide In/Out, Border Glow, Bounce, Ripple, Gradient Shift, Wiggle, Scale) and a ButtonsContainer to showcase them. Updated MainContainer to use ButtonsContainer instead of CardsContainer, and added corresponding CSS animations for each button style.
+
+[33mcommit 6c6c3f0b69f7b10ff7f15ef5b48777b68f51219b[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 16:29:52 2025 -0600
+
+    Add new text animation samples and CSS keyframes
+    
+    Introduced new text animation components (Wiggle, SlideInLeft, SlideInRight, FadeLoop, SkewLoop, ScaleLoop, SpinLoop) and their corresponding CSS keyframes. Updated CardsContainer to showcase these new animations.
+
+[33mcommit 419c4d438490db33ed1f81a3f8bb17fccddc9566[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 16:11:13 2025 -0600
+
+    Add multiple text animation samples and styles
+    
+    Introduced new text animation components: TextBounce, TextColorCycle, TextFadeIn, TextPulse, TextRotate, TextScalePlus, TextTypewriter, and TextWave. Updated CardsContainer to showcase these animations. Extended index.css with keyframes and classes for each new animation effect.
+
+[33mcommit e9bc946930b2ae7c129d7a550446e1dd4c9b0494[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 15:56:31 2025 -0600
+
+    Add tailwind-scrollbar and improve sidebar scrolling
+    
+    Added the tailwind-scrollbar plugin and updated Tailwind config. Improved scroll behavior and appearance for CardsContainer and CategoriesSideBar, ensuring scrollbars are hidden and layouts are more consistent. Also updated the .hide-scrollbar CSS utility for better cross-browser support.
+
+[33mcommit d2e5a1773efbee51096133b9ae8c09dae08d18e9[m
+Author: Carlos de Leon <admin@koxland.net>
+Date:   Fri Jun 27 15:38:19 2025 -0600
+
+    first commit
