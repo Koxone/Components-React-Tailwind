@@ -680,7 +680,7 @@
       "componentCode": "import { useState } from \"react\";\nexport default function IconToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className=\"flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 transition hover:bg-gray-700\"\n    >\n      {on ? (\n        <span className=\"text-xl text-white\">✅</span>\n      ) : (\n        <span className=\"text-xl text-white\">❌</span>\n      )}\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
       "cssCode": "/* ========================================\n   Animation: IconToggle\n   ======================================== */\n/* Custom styles for IconToggle */"
-    },
+    }, 
     {
       "title": "Neon Border Toggle",
       "effectClass": "h-12 w-32 rounded-full font-semibold text-white transition-all duration-300 shadow-neon-pink border-4 border-pink-500",
