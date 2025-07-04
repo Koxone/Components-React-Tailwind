@@ -10,9 +10,9 @@ import Demo from "./demos/Demo";
 import { Analytics } from "@vercel/analytics/react";
 import CardsContainer from "./components/containers/CardsContainer";
 import TogglesContainer from "./components/containers/TogglesContainer";
-import ModalComingSoon from "./components/feedback/ModalComingSoon";
+import PopoverComingSoon from "./components/feedback/PopoverComingSoon";
 import TooltipsContainer from "./components/containers/TooltipsContainer";
-import ModalsContainer from "./components/containers/ModalsContainer";
+import PopoversContainer from "./components/containers/PopoversContainer";
 import SlidersContainers from "./components/containers/SlidersContainers";
 import DropdownsContainer from "./components/containers/DropdownsContainer";
 
@@ -34,8 +34,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           element={<Layout content={<SlidersContainers />} />}
         />
         <Route
-          path="/modals"
-          element={<Layout content={<ModalsContainer />} />}
+          path="/popovers"
+          element={<Layout content={<PopoversContainer />} />}
         />
         <Route
           path="/dropdowns"
@@ -43,11 +43,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         />
         <Route
           path="/selects"
-          element={<Layout content={<ModalComingSoon />} />}
+          element={<Layout content={<PopoverComingSoon />} />}
         />
         <Route
           path="/sidebars"
-          element={<Layout content={<ModalComingSoon />} />}
+          element={<Layout content={<PopoverComingSoon />} />}
         />
         <Route
           path="/tooltips"
@@ -55,7 +55,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         />
         <Route
           path="/badges"
-          element={<Layout content={<ModalComingSoon />} />}
+          element={<Layout content={<PopoverComingSoon />} />}
         />
         <Route
           path="/cards"

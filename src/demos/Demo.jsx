@@ -11,7 +11,7 @@ import {
   cards,
   dropdowns,
   inputs,
-  modals,
+  popovers,
   sliders,
   text,
   toggles,
@@ -37,7 +37,7 @@ function Demo() {
   const inputComponent = inputs.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
-  const modalComponent = modals.find(
+  const popoverComponent = popovers.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
   const sliderComponent = sliders.find(
@@ -58,7 +58,7 @@ function Demo() {
     cardComponent ||
     dropdownComponent ||
     inputComponent ||
-    modalComponent ||
+    popoverComponent ||
     sliderComponent ||
     textComponent ||
     toggleComponent ||
@@ -75,7 +75,7 @@ function Demo() {
       );
     } else if (inputComponent) {
       return <currentComponent.Component placeholder="Sample placeholder" />;
-    } else if (modalComponent) {
+    } else if (popoverComponent) {
       return <currentComponent.Component>Click Me</currentComponent.Component>;
     } else if (textComponent) {
       return (
@@ -89,11 +89,11 @@ function Demo() {
     return <currentComponent.Component />;
   };
 
-  const [showModal, setShowModal] = useState(false);
+  const [showPopover, setShowPopover] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth < 768) {
-      setShowModal(true);
+      setShowPopover(true);
     }
   }, []);
 
@@ -120,7 +120,7 @@ function Demo() {
         Go Back
       </button>
 
-      {showModal && (
+      {showPopover && (
         <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
           <div className="max-w-sm rounded-lg bg-gray-800 p-6 text-center text-white shadow-lg">
             <h2 className="mb-2 text-lg font-semibold">Heads Up</h2>
@@ -129,7 +129,7 @@ function Demo() {
               best experience, please use a desktop.
             </p>
             <button
-              onClick={() => setShowModal(false)}
+              onClick={() => setShowPopover(false)}
               className="rounded bg-blue-600 px-4 py-2 text-sm font-medium transition hover:bg-blue-500"
             >
               Continue Anyway

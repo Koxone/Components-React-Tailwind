@@ -1,25 +1,26 @@
 import { useState } from "react";
 
-export default function ModalSlideUp() {
+export default function PopoverSwingIn() {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="relative inline-block">
       <button
         onClick={() => setOpen(!open)}
-        className="rounded bg-green-600 px-4 py-2 text-white hover:bg-green-700"
+        className="rounded bg-sky-600 px-4 py-2 text-white hover:bg-sky-700"
       >
-        Open SlideUp Modal
+        Open SwingIn Popover
       </button>
 
       {open && (
         <div
           onClick={() => setOpen(false)}
-          className="absolute top-full left-1/2 z-50 mt-2 w-64 -translate-x-1/2 transform rounded bg-white p-4 shadow-xl animate-slideUp"
+          className="absolute top-full left-1/2 z-50 mt-2 w-64 -translate-x-1/2 transform rounded bg-white p-4 shadow-xl animate-swingIn"
         >
-          This is a Slide Up Modal
+          This is a Swing In Popover
         </div>
       )}
     </div>
   );
 }
+

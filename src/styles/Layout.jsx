@@ -8,7 +8,7 @@ import "../styles/ButtonsStyles.css";
 import "../styles/CardsStyles.css";
 import "../styles/TogglesStyles.css";
 import "../styles/TooltipsStyles.css";
-import "../styles/ModalsStyles.css";
+import "../styles/PopoversStyles.css";
 import "../styles/DropdownsStyles.css";
 
 function Layout({ content, Demo = false }) {

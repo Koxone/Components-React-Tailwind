@@ -21,7 +21,7 @@ function CategoriesSideBar() {
     { id: "cards", type: "Cards", path: "/cards" },
     { id: "toggles", type: "Toggles", path: "/toggles" },
     { id: "tooltips", type: "Tooltips", path: "/tooltips" },
-    { id: "modals", type: "Modals", path: "/modals" },
+    { id: "popovers", type: "Popovers", path: "/popovers" },
     { id: "sliders", type: "Sliders", path: "/sliders" },
     { id: "dropdowns", type: "Dropdowns", path: "/dropdowns" },
     { id: "badges", type: "Badges", path: "/badges" },

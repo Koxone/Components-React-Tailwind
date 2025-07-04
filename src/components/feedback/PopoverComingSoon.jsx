@@ -1,6 +1,6 @@
 import React from "react";
 
-function ModalComingSoon() {
+function PopoverComingSoon() {
   return (
     <div className="flex h-full w-full flex-col items-center justify-center rounded-xl bg-gray-800 p-8 text-center shadow-xl">
       <h2 className="mb-4 text-2xl font-bold text-white">Coming Soon 🚧</h2>
@@ -13,4 +13,5 @@ function ModalComingSoon() {
   );
 }
 
-export default ModalComingSoon;
+export default PopoverComingSoon;
+
