@@ -15,7 +15,7 @@ export default function DropdownAccordion() {
 
   return (
     <div
-      className={`relative curpo inline-block text-left transition-all duration-600 select-none ${
+      className={`relative cursor-pointer inline-block text-left transition-all duration-600 select-none ${
         open ? "mt-[-90px]" : "mt-0"
       }`}
     >
