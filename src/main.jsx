@@ -14,6 +14,7 @@ import ModalComingSoon from "./components/feedback/ModalComingSoon";
 import TooltipsContainer from "./components/containers/TooltipsContainer";
 import ModalsContainer from "./components/containers/ModalsContainer";
 import SlidersContainers from "./components/containers/SlidersContainers";
+import DropdownsContainer from "./components/containers/DropdownsContainer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -38,7 +39,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         />
         <Route
           path="/dropdowns"
-          element={<Layout content={<ModalComingSoon />} />}
+          element={<Layout content={<DropdownsContainer />} />}
         />
         <Route
           path="/selects"

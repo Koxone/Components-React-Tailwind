@@ -189,6 +189,29 @@ import {
   SliderZoom,
 } from "../samples/sliders";
 
+import {
+  DropdownAccordion,
+  DropdownBlur,
+  DropdownBounce,
+  DropdownCube,
+  DropdownCurtain,
+  DropdownFade,
+  DropdownFlip,
+  DropdownGlitch,
+  DropdownMorph,
+  DropdownParallax,
+  DropdownPulse,
+  DropdownRotate,
+  DropdownScale,
+  DropdownSkew,
+  DropdownSlideUp,
+  DropdownSlide,
+  DropdownSpring,
+  DropdownTwist,
+  DropdownWave,
+  DropdownZoom,
+} from "../samples/dropdowns";
+
 export const buttons = [
   { id: "glow", title: "Button Glow", Component: ButtonGlow },
   { id: "pulse", title: "Button Pulse", Component: ButtonPulse },
@@ -626,4 +649,31 @@ export const sliders = [
   { id: "slide", title: "Slider Slide", Component: SliderSlide },
   { id: "vertical", title: "Slider Vertical", Component: SliderVertical },
   { id: "zoom", title: "Slider Zoom", Component: SliderZoom },
+];
+
+export const dropdowns = [
+  {
+    id: "accordion",
+    title: "Dropdown Accordion",
+    Component: DropdownAccordion,
+  },
+  { id: "blur", title: "Dropdown Blur", Component: DropdownBlur },
+  { id: "bounce", title: "Dropdown Bounce", Component: DropdownBounce },
+  { id: "cube", title: "Dropdown Cube", Component: DropdownCube },
+  { id: "curtain", title: "Dropdown Curtain", Component: DropdownCurtain },
+  { id: "fade", title: "Dropdown Fade", Component: DropdownFade },
+  { id: "flip", title: "Dropdown Flip", Component: DropdownFlip },
+  { id: "glitch", title: "Dropdown Glitch", Component: DropdownGlitch },
+  { id: "morph", title: "Dropdown Morph", Component: DropdownMorph },
+  { id: "parallax", title: "Dropdown Parallax", Component: DropdownParallax },
+  { id: "pulse", title: "Dropdown Pulse", Component: DropdownPulse },
+  { id: "rotate", title: "Dropdown Rotate", Component: DropdownRotate },
+  { id: "scale", title: "Dropdown Scale", Component: DropdownScale },
+  { id: "skew", title: "Dropdown Skew", Component: DropdownSkew },
+  { id: "slide", title: "Dropdown Slide", Component: DropdownSlide },
+  { id: "slideUp", title: "Dropdown Slide Up", Component: DropdownSlideUp },
+  { id: "spring", title: "Dropdown Spring", Component: DropdownSpring },
+  { id: "twist", title: "Dropdown Twist", Component: DropdownTwist },
+  { id: "wave", title: "Dropdown Wave", Component: DropdownWave },
+  { id: "zoom", title: "Dropdown Zoom", Component: DropdownZoom },
 ];

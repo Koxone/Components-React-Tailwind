@@ -8,6 +8,7 @@ import {
   tooltips,
   modals,
   sliders,
+  dropdowns,
 } from "../data/ComponentsData";
 
 function CategorieCard({ type = "", path, onClick }) {
@@ -30,6 +31,8 @@ function CategorieCard({ type = "", path, onClick }) {
     count = modals.length;
   } else if (type.toLowerCase() === "sliders") {
     count = sliders.length;
+  } else if (type.toLowerCase() === "dropdowns") {
+    count = dropdowns.length;
   }
 
   const isActive = location.pathname === path;

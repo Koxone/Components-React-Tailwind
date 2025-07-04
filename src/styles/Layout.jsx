@@ -9,6 +9,7 @@ import "../styles/CardsStyles.css";
 import "../styles/TogglesStyles.css";
 import "../styles/TooltipsStyles.css";
 import "../styles/ModalsStyles.css";
+import "../styles/DropdownsStyles.css";
 
 function Layout({ content, Demo = false }) {
   const [isToggle, setIsToggle] = useState(false);
