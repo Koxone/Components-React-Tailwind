@@ -18,7 +18,7 @@ export default function CodeSnippet({ code, lang = "jsx", snippetTitle, snippetS
   return (
     <div className="flex w-full flex-col items-start justify-center self-center">
       <h2 className="font-medium text-white">{snippetTitle}</h2>
-      <p className="text-neutral-500 text-sm">{snippetSubtitle}</p>
+      {snippetSubtitle && <p className="text-neutral-500 text-sm">{snippetSubtitle}</p>}
       <div className="relative h-full w-full">
         <button
           onClick={handleCopy}
