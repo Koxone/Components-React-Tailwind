@@ -1,10 +1,14 @@
 import MainCard from "../cards/MainCard";
 import { buttons } from "../data/ComponentsData";
 
-function ButtonsContainer() {
+function ButtonsContainer({ searchTerm }) {
+  const filteredButtons = buttons.filter(({ title }) =>
+    title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="hide-scrollbar grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {buttons.map(({ title, Component, id }) => (
+      {filteredButtons.map(({ title, Component, id }) => (
         <MainCard
           key={id}
           title={title}
@@ -15,5 +19,6 @@ function ButtonsContainer() {
     </div>
   );
 }
+
 
 export default ButtonsContainer;
