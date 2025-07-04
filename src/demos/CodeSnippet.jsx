@@ -2,7 +2,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useState } from "react";
 
-export default function CodeSnippet({ code, lang = "jsx", snippetTitle }) {
+export default function CodeSnippet({ code, lang = "jsx", snippetTitle, snippetSubtitle }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -17,7 +17,8 @@ export default function CodeSnippet({ code, lang = "jsx", snippetTitle }) {
 
   return (
     <div className="flex w-full flex-col items-start justify-center self-center">
-      <h2 className="text-white">{snippetTitle}</h2>
+      <h2 className="font-medium text-white">{snippetTitle}</h2>
+      {snippetSubtitle && <p className="text-neutral-500 text-sm">{snippetSubtitle}</p>}
       <div className="relative h-full w-full">
         <button
           onClick={handleCopy}

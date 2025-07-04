@@ -1,0 +1,234 @@
+/* ========================================
+  Dropdown Blur
+  ======================================== */
+@keyframes blurIn {
+  0% {
+    filter: blur(8px);
+    opacity: 0;
+  }
+  50% {
+    filter: blur(4px);
+    opacity: 0.5;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.animate-blurIn {
+  animation: blurIn 0.6s ease-out;
+}
+
+/* ========================================
+  Dropdown Bounce
+  ======================================== */
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-30%) scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10%) scale(1.05);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-5%) scale(0.98);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-bounceIn {
+  animation: bounceIn 0.6s ease-out;
+}
+
+/* ========================================
+  Dropdown Glitch
+  ======================================== */
+
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  10% {
+    transform: translate(-2px, 2px);
+    opacity: 0.8;
+  }
+  20% {
+    transform: translate(2px, -2px);
+    opacity: 0.6;
+  }
+  30% {
+    transform: translate(-1px, 1px);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translate(1px, -1px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-2px, 2px);
+    opacity: 0.8;
+  }
+  60% {
+    transform: translate(2px, -2px);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translate(-1px, 1px);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translate(1px, -1px);
+    opacity: 0.6;
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+/* ========================================
+  Dropdown Pulse
+  ======================================== */
+
+.animate-glitch {
+  animation: glitch 300ms linear;
+}
+
+@keyframes realPulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.97);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-realPulse {
+  animation: realPulse 0.6s ease-in-out;
+}
+
+/* ========================================
+  Dropdown Spring
+  ======================================== */
+
+@keyframes spring {
+  0% {
+    transform: scale(0.9);
+  }
+  40% {
+    transform: scale(1.05);
+  }
+  60% {
+    transform: scale(0.97);
+  }
+  80% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-spring {
+  animation: spring 0.6s ease-out;
+}
+
+/* ========================================
+  Dropdown Twist
+  ======================================== */
+
+@keyframes twist {
+  0% {
+    transform: rotate(0deg) scale(0.95);
+  }
+  30% {
+    transform: rotate(10deg) scale(1.05);
+  }
+  60% {
+    transform: rotate(-5deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.animate-twist {
+  animation: twist 0.6s ease-out;
+}
+
+/* ========================================
+  Dropdown Wave
+  ======================================== */
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-10px);
+  }
+  30% {
+    transform: translateX(10px);
+  }
+  45% {
+    transform: translateX(-6px);
+  }
+  60% {
+    transform: translateX(6px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  90% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-wave {
+  animation: wave 0.6s ease-out;
+}
+
+/* ========================================
+  Dropdown Zoom
+  ======================================== */
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-zoom {
+  animation: zoom 0.6s ease-out;
+}

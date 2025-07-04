@@ -6,8 +6,9 @@ import {
   cards,
   toggles,
   tooltips,
-  modals,
+  popovers,
   sliders,
+  dropdowns,
 } from "../data/ComponentsData";
 
 function CategorieCard({ type = "", path, onClick }) {
@@ -26,10 +27,12 @@ function CategorieCard({ type = "", path, onClick }) {
     count = toggles.length;
   } else if (type.toLowerCase() === "tooltips") {
     count = tooltips.length;
-  } else if (type.toLowerCase() === "modals") {
-    count = modals.length;
+  } else if (type.toLowerCase() === "popovers") {
+    count = popovers.length;
   } else if (type.toLowerCase() === "sliders") {
     count = sliders.length;
+  } else if (type.toLowerCase() === "dropdowns") {
+    count = dropdowns.length;
   }
 
   const isActive = location.pathname === path;

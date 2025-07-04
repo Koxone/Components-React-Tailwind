@@ -7,7 +7,7 @@ export default function ToggleBounce() {
       <button
         onClick={() => setOn(!on)}
         className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${
-          on ? "bg-orange-500" : "bg-gray-400"
+          on ? "bg-blue-500" : "bg-gray-400"
         }`}
       >
         <span

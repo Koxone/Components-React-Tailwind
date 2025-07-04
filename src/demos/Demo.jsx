@@ -8,10 +8,14 @@ import npxButtons from "../utils/npx/buttons.json";
 import npxTexts from "../utils/npx/texts.json";
 import {
   buttons,
-  text,
-  inputs,
   cards,
+  dropdowns,
+  inputs,
+  popovers,
+  sliders,
+  text,
   toggles,
+  tooltips,
 } from "../components/data/ComponentsData";
 
 function Demo() {
@@ -21,55 +25,75 @@ function Demo() {
     (c) => c.title.toLowerCase() === decodedComponent,
   );
 
-  const textComponent = text.find(
-    (item) => item.title.toLowerCase() === decodedComponent,
-  );
   const buttonComponent = buttons.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
   const cardComponent = cards.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
+  const dropdownComponent = dropdowns.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
   const inputComponent = inputs.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const popoverComponent = popovers.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const sliderComponent = sliders.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const textComponent = text.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
   const toggleComponent = toggles.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
+  const tooltipComponent = tooltips.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
 
   const currentComponent =
-    textComponent ||
     buttonComponent ||
     cardComponent ||
+    dropdownComponent ||
     inputComponent ||
-    toggleComponent;
+    popoverComponent ||
+    sliderComponent ||
+    textComponent ||
+    toggleComponent ||
+    tooltipComponent;
 
   const navigate = useNavigate();
 
   const renderEffect = () => {
-    if (inputComponent) {
-      return <currentComponent.Component placeholder="Sample placeholder" />;
-    } else if (textComponent) {
-      return (
-        <currentComponent.Component>Sample Text</currentComponent.Component>
-      );
-    } else if (buttonComponent) {
+    if (buttonComponent) {
       return <currentComponent.Component>Click Me</currentComponent.Component>;
     } else if (cardComponent) {
       return (
         <currentComponent.Component>Card Content</currentComponent.Component>
       );
+    } else if (inputComponent) {
+      return <currentComponent.Component placeholder="Sample placeholder" />;
+    } else if (popoverComponent) {
+      return <currentComponent.Component>Click Me</currentComponent.Component>;
+    } else if (textComponent) {
+      return (
+        <currentComponent.Component>Sample Text</currentComponent.Component>
+      );
     } else if (toggleComponent) {
       return <currentComponent.Component>Toggle Me</currentComponent.Component>;
+    } else if (tooltipComponent) {
+      return <currentComponent.Component>Click Me</currentComponent.Component>;
     }
     return <currentComponent.Component />;
   };
 
-  const [showModal, setShowModal] = useState(false);
+  const [showPopover, setShowPopover] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth < 768) {
-      setShowModal(true);
+      setShowPopover(true);
     }
   }, []);
 
@@ -85,7 +109,7 @@ function Demo() {
     "";
 
   return (
-    <div className="relative grid grid-rows-[auto_1fr] items-center justify-center space-y-8 overflow-hidden p-4 md:overflow-visible">
+    <div className="relative mb-[50px] grid grid-rows-[auto_1fr] items-center justify-center space-y-8 overflow-hidden p-4 md:overflow-visible">
       <button
         onClick={() => {
           sessionStorage.setItem("scrollToPosition", window.scrollY);
@@ -96,7 +120,7 @@ function Demo() {
         Go Back
       </button>
 
-      {showModal && (
+      {showPopover && (
         <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
           <div className="max-w-sm rounded-lg bg-gray-800 p-6 text-center text-white shadow-lg">
             <h2 className="mb-2 text-lg font-semibold">Heads Up</h2>
@@ -105,7 +129,7 @@ function Demo() {
               best experience, please use a desktop.
             </p>
             <button
-              onClick={() => setShowModal(false)}
+              onClick={() => setShowPopover(false)}
               className="rounded bg-blue-600 px-4 py-2 text-sm font-medium transition hover:bg-blue-500"
             >
               Continue Anyway
@@ -114,7 +138,7 @@ function Demo() {
         </div>
       )}
 
-      <div className="flex max-h-60 max-w-60 justify-self-center">
+      <div className="flex h-67 w-67 justify-self-center">
         <MainCard
           svg="hidden"
           effect={renderEffect()}
@@ -133,18 +157,19 @@ function Demo() {
           lang="jsx"
         />
 
-        {componentData.tailwindConfigCode && (
+        {/* {componentData.tailwindConfigCode && (
           <CodeSnippet
             code={componentData.tailwindConfigCode}
             lang="json"
             filename="tailwind.config.js"
             snippetTitle="Tailwind Config (If you use Tailwind 4.x, use the Global CSS Code)"
           />
-        )}
+        )} */}
 
         {componentData.cssCode && (
           <CodeSnippet
             snippetTitle="Global CSS"
+            snippetSubtitle="All components use Tailwind CSS v4, so ensure it's installed in your project"
             code={componentData.cssCode}
             lang="css"
             filename="styles.css"

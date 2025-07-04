@@ -12,7 +12,10 @@ export default function KoxlandCli({ url = "" }) {
     } catch (error) {
       console.error("Failed to copy:", error);
     }
+
+
   };
+
 
   return (
     <div>
