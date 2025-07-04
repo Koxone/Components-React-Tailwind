@@ -12,6 +12,7 @@ import {
   inputs,
   cards,
   toggles,
+  dropdowns,
 } from "../components/data/ComponentsData";
 
 function Demo() {
@@ -36,13 +37,17 @@ function Demo() {
   const toggleComponent = toggles.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
+  const dropdownComponent = dropdowns.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
 
   const currentComponent =
     textComponent ||
     buttonComponent ||
     cardComponent ||
     inputComponent ||
-    toggleComponent;
+    toggleComponent ||
+    dropdownComponent;
 
   const navigate = useNavigate();
 
@@ -85,7 +90,7 @@ function Demo() {
     "";
 
   return (
-    <div className="relative grid grid-rows-[auto_1fr] items-center justify-center space-y-8 overflow-hidden p-4 md:overflow-visible">
+    <div className="relative mb-[50px] grid grid-rows-[auto_1fr] items-center justify-center space-y-8 overflow-hidden p-4 md:overflow-visible">
       <button
         onClick={() => {
           sessionStorage.setItem("scrollToPosition", window.scrollY);
@@ -114,7 +119,7 @@ function Demo() {
         </div>
       )}
 
-      <div className="flex max-h-60 max-w-60 justify-self-center">
+      <div className="flex h-67 w-67 justify-self-center">
         <MainCard
           svg="hidden"
           effect={renderEffect()}
@@ -133,18 +138,19 @@ function Demo() {
           lang="jsx"
         />
 
-        {componentData.tailwindConfigCode && (
+        {/* {componentData.tailwindConfigCode && (
           <CodeSnippet
             code={componentData.tailwindConfigCode}
             lang="json"
             filename="tailwind.config.js"
             snippetTitle="Tailwind Config (If you use Tailwind 4.x, use the Global CSS Code)"
           />
-        )}
+        )} */}
 
         {componentData.cssCode && (
           <CodeSnippet
             snippetTitle="Global CSS"
+            snippetSubtitle="All components use Tailwind CSS v4, so ensure it's installed in your project"
             code={componentData.cssCode}
             lang="css"
             filename="styles.css"

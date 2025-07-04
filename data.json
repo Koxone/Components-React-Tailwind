@@ -2,7 +2,6 @@
   "components": [
     {
       "title": "Text Animated Gradient",
-      "effectClass": "inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-[40px] text-transparent",
       "category": "Text",
       "componentCode": "import React from \"react\";\n\nconst TextAnimatedGradient = ({ children = \"Sample Text\", className = \"\" }) => {\n  return (\n    <span\n      className={`inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-[40px] text-transparent ${className}`}\n    >\n      {children}\n    </span>\n  );\n};\n\nexport default TextAnimatedGradient;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"text-gradient\": \"text-gradient 3s ease infinite\"\n  },\n  \"keyframes\": {\n    \"text-gradient\": {}\n  }\n}",
@@ -10,7 +9,6 @@
     },
     {
       "title": "Text Animation Horizontal",
-      "effectClass": "animate-horizontal inline-flex bg-[linear-gradient(110deg,#939393,45%,#1e293b,55%,#939393)] bg-[length:250%_100%] bg-clip-text text-[40px] text-transparent",
       "category": "Text",
       "componentCode": "import React from \"react\";\n\nfunction TextAnimationHorizontal({ children }) {\n  return (\n    <span className=\"animate-horizontal inline-flex bg-[linear-gradient(110deg,#939393,45%,#1e293b,55%,#939393)] bg-[length:250%_100%] bg-clip-text text-[40px] text-transparent\">\n      {children}\n    </span>\n  );\n}\n\nexport default TextAnimationHorizontal;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"horizontal\": \"horizontal 3s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"horizontal\": {}\n  }\n}",
@@ -18,7 +16,6 @@
     },
     {
       "title": "Text Bounce",
-      "effectClass": "animate-bounceText text-[40px] font-bold text-white",
       "category": "Text",
       "componentCode": "function TextBounce({ children }) {\n  return (\n    <div className=\"animate-bounceText text-[40px] font-bold text-white\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextBounce;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"bounceText\": \"bounceText 1s ease infinite\"\n  },\n  \"keyframes\": {\n    \"bounceText\": {}\n  }\n}",
@@ -26,7 +23,6 @@
     },
     {
       "title": "Text Color Cycle",
-      "effectClass": "animate-colorCycle text-[40px] font-bold",
       "category": "Text",
       "componentCode": "function TextColorCycle({ children }) {\n  return (\n    <div className=\"animate-colorCycle text-[40px] font-bold\">{children}</div>\n  );\n}\n\nexport default TextColorCycle;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"colorCycle\": \"colorCycle 5s ease infinite\"\n  },\n  \"keyframes\": {\n    \"colorCycle\": {}\n  }\n}",
@@ -34,7 +30,6 @@
     },
     {
       "title": "Text Fade In",
-      "effectClass": "animate-fadeInUp inline-block text-[40px] text-white",
       "category": "Text",
       "componentCode": "import React from \"react\";\n\nconst TextFadeIn = ({ children = \"Sample Text\", className = \"\" }) => {\n  return (\n    <span className={`animate-fadeInUp inline-block text-[40px] text-white`}>\n      {children}\n    </span>\n  );\n};\n\nexport default TextFadeIn;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"fadeInUp\": \"fadeInUp 4s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"fadeInUp\": {}\n  }\n}",
@@ -42,7 +37,6 @@
     },
     {
       "title": "Text Fade Loop",
-      "effectClass": "animate-fadeLoop inline-block text-[40px] font-bold text-white",
       "category": "Text",
       "componentCode": "function TextFadeLoop({ children }) {\n  return (\n    <div className=\"animate-fadeLoop inline-block text-[40px] font-bold text-white\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextFadeLoop;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"fadeLoop\": \"fadeLoop 3s ease infinite\"\n  },\n  \"keyframes\": {\n    \"fadeLoop\": {}\n  }\n}",
@@ -50,7 +44,6 @@
     },
     {
       "title": "Text Pulse",
-      "effectClass": "animate-pulseText text-white text-[40px] font-bold",
       "category": "Text",
       "componentCode": "function TextPulse({ children }) {\n  return (\n    <div className=\"animate-pulseText text-white text-[40px] font-bold\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextPulse;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"pulseText\": \"pulseText 2s ease infinite\"\n  },\n  \"keyframes\": {\n    \"pulseText\": {}\n  }\n}",
@@ -58,7 +51,6 @@
     },
     {
       "title": "Text Rotate",
-      "effectClass": "animate-rotateText inline-block text-[40px] font-bold text-white",
       "category": "Text",
       "componentCode": "function TextRotate({ children }) {\n  return (\n    <div className=\"animate-rotateText inline-block text-[40px] font-bold text-white\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextRotate;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"rotateText\": \"rotateText 2s ease infinite\"\n  },\n  \"keyframes\": {\n    \"rotateText\": {}\n  }\n}",
@@ -66,7 +58,6 @@
     },
     {
       "title": "Text Scale Loop",
-      "effectClass": "animate-scaleLoop inline-block text-[40px] font-bold text-white",
       "category": "Text",
       "componentCode": "function TextScaleLoop({ children }) {\n  return (\n    <div className=\"animate-scaleLoop inline-block text-[40px] font-bold text-white\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextScaleLoop;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"scaleLoop\": \"scaleLoop 2s ease infinite\"\n  },\n  \"keyframes\": {\n    \"scaleLoop\": {}\n  }\n}",
@@ -74,7 +65,6 @@
     },
     {
       "title": "Text Scale Pulse",
-      "effectClass": "animate-scalePulse text-white text-[40px] font-bold",
       "category": "Text",
       "componentCode": "function TextScalePulse({ children }) {\n  return (\n    <div className=\"animate-scalePulse text-white text-[40px] font-bold\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextScalePulse;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"scalePulse\": \"scalePulse 1.5s ease infinite\"\n  },\n  \"keyframes\": {\n    \"scalePulse\": {}\n  }\n}",
@@ -82,7 +72,6 @@
     },
     {
       "title": "Text Shine",
-      "effectClass": "animate-background-shine inline-flex bg-[linear-gradient(110deg,#939393,45%,#1e293b,55%,#939393)] bg-[length:250%_100%] bg-clip-text text-[40px] text-transparent",
       "category": "Text",
       "componentCode": "import React from \"react\";\n\nfunction TextShine({ children }) {\n  return (\n    <span className=\"animate-background-shine inline-flex bg-[linear-gradient(110deg,#939393,45%,#1e293b,55%,#939393)] bg-[length:250%_100%] bg-clip-text text-[40px] text-transparent\">\n      {children}\n    </span>\n  );\n}\n\nexport default TextShine;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"background-shine\": \"background-shine 2s linear infinite\"\n  },\n  \"keyframes\": {\n    \"background-shine\": {}\n  }\n}",
@@ -90,7 +79,6 @@
     },
     {
       "title": "Text Skew Loop",
-      "effectClass": "animate-skewLoop inline-block text-[40px] font-bold text-white",
       "category": "Text",
       "componentCode": "function TextSkewLoop({ children }) {\n  return (\n    <div className=\"animate-skewLoop inline-block text-[40px] font-bold text-white\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextSkewLoop;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"skewLoop\": \"skewLoop 2s ease infinite\"\n  },\n  \"keyframes\": {\n    \"skewLoop\": {}\n  }\n}",
@@ -98,7 +86,6 @@
     },
     {
       "title": "Text Slide In Left",
-      "effectClass": "overflow-hidden w-full",
       "category": "Text",
       "componentCode": "function TextSlideInLeft({ children }) {\n  return (\n    <div className=\"overflow-hidden w-full\">\n      <div className=\"animate-slideInLeftLoop text-[40px] text-white\">\n        {children}\n      </div>\n    </div>\n  );\n}\n\nexport default TextSlideInLeft;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"slideInLeftLoop\": \"slideInLeftLoop 3s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"slideInLeftLoop\": {}\n  }\n}",
@@ -106,7 +93,6 @@
     },
     {
       "title": "Text Slide In Right",
-      "effectClass": "relative inline-block w-full overflow-hidden",
       "category": "Text",
       "componentCode": "function TextSlideInRight({ children }) {\n  return (\n    <div className=\"relative inline-block w-full overflow-hidden\">\n      <span className=\"animate-slideInRightLoop inline-block text-[40px] text-white\">\n        {children}\n      </span>\n    </div>\n  );\n}\n\nexport default TextSlideInRight;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"slideInRightLoop\": \"slideInRightLoop 3s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"slideInRightLoop\": {}\n  }\n}",
@@ -114,7 +100,6 @@
     },
     {
       "title": "Text Spin Loop",
-      "effectClass": "animate-spinLoop text-white text-[40px] font-bold inline-block",
       "category": "Text",
       "componentCode": "function TextSpinLoop({ children }) {\n  return (\n    <div className=\"animate-spinLoop text-white text-[40px] font-bold inline-block\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextSpinLoop;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"spinLoop\": \"spinLoop 5s linear infinite\"\n  },\n  \"keyframes\": {\n    \"spinLoop\": {}\n  }\n}",
@@ -122,7 +107,6 @@
     },
     {
       "title": "Text Typewriter",
-      "effectClass": "animate-typewriter border-r-2 border-white pr-1 text-[40px] whitespace-nowrap text-white",
       "category": "Text",
       "componentCode": "import React from \"react\";\n\nconst TextTypewriter = ({ children = \"Sample Text\", className = \"\" }) => {\n  return (\n    <span\n      className={`animate-typewriter border-r-2 border-white pr-1 text-[40px] whitespace-nowrap text-white ${className}`}\n    >\n      {children}\n    </span>\n  );\n};\n\nexport default TextTypewriter;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"typewriter\": \"typewriter 4s ease infinite\"\n  },\n  \"keyframes\": {\n    \"typewriter\": {}\n  }\n}",
@@ -130,7 +114,6 @@
     },
     {
       "title": "Text Wave",
-      "effectClass": "animate-wave text-white text-[40px] font-bold",
       "category": "Text",
       "componentCode": "// TextWave.jsx\nfunction TextWave({ children }) {\n  return (\n    <div className=\"animate-wave text-white text-[40px] font-bold\">\n      {children.split(\"\").map((char, index) => (\n        <span key={index}>{char === \" \" ? \"\\u00A0\" : char}</span>\n      ))}\n    </div>\n  );\n}\n\nexport default TextWave;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"wave\": \"wave 1.5s ease infinite\"\n  },\n  \"keyframes\": {\n    \"wave\": {}\n  }\n}",
@@ -138,7 +121,6 @@
     },
     {
       "title": "Text Wiggle",
-      "effectClass": "animate-wiggle text-white text-[40px] font-bold inline-block",
       "category": "Text",
       "componentCode": "function TextWiggle({ children }) {\n  return (\n    <div className=\"animate-wiggle text-white text-[40px] font-bold inline-block\">\n      {children}\n    </div>\n  );\n}\n\nexport default TextWiggle;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"wiggle\": \"wiggle 0.5s ease infinite\"\n  },\n  \"keyframes\": {\n    \"wiggle\": {}\n  }\n}",
@@ -146,7 +128,6 @@
     },
     {
       "title": "Button Border Glow",
-      "effectClass": "btn-border-glow px-4 py-2 rounded-md text-white text-xl border-2",
       "category": "Button",
       "componentCode": "function ButtonBorderGlow({ children }) {\n  return (\n    <button className=\"btn-border-glow px-4 py-2 rounded-md text-white text-xl border-2\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonBorderGlow;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"borderGlowLoop\": \"borderGlowLoop 2s infinite\"\n  },\n  \"keyframes\": {\n    \"borderGlowLoop\": {\n      \"0%, 100%\": { \"box-shadow\": \"0 0 5px #3b82f6\" },\n      \"50%\": { \"box-shadow\": \"0 0 20px #3b82f6\" }\n    }\n  }\n}",
@@ -155,7 +136,6 @@
     },
     {
       "title": "Button Bounce",
-      "effectClass": "btn-bounce px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonBounce({ children }) {\n  return (\n    <button className=\"btn-bounce px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonBounce;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"bounceLoop\": \"bounceLoop 1s infinite\"\n  },\n  \"keyframes\": {\n    \"bounceLoop\": {\n      \"0%, 100%\": { \"transform\": \"translateY(0)\" },\n      \"50%\": { \"transform\": \"translateY(-5px)\" }\n    }\n  }\n}",
@@ -163,7 +143,6 @@
     },
     {
       "title": "Button Diagonal Slide",
-      "effectClass": "btn-diagonal-slide text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonDiagonalSlide({ children }) {\n  return <button className=\"btn-diagonal-slide text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonDiagonalSlide;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"diagonalSlide\": \"diagonalSlide 3s infinite\"\n  },\n  \"keyframes\": {\n    \"diagonalSlide\": {\n      \"0%\": { \"transform\": \"translate(-100%, -100%)\" },\n      \"50%\": { \"transform\": \"translate(0, 0)\" },\n      \"100%\": { \"transform\": \"translate(-100%, -100%)\" }\n    }\n  }\n}",
@@ -171,7 +150,6 @@
     },
     {
       "title": "Button Flash",
-      "effectClass": "btn-flash text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonFlash({ children }) {\n  return <button className=\"btn-flash text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonFlash;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"flash\": \"flash 1.5s infinite\"\n  },\n  \"keyframes\": {\n    \"flash\": {\n      \"0%, 100%\": { \"opacity\": \"1\" },\n      \"50%\": { \"opacity\": \"0.1\" }\n    }\n  }\n}",
@@ -179,7 +157,6 @@
     },
     {
       "title": "Button Flip",
-      "effectClass": "btn-flip text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonFlip({ children }) {\n  return <button className=\"btn-flip text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonFlip;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"flip\": \"flip 2s infinite\"\n  },\n  \"keyframes\": {\n    \"flip\": {\n      \"0%\": { \"transform\": \"rotateY(0)\" },\n      \"50%\": { \"transform\": \"rotateY(180deg)\" },\n      \"100%\": { \"transform\": \"rotateY(0)\" }\n    }\n  }\n}",
@@ -187,7 +164,6 @@
     },
     {
       "title": "Button Glow",
-      "effectClass": "btn-glow px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonGlow({ children }) {\n  return (\n    <button className=\"btn-glow px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonGlow;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"glowLoop\": \"glowLoop 2s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"glowLoop\": {\n      \"0%, 100%\": { \"box-shadow\": \"0 0 10px #1d4ed8, 0 0 20px #1d4ed8\" },\n      \"50%\": { \"box-shadow\": \"0 0 20px #1d4ed8, 0 0 40px #1d4ed8\" }\n    }\n  }\n}",
@@ -195,7 +171,6 @@
     },
     {
       "title": "Button Glow Border",
-      "effectClass": "btn-glow-border text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonGlowBorder({ children }) {\n  return <button className=\"btn-glow-border text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonGlowBorder;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"glowBorder\": \"glowBorder 2s infinite\"\n  },\n  \"keyframes\": {\n    \"glowBorder\": {\n      \"0%, 100%\": { \"box-shadow\": \"0 0 5px #9333ea\" },\n      \"50%\": { \"box-shadow\": \"0 0 15px #9333ea\" }\n    }\n  }\n}",
@@ -203,7 +178,6 @@
     },
     {
       "title": "Button Gradient Shift",
-      "effectClass": "btn-gradient-shift px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonGradientShift({ children }) {\n  return (\n    <button className=\"btn-gradient-shift px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonGradientShift;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"gradientShiftLoop\": \"gradientShiftLoop 5s ease infinite\"\n  },\n  \"keyframes\": {\n    \"gradientShiftLoop\": {\n      \"0%\": { \"background-position\": \"0% 50%\" },\n      \"50%\": { \"background-position\": \"100% 50%\" },\n      \"100%\": { \"background-position\": \"0% 50%\" }\n    }\n  }\n}",
@@ -211,7 +185,6 @@
     },
     {
       "title": "Button Heartbeat",
-      "effectClass": "btn-heartbeat text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonHeartbeat({ children }) {\n  return <button className=\"btn-heartbeat text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonHeartbeat;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"heartbeat\": \"heartbeat 1.5s infinite\"\n  },\n  \"keyframes\": {\n    \"heartbeat\": {\n      \"0%, 100%\": { \"transform\": \"scale(1)\" },\n      \"14%\": { \"transform\": \"scale(1.3)\" },\n      \"28%\": { \"transform\": \"scale(1)\" },\n      \"42%\": { \"transform\": \"scale(1.3)\" },\n      \"70%\": { \"transform\": \"scale(1)\" }\n    }\n  }\n}",
@@ -219,7 +192,6 @@
     },
     {
       "title": "Button Pulse",
-      "effectClass": "btn-pulse px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonPulse({ children }) {\n  return (\n    <button className=\"btn-pulse px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonPulse;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"pulseLoop\": \"pulseLoop 2s infinite\"\n  },\n  \"keyframes\": {\n    \"pulseLoop\": {\n      \"0%, 100%\": { \"transform\": \"scale(1)\" },\n      \"50%\": { \"transform\": \"scale(1.05)\" }\n    }\n  }\n}",
@@ -227,7 +199,6 @@
     },
     {
       "title": "Button Ripple",
-      "effectClass": "btn-ripple px-4 py-2 rounded-md text-white text-xl overflow-hidden relative",
       "category": "Button",
       "componentCode": "function ButtonRipple({ children }) {\n  return (\n    <button className=\"btn-ripple px-4 py-2 rounded-md text-white text-xl overflow-hidden relative\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonRipple;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"rippleLoop\": \"rippleLoop 2s infinite\"\n  },\n  \"keyframes\": {\n    \"rippleLoop\": {\n      \"0%\": { \"box-shadow\": \"0 0 0 0 rgba(255, 255, 255, 0.4)\" },\n      \"50%\": { \"box-shadow\": \"0 0 0 10px rgba(255, 255, 255, 0)\" },\n      \"100%\": { \"box-shadow\": \"0 0 0 0 rgba(255, 255, 255, 0)\" }\n    }\n  }\n}",
@@ -235,7 +206,6 @@
     },
     {
       "title": "Button Rotate",
-      "effectClass": "btn-rotate text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonRotate({ children }) {\n  return <button className=\"btn-rotate text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonRotate;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"rotate\": \"rotate 3s infinite linear\"\n  },\n  \"keyframes\": {\n    \"rotate\": {\n      \"0%\": { \"transform\": \"rotate(0)\" },\n      \"50%\": { \"transform\": \"rotate(180deg)\" },\n      \"100%\": { \"transform\": \"rotate(0)\" }\n    }\n  }\n}",
@@ -243,7 +213,6 @@
     },
     {
       "title": "Button Scale",
-      "effectClass": "btn-scale px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonScale({ children }) {\n  return (\n    <button className=\"btn-scale px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonScale;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"scaleLoopBtn\": \"scaleLoopBtn 1.5s infinite\"\n  },\n  \"keyframes\": {\n    \"scaleLoopBtn\": {\n      \"0%, 100%\": { \"transform\": \"scale(1)\" },\n      \"50%\": { \"transform\": \"scale(1.1)\" }\n    }\n  }\n}",
@@ -251,7 +220,6 @@
     },
     {
       "title": "Button Shadow Pulse",
-      "effectClass": "btn-shadow-pulse text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonShadowPulse({ children }) {\n  return <button className=\"btn-shadow-pulse text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonShadowPulse;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"shadowPulse\": \"shadowPulse 2s infinite\"\n  },\n  \"keyframes\": {\n    \"shadowPulse\": {\n      \"0%, 100%\": { \"box-shadow\": \"0 0 5px #3b82f6\" },\n      \"50%\": { \"box-shadow\": \"0 0 20px #3b82f6\" }\n    }\n  }\n}",
@@ -259,7 +227,6 @@
     },
     {
       "title": "Button Shimmer",
-      "effectClass": "btn-shimmer text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonShimmer({ children }) {\n  return <button className=\"btn-shimmer text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonShimmer;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"shimmer\": \"shimmer 4s infinite\"\n  },\n  \"keyframes\": {\n    \"shimmer\": {\n      \"0%\": { \"background-position\": \"-200% 0\" },\n      \"100%\": { \"background-position\": \"200% 0\" }\n    }\n  }\n}",
@@ -267,7 +234,6 @@
     },
     {
       "title": "Button Shooting Star Border",
-      "effectClass": "button-shooting-star group relative grid overflow-hidden rounded-full px-4 py-2 shadow-[inset_0_1000px_0_0_hsl(0_0%_20%)] transition-colors duration-200",
       "category": "Button",
       "componentCode": "export default function ButtonShootingStarBorder() {\n  return (\n    <button className=\"button-shooting-star group relative grid overflow-hidden rounded-full px-4 py-2 shadow-[inset_0_1000px_0_0_hsl(0_0%_20%)] transition-colors duration-200\">\n      <span className=\"spark absolute inset-0 h-full w-full animate-[flip_6s_steps(2,end)_infinite] before:absolute before:inset-0 before:animate-[rotate_3s_linear_infinite]\"></span>\n      <span className=\"absolute inset-[3px] rounded-full bg-blue-600 transition-colors duration-200 group-hover:bg-neutral-800\"></span>\n      <span className=\"relative z-10 py-0.5 text-lg text-neutral-100\">\n        Hover Me!\n      </span>\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -275,7 +241,6 @@
     },
     {
       "title": "Button Slide In",
-      "effectClass": "btn-slide-in px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonSlideIn({ children }) {\n  return (\n    <button className=\"btn-slide-in px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonSlideIn;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"slideInClipLoop\": \"slideInClipLoop 3s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"slideInClipLoop\": {\n      \"0%\": { \"clip-path\": \"inset(0 100% 0 0)\" },\n      \"50%\": { \"clip-path\": \"inset(0 0 0 0)\" },\n      \"100%\": { \"clip-path\": \"inset(0 100% 0 0)\" }\n    }\n  }\n}",
@@ -283,7 +248,6 @@
     },
     {
       "title": "Button Slide Out",
-      "effectClass": "btn-slide-out px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonSlideOut({ children }) {\n  return (\n    <button className=\"btn-slide-out px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonSlideOut;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"slideOutClipLoop\": \"slideOutClipLoop 3s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"slideOutClipLoop\": {\n      \"0%\": { \"clip-path\": \"inset(0 0 0 100%)\" },\n      \"50%\": { \"clip-path\": \"inset(0 0 0 0)\" },\n      \"100%\": { \"clip-path\": \"inset(0 0 0 100%)\" }\n    }\n  }\n}",
@@ -291,7 +255,6 @@
     },
     {
       "title": "Button Swing",
-      "effectClass": "btn-swing text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonSwing({ children }) {\n  return <button className=\"btn-swing text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonSwing;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"swing\": \"swing 2s infinite\"\n  },\n  \"keyframes\": {\n    \"swing\": {\n      \"0%\": { \"transform\": \"rotate(0)\" },\n      \"25%\": { \"transform\": \"rotate(10deg)\" },\n      \"50%\": { \"transform\": \"rotate(-10deg)\" },\n      \"75%\": { \"transform\": \"rotate(5deg)\" },\n      \"100%\": { \"transform\": \"rotate(0)\" }\n    }\n  }\n}",
@@ -299,7 +262,6 @@
     },
     {
       "title": "Button Symbion",
-      "effectClass": "button-symbion-wrapper relative flex h-full w-full items-center justify-center",
       "category": "Button",
       "componentCode": "export default function ButtonSymbion() {\n  return (\n    <div className=\"button-symbion-wrapper relative flex h-full w-full items-center justify-center\">\n      <button className=\"button-symbion relative inline-flex items-center justify-center rounded-xl bg-white px-6 py-4 text-xl font-bold text-black\">\n        Hover me\n        <div className=\"bubble-symbion absolute flex h-16 w-16 items-center justify-center rounded-xl bg-white\">\n          <svg\n            width=\"15\"\n            height=\"15\"\n            viewBox=\"0 0 15 15\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n            className=\"h-8 w-8 text-white\"\n          >\n            <path\n              d=\"M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z\"\n              fill=\"currentColor\"\n              fillRule=\"evenodd\"\n              clipRule=\"evenodd\"\n            ></path>\n          </svg>\n        </div>\n      </button>\n\n      <svg\n        className=\"absolute hidden\"\n        width=\"0\"\n        height=\"0\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n      >\n        <defs>\n          <filter id=\"symbion\">\n            <feGaussianBlur\n              in=\"SourceGraphic\"\n              stdDeviation=\"10\"\n              result=\"blur\"\n            />\n            <feColorMatrix\n              in=\"blur\"\n              mode=\"matrix\"\n              values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10\"\n              result=\"symbion\"\n            />\n            <feComposite in=\"SourceGraphic\" in2=\"symbion\" operator=\"atop\" />\n          </filter>\n        </defs>\n      </svg>\n    </div>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -307,7 +269,6 @@
     },
     {
       "title": "Button Tilt",
-      "effectClass": "btn-tilt text-white py-2 px-4 rounded",
       "category": "Button",
       "componentCode": "import React from \"react\";\nfunction ButtonTilt({ children }) {\n  return <button className=\"btn-tilt text-white py-2 px-4 rounded\">{children}</button>;\n}\nexport default ButtonTilt;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"tilt\": \"tilt 2s infinite\"\n  },\n  \"keyframes\": {\n    \"tilt\": {\n      \"0%\": { \"transform\": \"rotateZ(0deg)\" },\n      \"50%\": { \"transform\": \"rotateZ(5deg)\" },\n      \"100%\": { \"transform\": \"rotateZ(0deg)\" }\n    }\n  }\n}",
@@ -315,7 +276,6 @@
     },
     {
       "title": "Button Wiggle",
-      "effectClass": "btn-wiggle px-4 py-2 rounded-md text-white text-xl",
       "category": "Button",
       "componentCode": "function ButtonWiggle({ children }) {\n  return (\n    <button className=\"btn-wiggle px-4 py-2 rounded-md text-white text-xl\">\n      {children}\n    </button>\n  );\n}\n\nexport default ButtonWiggle;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"wiggleLoop\": \"wiggleLoop 0.5s infinite\"\n  },\n  \"keyframes\": {\n    \"wiggleLoop\": {\n      \"0%, 100%\": { \"transform\": \"rotate(-3deg)\" },\n      \"50%\": { \"transform\": \"rotate(3deg)\" }\n    }\n  }\n}",
@@ -323,7 +283,6 @@
     },
     {
       "title": "Input Animated Gradient Border",
-      "effectClass": "w-full rounded border-2 border-transparent bg-black p-3 text-white outline-none transition focus:border focus:border-transparent focus:bg-black focus:outline-none focus:ring-4 focus:ring-gradient-to-r focus:from-pink-500 focus:to-yellow-500",
       "category": "Input",
       "componentCode": "const InputAnimatedGradientBorder = (props) => (\n  <input\n    {...props}\n    className=\"w-full rounded border-2 border-transparent bg-black p-3 text-white outline-none transition focus:border focus:border-transparent focus:bg-black focus:outline-none focus:ring-4 focus:ring-gradient-to-r focus:from-pink-500 focus:to-yellow-500\"\n    placeholder=\"Animated Gradient Border\"\n  />\n);\nexport default InputAnimatedGradientBorder;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"gradient-shift\": \"gradient-shift 3s ease infinite\"\n  },\n  \"keyframes\": {\n    \"gradient-shift\": {\n      \"0%\": {\n        \"backgroundPosition\": \"0% 50%\"\n      },\n      \"50%\": {\n        \"backgroundPosition\": \"100% 50%\"\n      },\n      \"100%\": {\n        \"backgroundPosition\": \"0% 50%\"\n      }\n    }\n  }\n}",
@@ -331,7 +290,6 @@
     },
     {
       "title": "Input Animated Label Slide",
-      "effectClass": "relative",
       "category": "Input",
       "componentCode": "import { useState } from \"react\";\n\nconst InputAnimatedLabelSlide = ({ label = \"Label Slide\", ...props }) => {\n  const [focused, setFocused] = useState(false);\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <div className=\"relative\">\n      <input\n        {...props}\n        onFocus={() => setFocused(true)}\n        onBlur={() => setFocused(value !== \"\")}\n        onChange={(e) => setValue(e.target.value)}\n        className=\"peer w-full border-b-2 border-gray-500 bg-transparent p-3 text-white placeholder-transparent focus:border-blue-500 focus:outline-none\"\n        placeholder={label}\n      />\n      <label\n        className={`absolute left-3 top-3 text-gray-400 transition-all duration-300 ${\n          focused || value ? \"-top-4 text-xs text-blue-500\" : \"\"\n        }`}\n      >\n        {label}\n      </label>\n    </div>\n  );\n};\nexport default InputAnimatedLabelSlide;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -339,7 +297,6 @@
     },
     {
       "title": "Input Animated Placeholder",
-      "effectClass": "",
       "category": "Input",
       "componentCode": "import React, { useState } from \"react\";\n\nconst InputAnimatedPlaceholder = ({ placeholder = \"Type something...\", className = \"\", ...props }) => {\n  const [focused, setFocused] = useState(false);\n\n  return (\n    <input\n      placeholder={focused ? placeholder : \"\"}\n      onFocus={() => setFocused(true)}\n      onBlur={() => setFocused(false)}\n      className={`w-full rounded-md border border-gray-700 bg-gray-900 p-3 text-white placeholder-gray-400 transition duration-300 ease-in-out focus:border-blue-500 focus:outline-none ${className}`}\n      {...props}\n    />\n  );\n};\n\nexport default InputAnimatedPlaceholder;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -347,7 +304,6 @@
     },
     {
       "title": "Input Animated Underline",
-      "effectClass": "w-full border-b-2 border-gray-600 bg-transparent p-3 text-white placeholder-gray-400 focus:outline-none",
       "category": "Input",
       "componentCode": "import React, { useState } from \"react\";\n\nconst InputAnimatedUnderline = ({ placeholder = \"Enter text\", className = \"\", ...props }) => {\n  const [focused, setFocused] = useState(false);\n\n  return (\n    <div className={`relative w-full ${className}`}>\n      <input\n        placeholder={placeholder}\n        onFocus={() => setFocused(true)}\n        onBlur={() => setFocused(false)}\n        className=\"w-full border-b-2 border-gray-600 bg-transparent p-3 text-white placeholder-gray-400 focus:outline-none\"\n        {...props}\n      />\n      <span\n        className={`absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 to-purple-500 transition-transform duration-300 ${focused ? \"scale-x-100\" : \"scale-x-0\"} origin-left`}\n      />\n    </div>\n  );\n};\n\nexport default InputAnimatedUnderline;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -355,7 +311,6 @@
     },
     {
       "title": "Input Border Glow On Hover",
-      "effectClass": "w-full rounded border border-gray-700 bg-black p-3 text-white outline-none transition hover:border-blue-500 focus:border-blue-500",
       "category": "Input",
       "componentCode": "const InputBorderGlowOnHover = (props) => (\n  <input\n    {...props}\n    className=\"w-full rounded border border-gray-700 bg-black p-3 text-white outline-none transition hover:border-blue-500 focus:border-blue-500\"\n    placeholder=\"Border Glow On Hover\"\n  />\n);\nexport default InputBorderGlowOnHover;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"glow\": \"glow 2s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"glow\": {\n      \"0%, 100%\": {\n        \"boxShadow\": \"0 0 5px rgba(59, 130, 246, 0.5)\"\n      },\n      \"50%\": {\n        \"boxShadow\": \"0 0 20px rgba(59, 130, 246, 0.8)\"\n      }\n    }\n  }\n}",
@@ -363,7 +318,6 @@
     },
     {
       "title": "Input Dark Glass Blur",
-      "effectClass": "w-full rounded-md border border-white/10 bg-black/30 p-3 text-white placeholder-gray-400 backdrop-blur-sm focus:border-blue-500 focus:bg-black/40",
       "category": "Input",
       "componentCode": "const InputDarkGlassBlur = (props) => (\n  <input\n    {...props}\n    className=\"w-full rounded-md border border-white/10 bg-black/30 p-3 text-white placeholder-gray-400 backdrop-blur-sm focus:border-blue-500 focus:bg-black/40\"\n    placeholder=\"Dark Glass Blur\"\n  />\n);\nexport default InputDarkGlassBlur;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -371,7 +325,6 @@
     },
     {
       "title": "Input Double Shadow",
-      "effectClass": "w-full rounded border border-gray-700 bg-black p-3 text-white outline-none transition focus:shadow-[inset_0_0_10px_#9333ea,inset_0_0_20px_#3b82f6]",
       "category": "Input",
       "componentCode": "const InputDoubleShadow = (props) => (\n  <input\n    {...props}\n    className=\"w-full rounded border border-gray-700 bg-black p-3 text-white outline-none transition focus:shadow-[inset_0_0_10px_#9333ea,inset_0_0_20px_#3b82f6]\"\n    placeholder=\"Double Shadow\"\n  />\n);\nexport default InputDoubleShadow;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -379,7 +332,6 @@
     },
     {
       "title": "Input Floating Label",
-      "effectClass": "peer w-full border-b-2 border-gray-600 bg-transparent p-3 text-white placeholder-transparent focus:border-blue-500 focus:outline-none",
       "category": "Input",
       "componentCode": "import React, { useState } from \"react\";\n\nconst InputFloatingLabel = ({ label = \"Label\", className = \"\", ...props }) => {\n  const [value, setValue] = useState(\"\");\n\n  return (\n    <div className={`relative w-full ${className}`}>\n      <input\n        value={value}\n        onChange={(e) => setValue(e.target.value)}\n        className=\"peer w-full border-b-2 border-gray-600 bg-transparent p-3 text-white placeholder-transparent focus:border-blue-500 focus:outline-none\"\n        placeholder={label}\n        {...props}\n      />\n      <label\n        className={`absolute left-3 top-3 text-gray-400 transition-all duration-300 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-3 peer-focus:text-sm peer-focus:text-blue-400 ${value ? \"-top-3 text-sm text-blue-400\" : \"\"}`}\n      >\n        {label}\n      </label>\n    </div>\n  );\n};\n\nexport default InputFloatingLabel;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -387,7 +339,6 @@
     },
     {
       "title": "Input Glass Neon",
-      "effectClass": "",
       "category": "Input",
       "componentCode": "import React from \"react\";\n\nconst InputGlassNeon = ({ placeholder = \"Enter text\", className = \"\", ...props }) => {\n  return (\n    <input\n      placeholder={placeholder}\n      className={`w-full rounded-xl border border-white/20 bg-white/10 p-3 text-white placeholder-gray-300 backdrop-blur-md shadow-[0_0_20px_#0ea5e9] transition-all duration-300 focus:shadow-[0_0_40px_#22d3ee] focus:outline-none ${className}`}\n      {...props}\n    />\n  );\n};\n\nexport default InputGlassNeon;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -395,7 +346,6 @@
     },
     {
       "title": "Input Glassmorphism",
-      "effectClass": "",
       "category": "Input",
       "componentCode": "import React from \"react\";\n\nconst InputGlassmorphism = ({ placeholder = \"Enter text\", className = \"\", ...props }) => {\n  return (\n    <input\n      placeholder={placeholder}\n      className={`w-full rounded-xl border border-white/20 bg-white/10 p-3 text-white placeholder-gray-300 backdrop-blur-md transition-all duration-300 focus:border-blue-400 focus:bg-white/20 focus:outline-none ${className}`}\n      {...props}\n    />\n  );\n};\n\nexport default InputGlassmorphism;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -403,7 +353,6 @@
     },
     {
       "title": "Input Gradient Border",
-      "effectClass": "",
       "category": "Input",
       "componentCode": "import React from \"react\";\n\nconst InputGradientBorder = ({ placeholder = \"Enter text\", className = \"\", ...props }) => {\n  return (\n    <input\n      placeholder={placeholder}\n      className={`w-full rounded-md border-2 border-transparent bg-gray-900 p-3 text-white placeholder-gray-400 transition-all duration-500 ease-in-out focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-padding ${className}`}\n      {...props}\n    />\n  );\n};\n\nexport default InputGradientBorder;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"gradient-shift\": \"gradient-shift 3s ease infinite\"\n  },\n  \"keyframes\": {\n    \"gradient-shift\": {\n      \"0%\": {\n        \"backgroundPosition\": \"0% 50%\"\n      },\n      \"50%\": {\n        \"backgroundPosition\": \"100% 50%\"\n      },\n      \"100%\": {\n        \"backgroundPosition\": \"0% 50%\"\n      }\n    }\n  }\n}",
@@ -411,7 +360,6 @@
     },
     {
       "title": "Input Gradient Text",
-      "effectClass": "",
       "category": "Input",
       "componentCode": "import React from \"react\";\n\nconst InputGradientText = ({ placeholder = \"Enter text\", className = \"\", ...props }) => {\n  return (\n    <input\n      placeholder={placeholder}\n      className={`w-full rounded-md border border-gray-600 bg-gray-900 p-3 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 placeholder-gray-400 focus:border-blue-500 focus:outline-none ${className}`}\n      {...props}\n    />\n  );\n};\n\nexport default InputGradientText;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"gradient-shift\": \"gradient-shift 3s ease infinite\"\n  },\n  \"keyframes\": {\n    \"gradient-shift\": {\n      \"0%\": {\n        \"backgroundPosition\": \"0% 50%\"\n      },\n      \"50%\": {\n        \"backgroundPosition\": \"100% 50%\"\n      },\n      \"100%\": {\n        \"backgroundPosition\": \"0% 50%\"\n      }\n    }\n  }\n}",
@@ -419,7 +367,6 @@
     },
     {
       "title": "Input Icon Inside",
-      "effectClass": "w-full rounded-md border border-gray-600 bg-gray-900 p-3 pl-10 text-white placeholder-gray-400 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none",
       "category": "Input",
       "componentCode": "import React from \"react\";\nimport { Mail } from \"lucide-react\";\n\nconst InputIconInside = ({\n  placeholder = \"Your email\",\n  className = \"\",\n  ...props\n}) => {\n  return (\n    <div className={`relative w-full ${className}`}>\n      <Mail\n        className=\"absolute top-1/2 left-3 -translate-y-1/2 text-gray-500\"\n        size={18}\n      />\n      <input\n        placeholder={placeholder}\n        className=\"w-full rounded-md border border-gray-600 bg-gray-900 p-3 pl-10 text-white placeholder-gray-400 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:outline-none\"\n        {...props}\n      />\n    </div>\n  );\n};\n\n// npm install lucide-react\n// This is necessary for this component to work\n\nexport default InputIconInside;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -427,7 +374,6 @@
     },
     {
       "title": "Input Icon Right",
-      "effectClass": "w-full rounded border border-gray-700 bg-black p-3 pr-10 text-white outline-none focus:border-blue-500",
       "category": "Input",
       "componentCode": "import { Search } from \"lucide-react\";\n\nconst InputIconRight = (props) => (\n  <div className=\"relative flex items-center\">\n    <input\n      {...props}\n      className=\"w-full rounded border border-gray-700 bg-black p-3 pr-10 text-white outline-none focus:border-blue-500\"\n      placeholder=\"Icon Right\"\n    />\n    <Search className=\"absolute right-3 text-gray-400\" size={18} />\n  </div>\n);\nexport default InputIconRight;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -435,7 +381,6 @@
     },
     {
       "title": "Input Left Accent Border",
-      "effectClass": "w-full border-l-4 border-gray-500 bg-gray-900 p-3 text-white transition focus:border-pink-500 focus:outline-none",
       "category": "Input",
       "componentCode": "const InputLeftAccentBorder = (props) => (\n  <input\n    {...props}\n    className=\"w-full border-l-4 border-gray-500 bg-gray-900 p-3 text-white transition focus:border-pink-500 focus:outline-none\"\n    placeholder=\"Left Accent Border\"\n  />\n);\nexport default InputLeftAccentBorder;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -443,7 +388,6 @@
     },
     {
       "title": "Input Neon Glow",
-      "effectClass": "",
       "category": "Input",
       "componentCode": "import React from \"react\";\n\nconst InputNeonGlow = ({ placeholder = \"Enter text\", className = \"\", ...props }) => {\n  return (\n    <input\n      placeholder={placeholder}\n      className={`w-full rounded-md border border-gray-700 bg-black p-3 text-white placeholder-gray-500 shadow-[0_0_10px_#8b5cf6] transition focus:border-purple-500 focus:shadow-[0_0_20px_#c084fc] focus:outline-none ${className}`}\n      {...props}\n    />\n  );\n};\n\nexport default InputNeonGlow;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"glow\": \"glow 2s ease-in-out infinite\"\n  },\n  \"keyframes\": {\n    \"glow\": {\n      \"0%, 100%\": {\n        \"boxShadow\": \"0 0 5px rgba(59, 130, 246, 0.5)\"\n      },\n      \"50%\": {\n        \"boxShadow\": \"0 0 20px rgba(59, 130, 246, 0.8)\"\n      }\n    }\n  }\n}",
@@ -451,7 +395,6 @@
     },
     {
       "title": "Input Rounded Full",
-      "effectClass": "w-full rounded-full border border-gray-700 bg-gray-900 p-3 text-center text-white outline-none focus:border-blue-500",
       "category": "Input",
       "componentCode": "const InputRoundedFull = (props) => (\n  <input\n    {...props}\n    className=\"w-full rounded-full border border-gray-700 bg-gray-900 p-3 text-center text-white outline-none focus:border-blue-500\"\n    placeholder=\"Rounded Full\"\n  />\n);\nexport default InputRoundedFull;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -459,7 +402,6 @@
     },
     {
       "title": "Input Textarea Animated Border",
-      "effectClass": "",
       "category": "Input",
       "componentCode": "import React from \"react\";\n\nconst InputTextareaAnimatedBorder = ({ placeholder = \"Enter your message...\", className = \"\", ...props }) => {\n  return (\n    <textarea\n      placeholder={placeholder}\n      rows={4}\n      className={`w-full rounded-lg border-2 border-transparent bg-gray-900 p-3 text-white placeholder-gray-400 transition duration-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 ${className}`}\n      {...props}\n    />\n  );\n};\n\nexport default InputTextareaAnimatedBorder;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -467,7 +409,6 @@
     },
     {
       "title": "Input Vibrant Focus Ring",
-      "effectClass": "w-full rounded border border-gray-700 bg-gray-900 p-3 text-white outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2",
       "category": "Input",
       "componentCode": "const InputVibrantFocusRing = (props) => (\n  <input\n    {...props}\n    className=\"w-full rounded border border-gray-700 bg-gray-900 p-3 text-white outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2\"\n    placeholder=\"Vibrant Focus Ring\"\n  />\n);\nexport default InputVibrantFocusRing;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -475,7 +416,6 @@
     },
     {
       "title": "Input With Gradient Text",
-      "effectClass": "w-full rounded border border-gray-700 bg-black p-3 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 placeholder-white/50 focus:border-blue-500",
       "category": "Input",
       "componentCode": "const InputWithGradientText = (props) => (\n  <input\n    {...props}\n    className=\"w-full rounded border border-gray-700 bg-black p-3 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 placeholder-white/50 focus:border-blue-500\"\n    placeholder=\"Gradient Text\"\n  />\n);\nexport default InputWithGradientText;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"gradient-shift\": \"gradient-shift 3s ease infinite\"\n  },\n  \"keyframes\": {\n    \"gradient-shift\": {\n      \"0%\": {\n        \"backgroundPosition\": \"0% 50%\"\n      },\n      \"50%\": {\n        \"backgroundPosition\": \"100% 50%\"\n      },\n      \"100%\": {\n        \"backgroundPosition\": \"0% 50%\"\n      }\n    }\n  }\n}",
@@ -483,7 +423,6 @@
     },
     {
       "title": "Card3 D Tilt With Shadow",
-      "effectClass": "relative h-50 w-50 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 shadow-2xl transition-transform duration-500 hover:rotate-3 hover:scale-105",
       "category": "Card",
       "componentCode": "import React from \"react\";\n\nconst Card3DTiltWithShadow = () => {\n  return (\n    <div className=\"relative h-50 w-50 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 shadow-2xl transition-transform duration-500 hover:rotate-3 hover:scale-105\">\n      <div className=\"absolute inset-0 rounded-xl bg-black/10\"></div>\n      <div className=\"relative z-10 flex h-full w-full flex-col items-center justify-center text-white\">\n        <h2 className=\"text-xl font-bold\">3D Tilt</h2>\n        <p className=\"text-sm opacity-80\">Shadow & Hover Effect</p>\n      </div>\n    </div>\n  );\n};\n\nexport default Card3DTiltWithShadow;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -491,7 +430,6 @@
     },
     {
       "title": "Card Animated Confetti Celebration",
-      "effectClass": "relative flex h-50 w-50 cursor-pointer items-center justify-center rounded-lg bg-green-500 font-bold text-white",
       "category": "Card",
       "componentCode": "// CardAnimatedConfettiCelebration.jsx\nimport React, { useState } from \"react\";\nimport Confetti from \"react-confetti\";\n\nfunction CardAnimatedConfettiCelebration() {\n  const [showConfetti, setShowConfetti] = useState(false);\n\n  return (\n    <div\n      className=\"relative flex h-50 w-50 cursor-pointer items-center justify-center rounded-lg bg-green-500 font-bold text-white\"\n      onClick={() => setShowConfetti(!showConfetti)}\n    >\n      {showConfetti && <Confetti width={240} height={160} />}\n      Click Me!\n    </div>\n  );\n}\n\n// npm install react-confetti\n// Necessary for this component to work\n\nexport default CardAnimatedConfettiCelebration;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -499,7 +437,6 @@
     },
     {
       "title": "Card Background Video Hover",
-      "effectClass": "relative h-50 w-50 overflow-hidden rounded-lg cursor-pointer",
       "category": "Card",
       "componentCode": "// CardBackgroundVideoHover.jsx\nimport React, { useState } from \"react\";\n\nfunction CardBackgroundVideoHover() {\n  const [hovered, setHovered] = useState(false);\n\n  return (\n    <div\n      className=\"relative h-50 w-50 overflow-hidden rounded-lg cursor-pointer\"\n      onMouseEnter={() => setHovered(true)}\n      onMouseLeave={() => setHovered(false)}\n    >\n      {hovered && (\n        <video\n          src=\"https://www.w3schools.com/html/mov_bbb.mp4\"\n          autoPlay\n          muted\n          loop\n          className=\"absolute inset-0 h-full w-full object-cover\"\n        />\n      )}\n      <div className=\"relative z-10 flex h-full w-full items-center justify-center bg-black/50 text-white font-semibold\">\n        Hover for Video\n      </div>\n    </div>\n  );\n}\n\nexport default CardBackgroundVideoHover;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -507,7 +444,6 @@
     },
     {
       "title": "Card Border Pulse Animation",
-      "effectClass": "relative h-50 w-50 rounded-xl border-4 border-pink-500 animate-pulse flex items-center justify-center text-pink-500",
       "category": "Card",
       "componentCode": "import React from \"react\";\n\nconst CardBorderPulseAnimation = () => {\n  return (\n    <div className=\"relative h-50 w-50 rounded-xl border-4 border-pink-500 animate-pulse flex items-center justify-center text-pink-500\">\n      <h2 className=\"text-xl font-bold\">Border Pulse</h2>\n    </div>\n  );\n};\n\nexport default CardBorderPulseAnimation;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"pulse\": \"pulse 2s ease infinite\"\n  },\n  \"keyframes\": {\n    \"pulse\": {}\n  }\n}",
@@ -515,7 +451,6 @@
     },
     {
       "title": "Card Circular Reveal Hover",
-      "effectClass": "relative group h-50 w-50 bg-gray-800 rounded-lg overflow-hidden cursor-pointer",
       "category": "Card",
       "componentCode": "// CardCircularRevealHover.jsx\nimport React from \"react\";\n\nfunction CardCircularRevealHover() {\n  return (\n    <div className=\"relative group h-50 w-50 bg-gray-800 rounded-lg overflow-hidden cursor-pointer\">\n      <div className=\"absolute inset-0 bg-pink-500 scale-0 group-hover:scale-150 transition-transform duration-700 rounded-full\"></div>\n      <p className=\"relative z-10 flex h-full w-full items-center justify-center text-white font-bold\">\n        Hover Me\n      </p>\n    </div>\n  );\n}\n\nexport default CardCircularRevealHover;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -523,7 +458,6 @@
     },
     {
       "title": "Card Emoji React Animation",
-      "effectClass": "relative h-50 w-50 rounded-lg bg-purple-600 flex items-center justify-center text-white font-bold cursor-pointer overflow-hidden",
       "category": "Card",
       "componentCode": "// CardEmojiReactAnimation.jsx\nimport React, { useState } from \"react\";\n\nfunction CardEmojiReactAnimation() {\n  const [showEmojis, setShowEmojis] = useState(false);\n  const emojis = [\"🎉\", \"🔥\", \"✨\", \"💥\", \"💫\"];\n\n  return (\n    <div\n      className=\"relative h-50 w-50 rounded-lg bg-purple-600 flex items-center justify-center text-white font-bold cursor-pointer overflow-hidden\"\n      onMouseEnter={() => setShowEmojis(true)}\n      onMouseLeave={() => setShowEmojis(false)}\n    >\n      {showEmojis &&\n        emojis.map((emoji, idx) => (\n          <span\n            key={idx}\n            className=\"absolute text-2xl animate-bounce\"\n            style={{\n              top: `${Math.random() * 80 + 10}%`,\n              left: `${Math.random() * 80 + 10}%`,\n            }}\n          >\n            {emoji}\n          </span>\n        ))}\n      Hover Me! 🎈\n    </div>\n  );\n}\n\nexport default CardEmojiReactAnimation;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"bounce\": \"bounce 2s ease infinite\"\n  },\n  \"keyframes\": {\n    \"bounce\": {}\n  }\n}",
@@ -531,7 +465,6 @@
     },
     {
       "title": "Card Flip Glassmorphism",
-      "effectClass": "relative h-[200px] w-[200px] cursor-pointer",
       "category": "Card",
       "componentCode": "import React, { useState } from \"react\";\n\nfunction CardFlipGlassmorphism() {\n  const [flipped, setFlipped] = useState(false);\n\n  return (\n    <div\n      className=\"relative h-[200px] w-[200px] cursor-pointer\"\n      onClick={() => setFlipped(!flipped)}\n    >\n      <div\n        className={`transform-style-preserve-3d relative h-full w-full transition-transform duration-700 ${\n          flipped ? \"rotate-y-180\" : \"\"\n        }`}\n        style={{\n          transformStyle: \"preserve-3d\",\n          transform: flipped ? \"rotateY(180deg)\" : \"rotateY(0deg)\",\n        }}\n      >\n        <div\n          className=\"absolute inset-0 flex items-center justify-center rounded-xl bg-white/20 text-lg font-semibold text-white backdrop-blur-md\"\n          style={{\n            backfaceVisibility: \"hidden\",\n          }}\n        >\n          Click Me!\n        </div>\n\n        <div\n          className=\"absolute inset-0 flex items-center justify-center rounded-xl bg-purple-400/20 text-lg font-semibold text-white backdrop-blur-md\"\n          style={{\n            transform: \"rotateY(180deg)\",\n            backfaceVisibility: \"hidden\",\n          }}\n        >\n          Click Me!\n        </div>\n      </div>\n    </div>\n  );\n}\n\nexport default CardFlipGlassmorphism;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -539,7 +472,6 @@
     },
     {
       "title": "Card Frosted Glass Hover Expand",
-      "effectClass": "group relative h-50 w-50 overflow-hidden rounded-xl border border-white/10 bg-white/10 backdrop-blur-md transition-all duration-500 hover:scale-105 hover:bg-white/20",
       "category": "Card",
       "componentCode": "import React from \"react\";\n\nconst CardFrostedGlassHoverExpand = () => {\n  return (\n    <div className=\"group relative h-50 w-50 overflow-hidden rounded-xl border border-white/10 bg-white/10 backdrop-blur-md transition-all duration-500 hover:scale-105 hover:bg-white/20\">\n      <div className=\"absolute inset-0 z-0 bg-gradient-to-br from-white/30 to-white/10 blur-xl opacity-0 transition duration-500 group-hover:opacity-100\"></div>\n      <div className=\"relative z-10 flex h-full w-full flex-col items-center justify-center text-white\">\n        <h2 className=\"text-xl font-bold\">Frosted Glass</h2>\n        <p className=\"text-sm opacity-80\">Hover to Expand</p>\n      </div>\n    </div>\n  );\n};\n\nexport default CardFrostedGlassHoverExpand;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -547,7 +479,6 @@
     },
     {
       "title": "Card Glass Gradient Shine Sweep",
-      "effectClass": "relative h-50 w-50 rounded-xl bg-white/10 backdrop-blur-lg overflow-hidden group cursor-pointer",
       "category": "Card",
       "componentCode": "// CardGlassGradientShineSweep.jsx\nimport React from \"react\";\n\nfunction CardGlassGradientShineSweep() {\n  return (\n    <div className=\"relative h-50 w-50 rounded-xl bg-white/10 backdrop-blur-lg overflow-hidden group cursor-pointer\">\n      <div className=\"absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent w-1/3 h-full translate-x-[-100%] group-hover:translate-x-full transition-transform duration-700\"></div>\n      <p className=\"relative z-10 flex h-full w-full items-center justify-center text-white font-semibold\">\n        Hover Me!\n      </p>\n    </div>\n  );\n}\n\nexport default CardGlassGradientShineSweep;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -555,7 +486,6 @@
     },
     {
       "title": "Card Glass Reflection Shine",
-      "effectClass": "relative group h-[200px] w-[200px] overflow-hidden rounded-xl bg-white/10 backdrop-blur-lg",
       "category": "Card",
       "componentCode": "import React from \"react\";\n\nconst CardGlassReflectionShine = () => {\n  return (\n    <div className=\"relative group h-[200px] w-[200px] overflow-hidden rounded-xl bg-white/10 backdrop-blur-lg\">\n      {/* Shine overlay */}\n      <div className=\"absolute inset-0 z-0 overflow-hidden\">\n        <div className=\"absolute -left-full top-0 h-full w-1/3 rotate-12 bg-gradient-to-r from-white/60 to-white/0 opacity-30 transition-transform duration-700 group-hover:translate-x-[400%]\"></div>\n      </div>\n\n      {/* Content */}\n      <div className=\"relative z-10 flex h-full w-full flex-col items-center justify-center text-white\">\n        <h2 className=\"text-xl font-bold\">Hover Me!</h2>\n      </div>\n    </div>\n  );\n};\n\nexport default CardGlassReflectionShine;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -563,7 +493,6 @@
     },
     {
       "title": "Card Glitch Hover Effect",
-      "effectClass": "relative flex h-[200px] w-[200px] items-center justify-center overflow-hidden rounded-lg border bg-black text-xl font-bold text-white",
       "category": "Card",
       "componentCode": "import React, { useState, useEffect } from \"react\";\n\nfunction CardGlitchHoverEffect() {\n  const [glitchStyle, setGlitchStyle] = useState({});\n\n  useEffect(() => {\n    let interval;\n    const glitch = () => {\n      const translateX = Math.random() * 8 - 4;\n      const translateY = Math.random() * 8 - 4;\n      const skewX = Math.random() * 10 - 5;\n      const skewY = Math.random() * 10 - 5;\n      setGlitchStyle({ transform: `translate(${translateX}px, ${translateY}px) skew(${skewX}deg, ${skewY}deg)` });\n    };\n    interval = setInterval(glitch, 100);\n    return () => clearInterval(interval);\n  }, []);\n\n  return (\n    <div className=\"relative flex h-[200px] w-[200px] items-center justify-center overflow-hidden rounded-lg border bg-black text-xl font-bold text-white\">\n      <span className=\"absolute text-white\" style={glitchStyle}>GLITCH</span>\n      <span className=\"text-white opacity-30\">GLITCH</span>\n    </div>\n  );\n}\n\nexport default CardGlitchHoverEffect;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"glitch\": \"glitch 0.5s infinite\"\n  },\n  \"keyframes\": {\n    \"glitch\": {\n      \"0%\": { \"clip-path\": \"inset(0 0 0 0)\" },\n      \"20%\": { \"clip-path\": \"inset(10% 0 10% 0)\" },\n      \"40%\": { \"clip-path\": \"inset(0 10% 0 10%)\" },\n      \"60%\": { \"clip-path\": \"inset(10% 10% 10% 10%)\" },\n      \"80%\": { \"clip-path\": \"inset(0 0 0 0)\" },\n      \"100%\": { \"clip-path\": \"inset(0 0 0 0)\" }\n    }\n  }\n}",
@@ -571,7 +500,6 @@
     },
     {
       "title": "Card Hover Gradient Border Animation",
-      "effectClass": "relative h-50 w-50 rounded-xl p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-[length:300%_300%] animate-gradient-x hover:scale-105 transition-transform",
       "category": "Card",
       "componentCode": "// CardHoverGradientBorderAnimation.jsx\nimport React from \"react\";\n\nfunction CardHoverGradientBorderAnimation() {\n  return (\n    <div className=\"relative h-50 w-50 rounded-xl p-[2px] bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-[length:300%_300%] animate-gradient-x hover:scale-105 transition-transform\">\n      <div className=\"flex h-full w-full items-center justify-center rounded-xl bg-gray-900\">\n        <p className=\"text-white\">Hover Me</p>\n      </div>\n    </div>\n  );\n}\n\nexport default CardHoverGradientBorderAnimation;\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"gradient-x\": \"gradient-x 2s ease infinite\"\n  },\n  \"keyframes\": {\n    \"gradient-x\": {}\n  }\n}",
@@ -579,7 +507,6 @@
     },
     {
       "title": "Card Hover Ripple Wave",
-      "effectClass": "relative flex h-[200px] w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-blue-600 font-bold text-white select-none",
       "category": "Card",
       "componentCode": "import React, { useRef } from \"react\";\n\nfunction CardHoverRippleWave() {\n  const containerRef = useRef(null);\n\n  const handleClick = (e) => {\n    const container = containerRef.current;\n    const circle = document.createElement(\"span\");\n    const diameter = Math.max(container.clientWidth, container.clientHeight);\n    const radius = diameter / 2;\n    circle.style.width = circle.style.height = `${diameter}px`;\n    circle.style.left = `${e.clientX - container.getBoundingClientRect().left - radius}px`;\n    circle.style.top = `${e.clientY - container.getBoundingClientRect().top - radius}px`;\n    circle.style.position = \"absolute\";\n    circle.style.borderRadius = \"50%\";\n    circle.style.backgroundColor = \"rgba(255, 255, 255, 0.4)\";\n    circle.style.transform = \"scale(0)\";\n    circle.style.animation = \"rippleEffect 0.6s linear\";\n    circle.style.pointerEvents = \"none\";\n    container.appendChild(circle);\n    circle.addEventListener(\"animationend\", () => { circle.remove(); });\n  };\n\n  return (\n    <div ref={containerRef} onClick={handleClick} className=\"relative flex h-[200px] w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-blue-600 font-bold text-white select-none\">\n      Click Me!\n    </div>\n  );\n}\n\nexport default CardHoverRippleWave;",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"rippleEffect\": \"rippleEffect 0.6s ease-out forwards\"\n  },\n  \"keyframes\": {\n    \"rippleEffect\": {\n      \"to\": { \"transform\": \"scale(4)\", \"opacity\": \"0\" }\n    }\n  }\n}",
@@ -587,7 +514,6 @@
     },
     {
       "title": "Card Image Parallax Hover",
-      "effectClass": "relative h-50 w-50 cursor-pointer overflow-hidden rounded-xl bg-gray-900 will-change-transform",
       "category": "Card",
       "componentCode": "import React, { useRef } from \"react\";\n\nconst CardImageParallaxHover = () => {\n  const cardRef = useRef(null);\n\n  const handleMouseMove = (e) => {\n    const card = cardRef.current;\n    const rect = card.getBoundingClientRect();\n    const x = e.clientX - rect.left - rect.width / 2;\n    const y = e.clientY - rect.top - rect.height / 2;\n\n    const rotateX = Math.max(Math.min(-y / 15, 10), -10);\n    const rotateY = Math.max(Math.min(x / 15, 10), -10);\n\n    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;\n  };\n\n  const handleMouseLeave = () => {\n    const card = cardRef.current;\n    card.style.transition = \"transform 0.3s ease\";\n    card.style.transform = `rotateX(0deg) rotateY(0deg) scale(1)`;\n    setTimeout(() => {\n      card.style.transition = \"\";\n    }, 300);\n  };\n\n  return (\n    <div\n      ref={cardRef}\n      onMouseMove={handleMouseMove}\n      onMouseLeave={handleMouseLeave}\n      className=\"relative h-50 w-50 cursor-pointer overflow-hidden rounded-xl bg-gray-900 will-change-transform\"\n      style={{ transformStyle: \"preserve-3d\" }}\n    >\n      <img\n        src=\"/paralax.png\n        \"\n        alt=\"Parallax\"\n        className=\"pointer-events-none h-full w-full object-cover opacity-80\"\n      />\n      <div className=\"absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-center text-white\">\n        <h2 className=\"text-2xl font-bold drop-shadow-lg\">Parallax Hover</h2>\n        <p className=\"text-sm text-gray-300 drop-shadow-lg\">3D Tilt Effect</p>\n      </div>\n    </div>\n  );\n};\n\nexport default CardImageParallaxHover;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -595,7 +521,6 @@
     },
     {
       "title": "Card Layered Gradient Accent",
-      "effectClass": "relative h-50 w-50 rounded-xl bg-gradient-to-br from-purple-600 to-pink-500 p-1",
       "category": "Card",
       "componentCode": "import React from \"react\";\n\nconst CardLayeredGradientAccent = () => {\n  return (\n    <div className=\"relative h-50 w-50 rounded-xl bg-gradient-to-br from-purple-600 to-pink-500 p-1\">\n      <div className=\"h-full w-full rounded-xl bg-gray-900 flex flex-col items-center justify-center text-white\">\n        <h2 className=\"text-xl font-bold\">Layered Gradient</h2>\n        <p className=\"text-sm opacity-80\">Accent Border</p>\n      </div>\n    </div>\n  );\n};\n\nexport default CardLayeredGradientAccent;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -603,7 +528,6 @@
     },
     {
       "title": "Card Magnetic Hover Follow",
-      "effectClass": "flex h-[200px] w-[200px] items-center justify-center rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 text-lg font-bold text-white shadow-2xl transition-transform duration-200 will-change-transform",
       "category": "Card",
       "componentCode": "// CardMagneticHoverFollow.jsx\nimport React, { useRef } from \"react\";\n\nfunction CardMagneticHoverFollow() {\n  const cardRef = useRef();\n\n  const handleMouseMove = (e) => {\n    const card = cardRef.current;\n    const rect = card.getBoundingClientRect();\n    const x = e.clientX - rect.left - rect.width / 2;\n    const y = e.clientY - rect.top - rect.height / 2;\n    card.style.transform = `rotateX(${-y / 4}deg) rotateY(${x / 4}deg) scale(1.05)`;\n  };\n\n  const reset = () => {\n    const card = cardRef.current;\n    card.style.transition = \"transform 0.4s ease\";\n    card.style.transform = \"rotateX(0deg) rotateY(0deg) scale(1)\";\n    setTimeout(() => {\n      card.style.transition = \"\";\n    }, 400);\n  };\n\n  return (\n    <div\n      ref={cardRef}\n      onMouseMove={handleMouseMove}\n      onMouseLeave={reset}\n      className=\"flex h-[200px] w-[200px] items-center justify-center rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 text-lg font-bold text-white shadow-2xl transition-transform duration-200 will-change-transform\"\n    >\n      Hover Me\n    </div>\n  );\n}\n\nexport default CardMagneticHoverFollow;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -611,7 +535,6 @@
     },
     {
       "title": "Card Morphing Shape Hover",
-      "effectClass": "flex h-50 w-50 items-center justify-center rounded-xl bg-gradient-to-r from-green-400 to-blue-500 text-white transition-all duration-500 ease-in-out hover:rounded-full hover:ease-in-out",
       "category": "Card",
       "componentCode": "import React from \"react\";\n\nconst CardMorphingShapeHover = () => {\n  return (\n    <div className=\"flex h-50 w-50 items-center justify-center rounded-xl bg-gradient-to-r from-green-400 to-blue-500 text-white transition-all duration-500 ease-in-out hover:rounded-full hover:ease-in-out\">\n      <h2 className=\"text-xl font-bold\">Hover Me!</h2>\n    </div>\n  );\n};\n\nexport default CardMorphingShapeHover;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -619,7 +542,6 @@
     },
     {
       "title": "Card Neon Glow Border",
-      "effectClass": "relative h-50 w-50 rounded-xl border-2 border-cyan-400 transition duration-500 hover:shadow-[0_0_20px_5px_rgba(6,182,212,0.7)]",
       "category": "Card",
       "componentCode": "import React from \"react\";\n\nconst CardNeonGlowBorder = () => {\n  return (\n    <div className=\"relative h-50 w-50 rounded-xl border-2 border-cyan-400 transition duration-500 hover:shadow-[0_0_20px_5px_rgba(6,182,212,0.7)]\">\n      <div className=\"flex h-full w-full flex-col items-center justify-center text-cyan-400\">\n        <h2 className=\"text-xl font-bold\">Neon Glow</h2>\n        <p className=\"text-sm opacity-80\">Hover Border</p>\n      </div>\n    </div>\n  );\n};\n\nexport default CardNeonGlowBorder;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -627,7 +549,6 @@
     },
     {
       "title": "Card Slide Content On Hover",
-      "effectClass": "group relative h-50 w-50 overflow-hidden rounded-xl bg-indigo-600 text-white",
       "category": "Card",
       "componentCode": "import React from \"react\";\n\nconst CardSlideContentOnHover = () => {\n  return (\n    <div className=\"group relative h-50 w-50 overflow-hidden rounded-xl bg-indigo-600 text-white\">\n      <div className=\"absolute inset-0 flex items-center justify-center transition-transform duration-500 group-hover:-translate-y-full\">\n        <h2 className=\"text-xl font-bold\">Hover Me!</h2>\n      </div>\n      <div className=\"absolute inset-0 translate-y-full flex items-center justify-center bg-indigo-800 transition-transform duration-500 group-hover:translate-y-0\">\n        <p className=\"text-sm\">More Info</p>\n      </div>\n    </div>\n  );\n};\n\nexport default CardSlideContentOnHover;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -635,7 +556,6 @@
     },
     {
       "title": "Card Split Hover Reveal",
-      "effectClass": "group relative h-50 w-50 cursor-pointer overflow-hidden rounded-xl bg-gray-800 text-white",
       "category": "Card",
       "componentCode": "import React from \"react\";\n\nconst CardSplitHoverReveal = () => {\n  return (\n    <div className=\"group relative h-50 w-50 cursor-pointer overflow-hidden rounded-xl bg-gray-800 text-white\">\n      <div className=\"absolute inset-0 z-10 flex items-center justify-center transition-transform duration-500 group-hover:-translate-x-full\">\n        <h2 className=\"text-lg font-semibold\">Hover to Reveal</h2>\n      </div>\n\n      <div className=\"absolute inset-0 flex translate-x-full items-center justify-center rounded-xl bg-blue-500 transition-transform duration-500 group-hover:translate-x-0\">\n        <p className=\"text-sm\">Revealed Content</p>\n      </div>\n    </div>\n  );\n};\n\nexport default CardSplitHoverReveal;\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -643,7 +563,6 @@
     },
     {
       "title": "Border Flip Toggle",
-      "effectClass": "h-10 w-10 rounded-full border-4 transition-transform duration-500",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function BorderFlipToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`h-10 w-10 rounded-full border-4 transition-transform duration-500 ${on ? \"rotate-45 border-blue-500\" : \"border-gray-400\"}`}\n    />\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -651,7 +570,6 @@
     },
     {
       "title": "Emoji Toggle",
-      "effectClass": "h-16 w-16 text-3xl transition-transform duration-300 hover:scale-110",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function EmojiToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      type=\"button\"\n      onClick={() => setOn(!on)}\n      className=\"h-16 w-16 text-3xl transition-transform duration-300 hover:scale-110\"\n    >\n      {on ? \"🌞\" : \"🌜\"}\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -659,7 +577,6 @@
     },
     {
       "title": "Glow Dot Toggle",
-      "effectClass": "absolute inset-0 flex items-center justify-center font-bold text-white",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function GlowDotToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative h-12 w-12 rounded-full transition-all duration-500 ${on ? \"shadow-glow-green bg-green-500\" : \"bg-gray-500\"}`}\n    >\n      <span className=\"absolute inset-0 flex items-center justify-center font-bold text-white\">\n        {on ? \"✔\" : \"✖\"}\n      </span>\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -667,7 +584,6 @@
     },
     {
       "title": "Glow Toggle",
-      "effectClass": "h-10 w-20 rounded-full shadow-glow-purple bg-purple-600 transition-all duration-300",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function GlowToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`h-10 w-20 rounded-full ${on ? \"shadow-glow-purple bg-purple-600\" : \"bg-gray-600\"} transition-all duration-300`}\n    />\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -675,7 +591,6 @@
     },
     {
       "title": "Icon Toggle",
-      "effectClass": "flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 transition hover:bg-gray-700",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function IconToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className=\"flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 transition hover:bg-gray-700\"\n    >\n      {on ? (\n        <span className=\"text-xl text-white\">✅</span>\n      ) : (\n        <span className=\"text-xl text-white\">❌</span>\n      )}\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -683,7 +598,6 @@
     },
     {
       "title": "Neon Border Toggle",
-      "effectClass": "h-12 w-32 rounded-full font-semibold text-white transition-all duration-300 shadow-neon-pink border-4 border-pink-500",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function NeonBorderToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`h-12 w-32 rounded-full font-semibold text-white transition-all duration-300 ${on ? \"shadow-neon-pink border-4 border-pink-500\" : \"border-2 border-gray-500\"}`}\n    >\n      {on ? \"ON\" : \"OFF\"}\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -691,7 +605,6 @@
     },
     {
       "title": "Rotate Toggle",
-      "effectClass": "flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white transition-transform duration-500 rotate-180",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function RotateToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white transition-transform duration-500 ${on ? \"rotate-180\" : \"\"}`}\n    >\n      ⟳\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -699,7 +612,6 @@
     },
     {
       "title": "Scale Pulse Toggle",
-      "effectClass": "h-12 w-12 rounded-full bg-gradient-to-r animate-scale-pulse from-green-400 to-blue-500 transition-all duration-300",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ScalePulseToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`h-12 w-12 rounded-full bg-gradient-to-r ${on ? \"animate-scale-pulse from-green-400 to-blue-500\" : \"from-gray-400 to-gray-500\"} transition-all duration-300`}\n    />\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"scale-pulse\": \"scale-pulse 1s ease infinite\"\n  },\n  \"keyframes\": {\n    \"scale-pulse\": {}\n  }\n}",
@@ -707,7 +619,6 @@
     },
     {
       "title": "Slide Text Toggle",
-      "effectClass": "relative h-12 w-32 overflow-hidden rounded-full bg-gray-700 text-white",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function SlideTextToggle() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className=\"relative h-12 w-32 overflow-hidden rounded-full bg-gray-700 text-white\"\n    >\n      <span\n        className={`absolute inset-0 flex items-center justify-center transition-transform duration-500 ${on ? \"-translate-y-full\" : \"translate-y-0\"}`}\n      >\n        OFF\n      </span>\n      <span\n        className={`absolute inset-0 flex items-center justify-center transition-transform duration-500 ${on ? \"translate-y-0\" : \"translate-y-full\"}`}\n      >\n        ON\n      </span>\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -715,7 +626,6 @@
     },
     {
       "title": "Toggle Bounce",
-      "effectClass": "relative flex h-8 w-16 items-center rounded-full p-1 transition bg-orange-500",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ToggleBounce() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${\n        on ? \"bg-orange-500\" : \"bg-gray-400\"\n      }`}\n    >\n      <span\n        className={`inline-block h-6 w-6 transform rounded-full bg-white transition duration-300 ${\n          on ? \"translate-x-8 animate-bounce\" : \"\"\n        }`}\n      />\n    </button>\n  );\n}",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"bounce\": \"bounce 2s ease infinite\"\n  },\n  \"keyframes\": {\n    \"bounce\": {}\n  }\n}",
@@ -723,7 +633,6 @@
     },
     {
       "title": "Toggle Dot",
-      "effectClass": "relative flex h-8 w-16 items-center rounded-full p-1 transition bg-indigo-500",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ToggleDot() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${\n        on ? \"bg-indigo-500\" : \"bg-gray-400\"\n      }`}\n    >\n      <span\n        className={`inline-block h-4 w-4 transform rounded-full bg-white transition ${\n          on ? \"translate-x-10 scale-125\" : \"\"\n        }`}\n      />\n    </button>\n  );\n}",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -731,7 +640,6 @@
     },
     {
       "title": "Toggle Glow",
-      "effectClass": "relative flex h-8 w-16 items-center rounded-full p-1 transition bg-green-500 shadow-[0_0_10px_2px_rgba(16,185,129,0.7)]",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ToggleGlow() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${\n        on ? \"bg-green-500 shadow-[0_0_10px_2px_rgba(16,185,129,0.7)]\" : \"bg-gray-400\"\n      }`}\n    >\n      <span\n        className={`inline-block h-6 w-6 transform rounded-full bg-white transition ${\n          on ? \"translate-x-8\" : \"\"\n        }`}\n      />\n    </button>\n  );\n}",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -739,7 +647,6 @@
     },
     {
       "title": "Toggle Gradient",
-      "effectClass": "relative flex h-8 w-16 items-center rounded-full p-1 transition bg-gradient-to-r from-purple-500 to-pink-500",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ToggleGradient() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${\n        on ? \"bg-gradient-to-r from-purple-500 to-pink-500\" : \"bg-gray-400\"\n      }`}\n    >\n      <span\n        className={`inline-block h-6 w-6 transform rounded-full bg-white transition ${\n          on ? \"translate-x-8\" : \"\"\n        }`}\n      />\n    </button>\n  );\n}",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -747,7 +654,6 @@
     },
     {
       "title": "Toggle Icon Inside",
-      "effectClass": "text-white",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nimport { CheckIcon, XIcon } from \"@heroicons/react/solid\";\nexport default function ToggleIconInside() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center justify-between rounded-full px-2 transition ${\n        on ? \"bg-green-500\" : \"bg-gray-400\"\n      }`}\n    >\n      <span className=\"text-white\">\n        {on ? <CheckIcon className=\"h-4 w-4\" /> : <XIcon className=\"h-4 w-4\" />}\n      </span>\n      <span\n        className={`absolute top-1 left-1 h-6 w-6 transform rounded-full bg-white transition ${\n          on ? \"translate-x-8\" : \"\"\n        }`}\n      />\n    </button>\n  );\n}\n// npm install @heroicons/react\n// Needed for this component to work\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -755,7 +661,6 @@
     },
     {
       "title": "Toggle Outline",
-      "effectClass": "",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ToggleOutline() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center rounded-full border-2 p-1 transition ${\n        on ? \"border-green-500\" : \"border-gray-400\"\n      }`}\n    >\n      <span\n        className={`inline-block h-6 w-6 transform rounded-full bg-green-500 transition ${\n          on ? \"translate-x-8\" : \"bg-gray-400\"\n        }`}\n      />\n    </button>\n  );\n}",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -763,7 +668,6 @@
     },
     {
       "title": "Toggle Pulse",
-      "effectClass": "",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function TogglePulse() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${\n        on ? \"bg-emerald-500 animate-pulse\" : \"bg-gray-400\"\n      }`}\n    >\n      <span\n        className={`inline-block h-6 w-6 transform rounded-full bg-white transition ${\n          on ? \"translate-x-8\" : \"\"\n        }`}\n      />\n    </button>\n  );\n}",
       "tailwindConfigCode": "{\n  \"animation\": {\n    \"pulse\": \"pulse 2s ease infinite\"\n  },\n  \"keyframes\": {\n    \"pulse\": {}\n  }\n}",
@@ -771,7 +675,6 @@
     },
     {
       "title": "Toggle Ring",
-      "effectClass": "",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ToggleRing() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${\n        on ? \"bg-pink-500\" : \"bg-gray-400\"\n      }`}\n    >\n      <span\n        className={`inline-block h-6 w-6 transform rounded-full bg-white ring-2 ring-pink-500 transition ${\n          on ? \"translate-x-8\" : \"\"\n        }`}\n      />\n    </button>\n  );\n}",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -779,7 +682,6 @@
     },
     {
       "title": "Toggle Shadow",
-      "effectClass": "",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ToggleShadow() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${\n        on ? \"bg-blue-500 shadow-lg shadow-blue-500/50\" : \"bg-gray-400\"\n      }`}\n    >\n      <span\n        className={`inline-block h-6 w-6 transform rounded-full bg-white shadow-md transition ${\n          on ? \"translate-x-8\" : \"\"\n        }`}\n      />\n    </button>\n  );\n}",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -787,7 +689,6 @@
     },
     {
       "title": "Toggle Slide",
-      "effectClass": "",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ToggleSlide() {\n  const [on, setOn] = useState(false);\n  return (\n    <button\n      onClick={() => setOn(!on)}\n      className={`relative flex h-8 w-16 items-center rounded-full p-1 transition ${\n        on ? \"bg-green-500\" : \"bg-gray-400\"\n      }`}\n    >\n      <span\n        className={`inline-block h-6 w-6 transform rounded-full bg-white transition ${\n          on ? \"translate-x-8\" : \"\"\n        }`}\n      />\n    </button>\n  );\n}",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
@@ -795,11 +696,150 @@
     },
     {
       "title": "Toggle Switch",
-      "effectClass": "",
       "category": "Toggle",
       "componentCode": "import { useState } from \"react\";\nexport default function ToggleSwitch() {\n  const [enabled, setEnabled] = useState(false);\n  return (\n    <button\n      onClick={() => setEnabled(!enabled)}\n      className={`relative h-8 w-16 rounded-full transition-colors duration-300 ${enabled ? \"bg-green-500\" : \"bg-gray-300\"}`}\n    >\n      <span\n        className={`absolute top-1 left-1 h-6 w-6 rounded-full bg-white transition-transform duration-300 ${enabled ? \"translate-x-8\" : \"\"}`}\n      />\n    </button>\n  );\n}\n",
       "tailwindConfigCode": "{\n  \"animation\": {},\n  \"keyframes\": {}\n}",
       "cssCode": "/* ========================================\n   Animation: ToggleSwitch\n   ======================================== */\n/* Custom styles for ToggleSwitch */"
+    },
+    {
+      "title": "Dropdown Accordion",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownAccordion() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Accordion\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Accordion\n   ======================================== */\n/* Custom styles for Dropdown Accordion */"
+    },
+    {
+      "title": "Dropdown Blur",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownBlur() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Blur\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Dropdown Blur\n   ======================================== */\n@keyframes blurIn {\n  0% {\n    filter: blur(8px);\n    opacity: 0;\n  }\n  50% {\n    filter: blur(4px);\n    opacity: 0.5;\n  }\n  100% {\n    filter: blur(0px);\n    opacity: 1;\n  }\n}\n\n.animate-blurIn {\n  animation: blurIn 0.6s ease-out;\n}"
+    },
+    {
+      "title": "Dropdown Bounce",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownBounce() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Bounce\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "@keyframes bounceIn {\n  0% { transform: translateY(-30%) scale(0.9); opacity: 0; }\n  50% { transform: translateY(10%) scale(1.05); opacity: 1; }\n  70% { transform: translateY(-5%) scale(0.98); }\n  100% { transform: translateY(0) scale(1); }\n}\n.animate-bounceIn { animation: bounceIn 0.6s ease-out; }"
+    },
+    {
+      "title": "Dropdown Cube",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownCube() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Cube\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Cube\n   ======================================== */\n/* Custom styles for Dropdown Cube */"
+    },
+    {
+      "title": "Dropdown Curtain",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownCurtain() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Curtain\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Curtain\n   ======================================== */\n/* Custom styles for Dropdown Curtain */"
+    },
+    {
+      "title": "Dropdown Fade",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownFade() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Fade\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Fade\n   ======================================== */\n/* Custom styles for Dropdown Fade */"
+    },
+    {
+      "title": "Dropdown Flip",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownFlip() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Flip\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Flip\n   ======================================== */\n/* Custom styles for Dropdown Flip */"
+    },
+    {
+      "title": "Dropdown Glitch",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownGlitch() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Glitch\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "@keyframes glitch { 0% { transform: translate(0,0); opacity: 1; } 10% { transform: translate(-2px,2px); opacity: 0.8; } 20% { transform: translate(2px,-2px); opacity: 0.6; } 30% { transform: translate(-1px,1px); opacity: 0.8; } 40% { transform: translate(1px,-1px); opacity: 0.6; } 50% { transform: translate(-2px,2px); opacity: 0.8; } 60% { transform: translate(2px,-2px); opacity: 0.6; } 70% { transform: translate(-1px,1px); opacity: 0.8; } 80% { transform: translate(1px,-1px); opacity: 0.6; } 90% { transform: translate(0,0); opacity: 0.8; } 100% { transform: translate(0,0); opacity: 1; } }\n.animate-glitch { animation: glitch 300ms linear; }"
+    },
+    {
+      "title": "Dropdown Morph",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownMorph() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Morph\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Morph\n   ======================================== */\n/* Custom styles for Dropdown Morph */"
+    },
+    {
+      "title": "Dropdown Parallax",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownParallax() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Parallax\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Parallax\n   ======================================== */\n/* Custom styles for Dropdown Parallax */"
+    },
+    {
+      "title": "Dropdown Pulse",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownPulse() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Pulse\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Dropdown Pulse\n   ======================================== */\n\n.animate-glitch {\n  animation: glitch 300ms linear;\n}\n\n@keyframes realPulse {\n  0% {\n    transform: scale(1);\n  }\n  30% {\n    transform: scale(1.1);\n  }\n  50% {\n    transform: scale(0.97);\n  }\n  70% {\n    transform: scale(1.05);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n\n.animate-realPulse {\n  animation: realPulse 0.6s ease-in-out;\n}"
+    },
+    {
+      "title": "Dropdown Rotate",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownRotate() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Rotate\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Rotate\n   ======================================== */\n/* Custom styles for Dropdown Rotate */"
+    },
+    {
+      "title": "Dropdown Scale",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownScale() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Scale\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Scale\n   ======================================== */\n/* Custom styles for Dropdown Scale */"
+    },
+    {
+      "title": "Dropdown Skew",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownSkew() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Skew\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Skew\n   ======================================== */\n/* Custom styles for Dropdown Skew */"
+    },
+    {
+      "title": "Dropdown Slide",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownSlide() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Slide\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown Slide\n   ======================================== */\n/* Custom styles for Dropdown Slide */"
+    },
+    {
+      "title": "Dropdown SlideUp",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownSlideUp() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        SlideUp\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Animation: Dropdown SlideUp\n   ======================================== */\n/* Custom styles for Dropdown SlideUp */"
+    },
+    {
+      "title": "Dropdown Spring",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownSpring() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Spring\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Dropdown Spring\n   ======================================== */\n\n@keyframes spring {\n  0% {\n    transform: scale(0.9);\n  }\n  40% {\n    transform: scale(1.05);\n  }\n  60% {\n    transform: scale(0.97);\n  }\n  80% {\n    transform: scale(1.02);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n\n.animate-spring {\n  animation: spring 0.6s ease-out;\n}"
+    },
+    {
+      "title": "Dropdown Twist",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownTwist() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Twist\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Dropdown Twist\n   ======================================== */\n\n@keyframes twist {\n  0% {\n    transform: rotate(0deg) scale(0.95);\n  }\n  30% {\n    transform: rotate(10deg) scale(1.05);\n  }\n  60% {\n    transform: rotate(-5deg) scale(1.02);\n  }\n  100% {\n    transform: rotate(0deg) scale(1);\n  }\n}\n\n.animate-twist {\n  animation: twist 0.6s ease-out;\n}"
+    },
+    {
+      "title": "Dropdown Wave",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownWave() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Wave\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Dropdown Wave\n   ======================================== */\n\n@keyframes wave {\n  0% {\n    transform: translateX(0);\n  }\n  15% {\n    transform: translateX(-10px);\n  }\n  30% {\n    transform: translateX(10px);\n  }\n  45% {\n    transform: translateX(-6px);\n  }\n  60% {\n    transform: translateX(6px);\n  }\n  75% {\n    transform: translateX(-3px);\n  }\n  90% {\n    transform: translateX(3px);\n  }\n  100% {\n    transform: translateX(0);\n  }\n}\n\n.animate-wave {\n  animation: wave 0.6s ease-out;\n}"
+    },
+    {
+      "title": "Dropdown Zoom",
+      "category": "Dropdown",
+      "componentCode": "import { useState } from \"react\";\n\nexport default function DropdownZoom() {\n  const [open, setOpen] = useState(false);\n  return (\n    <div className=\"relative inline-block text-left select-none\">\n      <button onClick={() => setOpen(!open)} className=\"px-4 py-2 rounded bg-orange-500 text-white focus:outline-none\">\n        Zoom\n      </button>\n      <ul\n        className={`absolute left-0 mt-2 w-44 bg-white rounded shadow-lg divide-y divide-gray-100 transition-all duration-500 ease-out ${{open ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}}`}\n      >\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 1</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 2</li>\n        <li className=\"px-4 py-2 hover:bg-gray-100 cursor-pointer\">Item 3</li>\n      </ul>\n    </div>\n  );\n}\n",
+      "tailwindConfigCode": "{ \"animation\": {}, \"keyframes\": {} }",
+      "cssCode": "/* ========================================\n   Dropdown Zoom\n   ======================================== */\n\n@keyframes zoom {\n  0% {\n    transform: scale(0.8);\n    opacity: 0;\n  }\n  50% {\n    transform: scale(1.1);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n.animate-zoom {\n  animation: zoom 0.6s ease-out;\n}"
     }
   ]
 }
