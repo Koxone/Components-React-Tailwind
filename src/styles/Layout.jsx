@@ -27,7 +27,7 @@ function Layout({ content, Demo = false }) {
     <div className="grid grid-rows-[auto_1fr_auto]">
       {/* HEADER */}
       <div className="sticky top-0 z-50 mb-6 w-full sm:mb-0">
-        <SearchBar onClick={handleClick} onChange={setSearchTerm} />{" "}
+        <SearchBar onClick={handleClick} onChange={setSearchTerm} />
         {/* PASAMOS onChange */}
         <DrawerMenu isToggle={isToggle} />
       </div>
