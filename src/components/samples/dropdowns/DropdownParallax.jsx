@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function DropdownParallax() {
   const [open, setOpen] = useState(false);
 
-  // Animación parallax simulada con escala y desplazamiento
+
   const menuClass = open
     ? "translate-y-0 scale-100 opacity-100"
     : "-translate-y-4 scale-95 opacity-0 pointer-events-none";
@@ -16,7 +16,7 @@ export default function DropdownParallax() {
     >
       <button
         onClick={() => setOpen(!open)}
-        className="rounded bg-blue-500 px-4 py-2 text-white shadow focus:outline-none"
+        className="rounded hover:bg-blue-700 cursor-pointer bg-blue-500 px-4 py-2 text-white shadow focus:outline-none"
       >
         Click Me!
       </button>

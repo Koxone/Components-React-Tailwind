@@ -11,12 +11,12 @@ export default function DropdownFlip() {
     >
       <button
         onClick={() => setOpen(!open)}
-        className="rounded bg-blue-500 px-4 py-2 text-white shadow focus:outline-none"
+        className="rounded bg-blue-500 hover:bg-blue-700 px-4 py-2 text-white shadow focus:outline-none"
       >
         Click Me!
       </button>
       <ul
-        className={`absolute left-0 mt-2 w-44 divide-y divide-gray-100 rounded bg-white shadow-lg transition-transform duration-600 ease-out`}
+        className={`absolute cursor-pointer left-0 mt-2 w-44 divide-y divide-gray-100 rounded bg-white shadow-lg transition-transform duration-600 ease-out`}
         style={{
           transform: open
             ? "perspective(800px) rotateX(0deg)"

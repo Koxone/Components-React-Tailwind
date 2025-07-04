@@ -15,13 +15,13 @@ export default function DropdownAccordion() {
 
   return (
     <div
-      className={`relative inline-block text-left transition-all duration-600 select-none ${
+      className={`relative curpo inline-block text-left transition-all duration-600 select-none ${
         open ? "mt-[-90px]" : "mt-0"
       }`}
     >
       <button
         onClick={() => setOpen(!open)}
-        className="rounded bg-blue-500 px-4 py-2 text-white shadow focus:outline-none"
+        className="rounded cursor-pointer hover:bg-blue-700 bg-blue-500 px-4 py-2 text-white shadow focus:outline-none"
       >
         Click Me!
       </button>

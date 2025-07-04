@@ -15,7 +15,7 @@ export default function DropdownMorph() {
     >
       <button
         onClick={() => setOpen(!open)}
-        className="rounded bg-blue-500 px-4 py-2 text-white shadow focus:outline-none"
+        className="rounded hover:bg-blue-700 cursor-pointer bg-blue-500 px-4 py-2 text-white shadow focus:outline-none"
       >
         Click Me!
       </button>
