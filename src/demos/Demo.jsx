@@ -8,11 +8,14 @@ import npxButtons from "../utils/npx/buttons.json";
 import npxTexts from "../utils/npx/texts.json";
 import {
   buttons,
-  text,
-  inputs,
   cards,
-  toggles,
   dropdowns,
+  inputs,
+  modals,
+  sliders,
+  text,
+  toggles,
+  tooltips,
 } from "../components/data/ComponentsData";
 
 function Demo() {
@@ -22,50 +25,66 @@ function Demo() {
     (c) => c.title.toLowerCase() === decodedComponent,
   );
 
-  const textComponent = text.find(
-    (item) => item.title.toLowerCase() === decodedComponent,
-  );
   const buttonComponent = buttons.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
   const cardComponent = cards.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
+  const dropdownComponent = dropdowns.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
   const inputComponent = inputs.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const modalComponent = modals.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const sliderComponent = sliders.find(
+    (item) => item.title.toLowerCase() === decodedComponent,
+  );
+  const textComponent = text.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
   const toggleComponent = toggles.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
-  const dropdownComponent = dropdowns.find(
+  const tooltipComponent = tooltips.find(
     (item) => item.title.toLowerCase() === decodedComponent,
   );
 
   const currentComponent =
-    textComponent ||
     buttonComponent ||
     cardComponent ||
+    dropdownComponent ||
     inputComponent ||
+    modalComponent ||
+    sliderComponent ||
+    textComponent ||
     toggleComponent ||
-    dropdownComponent;
+    tooltipComponent;
 
   const navigate = useNavigate();
 
   const renderEffect = () => {
-    if (inputComponent) {
-      return <currentComponent.Component placeholder="Sample placeholder" />;
-    } else if (textComponent) {
-      return (
-        <currentComponent.Component>Sample Text</currentComponent.Component>
-      );
-    } else if (buttonComponent) {
+    if (buttonComponent) {
       return <currentComponent.Component>Click Me</currentComponent.Component>;
     } else if (cardComponent) {
       return (
         <currentComponent.Component>Card Content</currentComponent.Component>
       );
+    } else if (inputComponent) {
+      return <currentComponent.Component placeholder="Sample placeholder" />;
+    } else if (modalComponent) {
+      return <currentComponent.Component>Click Me</currentComponent.Component>;
+    } else if (textComponent) {
+      return (
+        <currentComponent.Component>Sample Text</currentComponent.Component>
+      );
     } else if (toggleComponent) {
       return <currentComponent.Component>Toggle Me</currentComponent.Component>;
+    } else if (tooltipComponent) {
+      return <currentComponent.Component>Click Me</currentComponent.Component>;
     }
     return <currentComponent.Component />;
   };
