@@ -3,7 +3,6 @@ import React from "react";
 function SearchBar({ onClick, onChange }) {
   return (
     <div
-      onClick={onClick}
       className="flex flex-row-reverse items-center justify-between border-gray-200 border-b-transparent bg-gray-50 p-4 sm:rounded-lg dark:border-gray-700 dark:bg-gray-800"
     >
       {/* INPUT A LA DERECHA */}
